@@ -51,10 +51,6 @@ const plugins = [
     },
     mangle: true,
   }), */
-  new webpack.ProvidePlugin({
-    $: 'jquery',
-    jQuery: 'jquery',
-  }),
 ];
 
 const rules = [

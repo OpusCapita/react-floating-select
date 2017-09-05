@@ -17,12 +17,12 @@
     "postversion": "git push && git push --tags"
   },
   "engines": {
-    "node": ">=6.11.x",
+    "node": ">=6.x.x",
     "npm": ">=5.4.x"
   },
   "peerDependencies": {
-    "react": ">=0.15.4",
-    "react-dom": ">=0.15.4"
+    "react": "15.4.x",
+    "react-dom": "15.4.x"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.1",
@@ -59,8 +59,9 @@
     "postcss-loader": "^2.0.6",
     "precss": "^2.0.0",
     "progress-bar-webpack-plugin": "^1.9.3",
-    "react": ">=15.4",
-    "react-dom": ">=15.4",
+    "react": "15.4.x",
+    "react-addons-test-utils": "^15.6.0",
+    "react-dom": "15.4.x",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-intl": "^2.2.2",
     "react-intl-redux": "^0.6.0",

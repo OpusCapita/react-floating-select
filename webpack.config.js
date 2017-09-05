@@ -4,7 +4,7 @@ const precss = require('precss');
 const flexbugs = require('postcss-flexbugs-fixes');
 const merge = require('webpack-merge');
 
-const libraryName = 'react-grid';
+const libraryName = 'react-floating-select';
 const outputJsFile = `${libraryName}.js`;
 
 const getBaseConfiguration = require('./webpack/base.config.js');

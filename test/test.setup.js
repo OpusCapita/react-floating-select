@@ -1,4 +1,3 @@
-import chai from 'chai';
 import { JSDOM } from 'jsdom';
 
 import mockStorage from './storage.mock';

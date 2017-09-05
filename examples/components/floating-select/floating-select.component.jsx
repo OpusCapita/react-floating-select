@@ -3,7 +3,6 @@ import React from 'react';
 import { FloatingSelect, FloatingSelectCreatable } from '../../../src/floating-select/index';
 
 export default class FloatingSelectView extends React.PureComponent {
-
   constructor(props) {
     super(props);
     this.state = { selectedOption: 0, selectedCreatableOption: 0 };
