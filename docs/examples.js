@@ -5,9 +5,11 @@ webpackJsonp([0],[
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  */
 
@@ -63,10 +65,12 @@ module.exports = invariant;
 
 "use strict";
 /**
- * Copyright (c) 2014-present, Facebook, Inc.
+ * Copyright 2014-2015, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  */
 
@@ -539,10 +543,12 @@ module.exports = invariant;
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  */
 
 if (false) {
@@ -575,9 +581,11 @@ if (false) {
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  */
 
@@ -616,9 +624,11 @@ module.exports = ExecutionEnvironment;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * 
  */
@@ -940,10 +950,12 @@ module.exports = ReactUpdates;
 
 "use strict";
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  */
 
@@ -2055,9 +2067,11 @@ module.exports = ReactElement;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  */
 
@@ -6911,9 +6925,11 @@ module.exports = ReactComponentEnvironment;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  * 
@@ -8461,7 +8477,7 @@ function createProvider() {
 }
 
 /* harmony default export */ var components_Provider = (createProvider());
-// EXTERNAL MODULE: ./node_modules/hoist-non-react-statics/index.js
+// EXTERNAL MODULE: ./node_modules/react-redux/node_modules/hoist-non-react-statics/index.js
 var hoist_non_react_statics = __webpack_require__(212);
 var hoist_non_react_statics_default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics);
 
@@ -10319,9 +10335,11 @@ module.exports = setTextContent;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  */
 
@@ -11947,9 +11965,11 @@ module.exports = ReactComponentTreeHook;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -12156,9 +12176,11 @@ module.exports = ReactInputSelection;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -15611,13 +15633,14 @@ var propTypes = {
 
   // PRIVATE: For client-side rehydration of server match.
   matchContext: prop_types["object"]
+};
 
-  /**
-   * A <Router> is a high-level API for automatically setting up
-   * a router that renders a <RouterContext> with all the props
-   * it needs each time the URL changes.
-   */
-};var Router = create_react_class_default()({
+/**
+ * A <Router> is a high-level API for automatically setting up
+ * a router that renders a <RouterContext> with all the props
+ * it needs each time the URL changes.
+ */
+var Router = create_react_class_default()({
   displayName: 'Router',
 
   propTypes: propTypes,
@@ -15902,7 +15925,7 @@ var IndexLink = create_react_class_default()({
 });
 
 /* harmony default export */ var es_IndexLink = (IndexLink);
-// EXTERNAL MODULE: ./node_modules/react-router/node_modules/hoist-non-react-statics/index.js
+// EXTERNAL MODULE: ./node_modules/hoist-non-react-statics/index.js
 var hoist_non_react_statics = __webpack_require__(198);
 var hoist_non_react_statics_default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics);
 
@@ -16482,11 +16505,6 @@ var tether_component_TetherComponent = (_temp3 = _class2 = function (_React$Pure
   }
 
   _createClass(TetherComponent, [{
-    key: '__position__REACT_HOT_LOADER__',
-    value: function __position__REACT_HOT_LOADER__() {
-      return this.__position__REACT_HOT_LOADER__.apply(this, arguments);
-    }
-  }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
       this.tetherContainer = document.createElement('div');
@@ -16563,9 +16581,9 @@ var _temp4 = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(TetheredChildrenComponent, 'TetheredChildrenComponent', 'C:/Users/ristoje1/bug89244/react-floating-select/src/floating-select/tether.component.jsx');
+  __REACT_HOT_LOADER__.register(TetheredChildrenComponent, 'TetheredChildrenComponent', 'C:/src/react-floating-select/src/floating-select/tether.component.jsx');
 
-  __REACT_HOT_LOADER__.register(tether_component_TetherComponent, 'TetherComponent', 'C:/Users/ristoje1/bug89244/react-floating-select/src/floating-select/tether.component.jsx');
+  __REACT_HOT_LOADER__.register(tether_component_TetherComponent, 'TetherComponent', 'C:/src/react-floating-select/src/floating-select/tether.component.jsx');
 }();
 
 ;
@@ -16649,7 +16667,7 @@ var floating_select_component__temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(floating_select_component_FloatingSelect, 'FloatingSelect', 'C:/Users/ristoje1/bug89244/react-floating-select/src/floating-select/floating-select.component.jsx');
+  __REACT_HOT_LOADER__.register(floating_select_component_FloatingSelect, 'FloatingSelect', 'C:/src/react-floating-select/src/floating-select/floating-select.component.jsx');
 }();
 
 ;
@@ -16700,7 +16718,7 @@ var floating_select_creatable_component__temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(floating_select_creatable_component_FloatingSelectCreatable, 'FloatingSelectCreatable', 'C:/Users/ristoje1/bug89244/react-floating-select/src/floating-select/floating-select-creatable.component.jsx');
+  __REACT_HOT_LOADER__.register(floating_select_creatable_component_FloatingSelectCreatable, 'FloatingSelectCreatable', 'C:/src/react-floating-select/src/floating-select/floating-select-creatable.component.jsx');
 }();
 
 ;
@@ -16856,7 +16874,7 @@ var floating_select_floating_select_component__temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(floating_select_component_FloatingSelectView, 'FloatingSelectView', 'C:/Users/ristoje1/bug89244/react-floating-select/examples/components/floating-select/floating-select.component.jsx');
+  __REACT_HOT_LOADER__.register(floating_select_component_FloatingSelectView, 'FloatingSelectView', 'C:/src/react-floating-select/examples/components/floating-select/floating-select.component.jsx');
 }();
 
 ;
@@ -16903,9 +16921,9 @@ var examples__temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(composeEnhancers, 'composeEnhancers', 'C:/Users/ristoje1/bug89244/react-floating-select/examples/index.jsx');
+  __REACT_HOT_LOADER__.register(composeEnhancers, 'composeEnhancers', 'C:/src/react-floating-select/examples/index.jsx');
 
-  __REACT_HOT_LOADER__.register(store, 'store', 'C:/Users/ristoje1/bug89244/react-floating-select/examples/index.jsx');
+  __REACT_HOT_LOADER__.register(store, 'store', 'C:/src/react-floating-select/examples/index.jsx');
 }();
 
 ;
@@ -20763,9 +20781,11 @@ module.exports = Danger;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -20850,9 +20870,11 @@ module.exports = createNodesFromMarkup;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -20980,9 +21002,11 @@ module.exports = createArrayFromMixed;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  */
 
@@ -22364,9 +22388,11 @@ module.exports = CSSPropertyOperations;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -22409,9 +22435,11 @@ module.exports = camelizeStyleName;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -22526,9 +22554,11 @@ module.exports = dangerousStyleValue;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -22570,9 +22600,11 @@ module.exports = hyphenateStyleName;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -22604,9 +22636,11 @@ module.exports = hyphenate;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * 
  * @typechecks static-only
@@ -25958,9 +25992,11 @@ module.exports = ReactEventListener;
 "use strict";
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -26520,9 +26556,11 @@ module.exports = getNodeForCharacterOffset;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * 
  */
@@ -26563,9 +26601,11 @@ module.exports = containsNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -26591,9 +26631,11 @@ module.exports = isTextNode;
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks
  */
@@ -28141,10 +28183,12 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 
 "use strict";
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  *
  */
 
@@ -29018,10 +29062,12 @@ module.exports = factory;
 
 "use strict";
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  */
 
 
@@ -29066,8 +29112,7 @@ module.exports = function() {
     objectOf: getShim,
     oneOf: getShim,
     oneOfType: getShim,
-    shape: getShim,
-    exact: getShim
+    shape: getShim
   };
 
   ReactPropTypes.checkPropTypes = emptyFunction;
@@ -29083,10 +29128,12 @@ module.exports = function() {
 
 "use strict";
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
  */
 
 
@@ -30325,7 +30372,7 @@ var defaultLocaleData = { "locale": "en", "pluralRuleFunction": function pluralR
         t0 = Number(s[0]) == n,
         n10 = t0 && s[0].slice(-1),
         n100 = t0 && s[0].slice(-2);if (ord) return n10 == 1 && n100 != 11 ? "one" : n10 == 2 && n100 != 12 ? "two" : n10 == 3 && n100 != 13 ? "few" : "other";return n == 1 && v0 ? "one" : "other";
-  }, "fields": { "year": { "displayName": "year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "one": "in {0} year", "other": "in {0} years" }, "past": { "one": "{0} year ago", "other": "{0} years ago" } } }, "month": { "displayName": "month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "one": "in {0} month", "other": "in {0} months" }, "past": { "one": "{0} month ago", "other": "{0} months ago" } } }, "day": { "displayName": "day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "one": "in {0} day", "other": "in {0} days" }, "past": { "one": "{0} day ago", "other": "{0} days ago" } } }, "hour": { "displayName": "hour", "relative": { "0": "this hour" }, "relativeTime": { "future": { "one": "in {0} hour", "other": "in {0} hours" }, "past": { "one": "{0} hour ago", "other": "{0} hours ago" } } }, "minute": { "displayName": "minute", "relative": { "0": "this minute" }, "relativeTime": { "future": { "one": "in {0} minute", "other": "in {0} minutes" }, "past": { "one": "{0} minute ago", "other": "{0} minutes ago" } } }, "second": { "displayName": "second", "relative": { "0": "now" }, "relativeTime": { "future": { "one": "in {0} second", "other": "in {0} seconds" }, "past": { "one": "{0} second ago", "other": "{0} seconds ago" } } } } };
+  }, "fields": { "year": { "displayName": "year", "relative": { "0": "this year", "1": "next year", "-1": "last year" }, "relativeTime": { "future": { "one": "in {0} year", "other": "in {0} years" }, "past": { "one": "{0} year ago", "other": "{0} years ago" } } }, "month": { "displayName": "month", "relative": { "0": "this month", "1": "next month", "-1": "last month" }, "relativeTime": { "future": { "one": "in {0} month", "other": "in {0} months" }, "past": { "one": "{0} month ago", "other": "{0} months ago" } } }, "day": { "displayName": "day", "relative": { "0": "today", "1": "tomorrow", "-1": "yesterday" }, "relativeTime": { "future": { "one": "in {0} day", "other": "in {0} days" }, "past": { "one": "{0} day ago", "other": "{0} days ago" } } }, "hour": { "displayName": "hour", "relativeTime": { "future": { "one": "in {0} hour", "other": "in {0} hours" }, "past": { "one": "{0} hour ago", "other": "{0} hours ago" } } }, "minute": { "displayName": "minute", "relativeTime": { "future": { "one": "in {0} minute", "other": "in {0} minutes" }, "past": { "one": "{0} minute ago", "other": "{0} minutes ago" } } }, "second": { "displayName": "second", "relative": { "0": "now" }, "relativeTime": { "future": { "one": "in {0} second", "other": "in {0} seconds" }, "past": { "one": "{0} second ago", "other": "{0} seconds ago" } } } } };
 
 /*
  * Copyright 2015, Yahoo Inc.
@@ -30334,36 +30381,36 @@ var defaultLocaleData = { "locale": "en", "pluralRuleFunction": function pluralR
  */
 
 function addLocaleData() {
-  var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 
-  var locales = Array.isArray(data) ? data : [data];
+    var locales = Array.isArray(data) ? data : [data];
 
-  locales.forEach(function (localeData) {
-    if (localeData && localeData.locale) {
-      __WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a.__addLocaleData(localeData);
-      __WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a.__addLocaleData(localeData);
-    }
-  });
+    locales.forEach(function (localeData) {
+        if (localeData && localeData.locale) {
+            __WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a.__addLocaleData(localeData);
+            __WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a.__addLocaleData(localeData);
+        }
+    });
 }
 
 function hasLocaleData(locale) {
-  var localeParts = (locale || '').split('-');
+    var localeParts = (locale || '').split('-');
 
-  while (localeParts.length > 0) {
-    if (hasIMFAndIRFLocaleData(localeParts.join('-'))) {
-      return true;
+    while (localeParts.length > 0) {
+        if (hasIMFAndIRFLocaleData(localeParts.join('-'))) {
+            return true;
+        }
+
+        localeParts.pop();
     }
 
-    localeParts.pop();
-  }
-
-  return false;
+    return false;
 }
 
 function hasIMFAndIRFLocaleData(locale) {
-  var normalizedLocale = locale && locale.toLowerCase();
+    var normalizedLocale = locale && locale.toLowerCase();
 
-  return !!(__WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a.__localeData__[normalizedLocale] && __WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a.__localeData__[normalizedLocale]);
+    return !!(__WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a.__localeData__[normalizedLocale] && __WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a.__localeData__[normalizedLocale]);
 }
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
@@ -30527,7 +30574,6 @@ var object = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.object;
 var oneOf = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.oneOf;
 var shape = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.shape;
 var any = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.any;
-var oneOfType = __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.oneOfType;
 
 var localeMatcher = oneOf(['best fit', 'lookup']);
 var narrowShortLong = oneOf(['narrow', 'short', 'long']);
@@ -30535,76 +30581,76 @@ var numeric2digit = oneOf(['numeric', '2-digit']);
 var funcReq = func.isRequired;
 
 var intlConfigPropTypes = {
-  locale: string,
-  formats: object,
-  messages: object,
-  textComponent: any,
+    locale: string,
+    formats: object,
+    messages: object,
+    textComponent: any,
 
-  defaultLocale: string,
-  defaultFormats: object
+    defaultLocale: string,
+    defaultFormats: object
 };
 
 var intlFormatPropTypes = {
-  formatDate: funcReq,
-  formatTime: funcReq,
-  formatRelative: funcReq,
-  formatNumber: funcReq,
-  formatPlural: funcReq,
-  formatMessage: funcReq,
-  formatHTMLMessage: funcReq
+    formatDate: funcReq,
+    formatTime: funcReq,
+    formatRelative: funcReq,
+    formatNumber: funcReq,
+    formatPlural: funcReq,
+    formatMessage: funcReq,
+    formatHTMLMessage: funcReq
 };
 
 var intlShape = shape(_extends({}, intlConfigPropTypes, intlFormatPropTypes, {
-  formatters: object,
-  now: funcReq
+    formatters: object,
+    now: funcReq
 }));
 
 var messageDescriptorPropTypes = {
-  id: string.isRequired,
-  description: oneOfType([string, object]),
-  defaultMessage: string
+    id: string.isRequired,
+    description: string,
+    defaultMessage: string
 };
 
 var dateTimeFormatPropTypes = {
-  localeMatcher: localeMatcher,
-  formatMatcher: oneOf(['basic', 'best fit']),
+    localeMatcher: localeMatcher,
+    formatMatcher: oneOf(['basic', 'best fit']),
 
-  timeZone: string,
-  hour12: bool,
+    timeZone: string,
+    hour12: bool,
 
-  weekday: narrowShortLong,
-  era: narrowShortLong,
-  year: numeric2digit,
-  month: oneOf(['numeric', '2-digit', 'narrow', 'short', 'long']),
-  day: numeric2digit,
-  hour: numeric2digit,
-  minute: numeric2digit,
-  second: numeric2digit,
-  timeZoneName: oneOf(['short', 'long'])
+    weekday: narrowShortLong,
+    era: narrowShortLong,
+    year: numeric2digit,
+    month: oneOf(['numeric', '2-digit', 'narrow', 'short', 'long']),
+    day: numeric2digit,
+    hour: numeric2digit,
+    minute: numeric2digit,
+    second: numeric2digit,
+    timeZoneName: oneOf(['short', 'long'])
 };
 
 var numberFormatPropTypes = {
-  localeMatcher: localeMatcher,
+    localeMatcher: localeMatcher,
 
-  style: oneOf(['decimal', 'currency', 'percent']),
-  currency: string,
-  currencyDisplay: oneOf(['symbol', 'code', 'name']),
-  useGrouping: bool,
+    style: oneOf(['decimal', 'currency', 'percent']),
+    currency: string,
+    currencyDisplay: oneOf(['symbol', 'code', 'name']),
+    useGrouping: bool,
 
-  minimumIntegerDigits: number,
-  minimumFractionDigits: number,
-  maximumFractionDigits: number,
-  minimumSignificantDigits: number,
-  maximumSignificantDigits: number
+    minimumIntegerDigits: number,
+    minimumFractionDigits: number,
+    maximumFractionDigits: number,
+    minimumSignificantDigits: number,
+    maximumSignificantDigits: number
 };
 
 var relativeFormatPropTypes = {
-  style: oneOf(['best fit', 'numeric']),
-  units: oneOf(['second', 'minute', 'hour', 'day', 'month', 'year'])
+    style: oneOf(['best fit', 'numeric']),
+    units: oneOf(['second', 'minute', 'hour', 'day', 'month', 'year'])
 };
 
 var pluralFormatPropTypes = {
-  style: oneOf(['cardinal', 'ordinal'])
+    style: oneOf(['cardinal', 'ordinal'])
 };
 
 /*
@@ -30621,82 +30667,82 @@ file in the root directory of React's source tree.
 var intlConfigPropNames = Object.keys(intlConfigPropTypes);
 
 var ESCAPED_CHARS = {
-  '&': '&amp;',
-  '>': '&gt;',
-  '<': '&lt;',
-  '"': '&quot;',
-  "'": '&#x27;'
+    '&': '&amp;',
+    '>': '&gt;',
+    '<': '&lt;',
+    '"': '&quot;',
+    '\'': '&#x27;'
 };
 
 var UNSAFE_CHARS_REGEX = /[&><"']/g;
 
 function escape(str) {
-  return ('' + str).replace(UNSAFE_CHARS_REGEX, function (match) {
-    return ESCAPED_CHARS[match];
-  });
+    return ('' + str).replace(UNSAFE_CHARS_REGEX, function (match) {
+        return ESCAPED_CHARS[match];
+    });
 }
 
 function filterProps(props, whitelist) {
-  var defaults$$1 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var defaults$$1 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 
-  return whitelist.reduce(function (filtered, name) {
-    if (props.hasOwnProperty(name)) {
-      filtered[name] = props[name];
-    } else if (defaults$$1.hasOwnProperty(name)) {
-      filtered[name] = defaults$$1[name];
-    }
+    return whitelist.reduce(function (filtered, name) {
+        if (props.hasOwnProperty(name)) {
+            filtered[name] = props[name];
+        } else if (defaults$$1.hasOwnProperty(name)) {
+            filtered[name] = defaults$$1[name];
+        }
 
-    return filtered;
-  }, {});
+        return filtered;
+    }, {});
 }
 
 function invariantIntlContext() {
-  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-      intl = _ref.intl;
+    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+        intl = _ref.intl;
 
-  __WEBPACK_IMPORTED_MODULE_5_invariant___default()(intl, '[React Intl] Could not find required `intl` object. ' + '<IntlProvider> needs to exist in the component ancestry.');
+    __WEBPACK_IMPORTED_MODULE_5_invariant___default()(intl, '[React Intl] Could not find required `intl` object. ' + '<IntlProvider> needs to exist in the component ancestry.');
 }
 
 function shallowEquals(objA, objB) {
-  if (objA === objB) {
-    return true;
-  }
-
-  if ((typeof objA === 'undefined' ? 'undefined' : _typeof(objA)) !== 'object' || objA === null || (typeof objB === 'undefined' ? 'undefined' : _typeof(objB)) !== 'object' || objB === null) {
-    return false;
-  }
-
-  var keysA = Object.keys(objA);
-  var keysB = Object.keys(objB);
-
-  if (keysA.length !== keysB.length) {
-    return false;
-  }
-
-  // Test for A's keys different from B.
-  var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
-  for (var i = 0; i < keysA.length; i++) {
-    if (!bHasOwnProperty(keysA[i]) || objA[keysA[i]] !== objB[keysA[i]]) {
-      return false;
+    if (objA === objB) {
+        return true;
     }
-  }
 
-  return true;
+    if ((typeof objA === 'undefined' ? 'undefined' : _typeof(objA)) !== 'object' || objA === null || (typeof objB === 'undefined' ? 'undefined' : _typeof(objB)) !== 'object' || objB === null) {
+        return false;
+    }
+
+    var keysA = Object.keys(objA);
+    var keysB = Object.keys(objB);
+
+    if (keysA.length !== keysB.length) {
+        return false;
+    }
+
+    // Test for A's keys different from B.
+    var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+    for (var i = 0; i < keysA.length; i++) {
+        if (!bHasOwnProperty(keysA[i]) || objA[keysA[i]] !== objB[keysA[i]]) {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 function shouldIntlComponentUpdate(_ref2, nextProps, nextState) {
-  var props = _ref2.props,
-      state = _ref2.state,
-      _ref2$context = _ref2.context,
-      context = _ref2$context === undefined ? {} : _ref2$context;
-  var nextContext = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-  var _context$intl = context.intl,
-      intl = _context$intl === undefined ? {} : _context$intl;
-  var _nextContext$intl = nextContext.intl,
-      nextIntl = _nextContext$intl === undefined ? {} : _nextContext$intl;
+    var props = _ref2.props,
+        state = _ref2.state,
+        _ref2$context = _ref2.context,
+        context = _ref2$context === undefined ? {} : _ref2$context;
+    var nextContext = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var _context$intl = context.intl,
+        intl = _context$intl === undefined ? {} : _context$intl;
+    var _nextContext$intl = nextContext.intl,
+        nextIntl = _nextContext$intl === undefined ? {} : _nextContext$intl;
 
 
-  return !shallowEquals(nextProps, props) || !shallowEquals(nextState, state) || !(nextIntl === intl || shallowEquals(filterProps(nextIntl, intlConfigPropNames), filterProps(intl, intlConfigPropNames)));
+    return !shallowEquals(nextProps, props) || !shallowEquals(nextState, state) || !(nextIntl === intl || shallowEquals(filterProps(nextIntl, intlConfigPropNames), filterProps(intl, intlConfigPropNames)));
 }
 
 /*
@@ -30709,54 +30755,54 @@ function shouldIntlComponentUpdate(_ref2, nextProps, nextState) {
 // https://github.com/rackt/react-redux
 
 function getDisplayName(Component$$1) {
-  return Component$$1.displayName || Component$$1.name || 'Component';
+    return Component$$1.displayName || Component$$1.name || 'Component';
 }
 
 function injectIntl(WrappedComponent) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var _options$intlPropName = options.intlPropName,
-      intlPropName = _options$intlPropName === undefined ? 'intl' : _options$intlPropName,
-      _options$withRef = options.withRef,
-      withRef = _options$withRef === undefined ? false : _options$withRef;
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var _options$intlPropName = options.intlPropName,
+        intlPropName = _options$intlPropName === undefined ? 'intl' : _options$intlPropName,
+        _options$withRef = options.withRef,
+        withRef = _options$withRef === undefined ? false : _options$withRef;
 
-  var InjectIntl = function (_Component) {
-    inherits(InjectIntl, _Component);
+    var InjectIntl = function (_Component) {
+        inherits(InjectIntl, _Component);
 
-    function InjectIntl(props, context) {
-      classCallCheck(this, InjectIntl);
+        function InjectIntl(props, context) {
+            classCallCheck(this, InjectIntl);
 
-      var _this = possibleConstructorReturn(this, (InjectIntl.__proto__ || Object.getPrototypeOf(InjectIntl)).call(this, props, context));
+            var _this = possibleConstructorReturn(this, (InjectIntl.__proto__ || Object.getPrototypeOf(InjectIntl)).call(this, props, context));
 
-      invariantIntlContext(context);
-      return _this;
-    }
+            invariantIntlContext(context);
+            return _this;
+        }
 
-    createClass(InjectIntl, [{
-      key: 'getWrappedInstance',
-      value: function getWrappedInstance() {
-        __WEBPACK_IMPORTED_MODULE_5_invariant___default()(withRef, '[React Intl] To access the wrapped instance, ' + 'the `{withRef: true}` option must be set when calling: ' + '`injectIntl()`');
+        createClass(InjectIntl, [{
+            key: 'getWrappedInstance',
+            value: function getWrappedInstance() {
+                __WEBPACK_IMPORTED_MODULE_5_invariant___default()(withRef, '[React Intl] To access the wrapped instance, ' + 'the `{withRef: true}` option must be set when calling: ' + '`injectIntl()`');
 
-        return this.refs.wrappedInstance;
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(WrappedComponent, _extends({}, this.props, defineProperty({}, intlPropName, this.context.intl), {
-          ref: withRef ? 'wrappedInstance' : null
-        }));
-      }
-    }]);
+                return this.refs.wrappedInstance;
+            }
+        }, {
+            key: 'render',
+            value: function render() {
+                return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(WrappedComponent, _extends({}, this.props, defineProperty({}, intlPropName, this.context.intl), {
+                    ref: withRef ? 'wrappedInstance' : null
+                }));
+            }
+        }]);
+        return InjectIntl;
+    }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
+
+    InjectIntl.displayName = 'InjectIntl(' + getDisplayName(WrappedComponent) + ')';
+    InjectIntl.contextTypes = {
+        intl: intlShape
+    };
+    InjectIntl.WrappedComponent = WrappedComponent;
+
+
     return InjectIntl;
-  }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
-
-  InjectIntl.displayName = 'InjectIntl(' + getDisplayName(WrappedComponent) + ')';
-  InjectIntl.contextTypes = {
-    intl: intlShape
-  };
-  InjectIntl.WrappedComponent = WrappedComponent;
-
-
-  return InjectIntl;
 }
 
 /*
@@ -30780,25 +30826,25 @@ function defineMessages(messageDescriptors) {
 // This is a "hack" until a proper `intl-pluralformat` package is created.
 
 function resolveLocale(locales) {
-  // IntlMessageFormat#_resolveLocale() does not depend on `this`.
-  return __WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a.prototype._resolveLocale(locales);
+    // IntlMessageFormat#_resolveLocale() does not depend on `this`.
+    return __WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a.prototype._resolveLocale(locales);
 }
 
 function findPluralFunction(locale) {
-  // IntlMessageFormat#_findPluralFunction() does not depend on `this`.
-  return __WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a.prototype._findPluralRuleFunction(locale);
+    // IntlMessageFormat#_findPluralFunction() does not depend on `this`.
+    return __WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a.prototype._findPluralRuleFunction(locale);
 }
 
 var IntlPluralFormat = function IntlPluralFormat(locales) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  classCallCheck(this, IntlPluralFormat);
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    classCallCheck(this, IntlPluralFormat);
 
-  var useOrdinal = options.style === 'ordinal';
-  var pluralFn = findPluralFunction(resolveLocale(locales));
+    var useOrdinal = options.style === 'ordinal';
+    var pluralFn = findPluralFunction(resolveLocale(locales));
 
-  this.format = function (value) {
-    return pluralFn(value, useOrdinal);
-  };
+    this.format = function (value) {
+        return pluralFn(value, useOrdinal);
+    };
 };
 
 /*
@@ -30813,234 +30859,234 @@ var RELATIVE_FORMAT_OPTIONS = Object.keys(relativeFormatPropTypes);
 var PLURAL_FORMAT_OPTIONS = Object.keys(pluralFormatPropTypes);
 
 var RELATIVE_FORMAT_THRESHOLDS = {
-  second: 60, // seconds to minute
-  minute: 60, // minutes to hour
-  hour: 24, // hours to day
-  day: 30, // days to month
-  month: 12 // months to year
-};
+    second: 60, // seconds to minute
+    minute: 60, // minutes to hour
+    hour: 24, // hours to day
+    day: 30, // days to month
+    month: 12 };
 
 function updateRelativeFormatThresholds(newThresholds) {
-  var thresholds = __WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a.thresholds;
-  thresholds.second = newThresholds.second;
-  thresholds.minute = newThresholds.minute;
-  thresholds.hour = newThresholds.hour;
-  thresholds.day = newThresholds.day;
-  thresholds.month = newThresholds.month;
+    var thresholds = __WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a.thresholds;
+    thresholds.second = newThresholds.second;
+    thresholds.minute = newThresholds.minute;
+    thresholds.hour = newThresholds.hour;
+    thresholds.day = newThresholds.day;
+    thresholds.month = newThresholds.month;
 }
 
 function getNamedFormat(formats, type, name) {
-  var format = formats && formats[type] && formats[type][name];
-  if (format) {
-    return format;
-  }
+    var format = formats && formats[type] && formats[type][name];
+    if (format) {
+        return format;
+    }
 
-  if (false) {
-    console.error('[React Intl] No ' + type + ' format named: ' + name);
-  }
+    if (false) {
+        console.error('[React Intl] No ' + type + ' format named: ' + name);
+    }
 }
 
 function formatDate(config, state, value) {
-  var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-  var locale = config.locale,
-      formats = config.formats;
-  var format = options.format;
+    var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var locale = config.locale,
+        formats = config.formats;
+    var format = options.format;
 
 
-  var date = new Date(value);
-  var defaults$$1 = format && getNamedFormat(formats, 'date', format);
-  var filteredOptions = filterProps(options, DATE_TIME_FORMAT_OPTIONS, defaults$$1);
+    var date = new Date(value);
+    var defaults$$1 = format && getNamedFormat(formats, 'date', format);
+    var filteredOptions = filterProps(options, DATE_TIME_FORMAT_OPTIONS, defaults$$1);
 
-  try {
-    return state.getDateTimeFormat(locale, filteredOptions).format(date);
-  } catch (e) {
-    if (false) {
-      console.error('[React Intl] Error formatting date.\n' + e);
+    try {
+        return state.getDateTimeFormat(locale, filteredOptions).format(date);
+    } catch (e) {
+        if (false) {
+            console.error('[React Intl] Error formatting date.\n' + e);
+        }
     }
-  }
 
-  return String(date);
+    return String(date);
 }
 
 function formatTime(config, state, value) {
-  var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-  var locale = config.locale,
-      formats = config.formats;
-  var format = options.format;
+    var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var locale = config.locale,
+        formats = config.formats;
+    var format = options.format;
 
 
-  var date = new Date(value);
-  var defaults$$1 = format && getNamedFormat(formats, 'time', format);
-  var filteredOptions = filterProps(options, DATE_TIME_FORMAT_OPTIONS, defaults$$1);
+    var date = new Date(value);
+    var defaults$$1 = format && getNamedFormat(formats, 'time', format);
+    var filteredOptions = filterProps(options, DATE_TIME_FORMAT_OPTIONS, defaults$$1);
 
-  if (!filteredOptions.hour && !filteredOptions.minute && !filteredOptions.second) {
-    // Add default formatting options if hour, minute, or second isn't defined.
-    filteredOptions = _extends({}, filteredOptions, { hour: 'numeric', minute: 'numeric' });
-  }
-
-  try {
-    return state.getDateTimeFormat(locale, filteredOptions).format(date);
-  } catch (e) {
-    if (false) {
-      console.error('[React Intl] Error formatting time.\n' + e);
+    if (!filteredOptions.hour && !filteredOptions.minute && !filteredOptions.second) {
+        // Add default formatting options if hour, minute, or second isn't defined.
+        filteredOptions = _extends({}, filteredOptions, { hour: 'numeric', minute: 'numeric' });
     }
-  }
 
-  return String(date);
+    try {
+        return state.getDateTimeFormat(locale, filteredOptions).format(date);
+    } catch (e) {
+        if (false) {
+            console.error('[React Intl] Error formatting time.\n' + e);
+        }
+    }
+
+    return String(date);
 }
 
 function formatRelative(config, state, value) {
-  var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-  var locale = config.locale,
-      formats = config.formats;
-  var format = options.format;
+    var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var locale = config.locale,
+        formats = config.formats;
+    var format = options.format;
 
 
-  var date = new Date(value);
-  var now = new Date(options.now);
-  var defaults$$1 = format && getNamedFormat(formats, 'relative', format);
-  var filteredOptions = filterProps(options, RELATIVE_FORMAT_OPTIONS, defaults$$1);
+    var date = new Date(value);
+    var now = new Date(options.now);
+    var defaults$$1 = format && getNamedFormat(formats, 'relative', format);
+    var filteredOptions = filterProps(options, RELATIVE_FORMAT_OPTIONS, defaults$$1);
 
-  // Capture the current threshold values, then temporarily override them with
-  // specific values just for this render.
-  var oldThresholds = _extends({}, __WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a.thresholds);
-  updateRelativeFormatThresholds(RELATIVE_FORMAT_THRESHOLDS);
+    // Capture the current threshold values, then temporarily override them with
+    // specific values just for this render.
+    var oldThresholds = _extends({}, __WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a.thresholds);
+    updateRelativeFormatThresholds(RELATIVE_FORMAT_THRESHOLDS);
 
-  try {
-    return state.getRelativeFormat(locale, filteredOptions).format(date, {
-      now: isFinite(now) ? now : state.now()
-    });
-  } catch (e) {
-    if (false) {
-      console.error('[React Intl] Error formatting relative time.\n' + e);
+    try {
+        return state.getRelativeFormat(locale, filteredOptions).format(date, {
+            now: isFinite(now) ? now : state.now()
+        });
+    } catch (e) {
+        if (false) {
+            console.error('[React Intl] Error formatting relative time.\n' + e);
+        }
+    } finally {
+        updateRelativeFormatThresholds(oldThresholds);
     }
-  } finally {
-    updateRelativeFormatThresholds(oldThresholds);
-  }
 
-  return String(date);
+    return String(date);
 }
 
 function formatNumber(config, state, value) {
-  var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-  var locale = config.locale,
-      formats = config.formats;
-  var format = options.format;
+    var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var locale = config.locale,
+        formats = config.formats;
+    var format = options.format;
 
 
-  var defaults$$1 = format && getNamedFormat(formats, 'number', format);
-  var filteredOptions = filterProps(options, NUMBER_FORMAT_OPTIONS, defaults$$1);
+    var defaults$$1 = format && getNamedFormat(formats, 'number', format);
+    var filteredOptions = filterProps(options, NUMBER_FORMAT_OPTIONS, defaults$$1);
 
-  try {
-    return state.getNumberFormat(locale, filteredOptions).format(value);
-  } catch (e) {
-    if (false) {
-      console.error('[React Intl] Error formatting number.\n' + e);
+    try {
+        return state.getNumberFormat(locale, filteredOptions).format(value);
+    } catch (e) {
+        if (false) {
+            console.error('[React Intl] Error formatting number.\n' + e);
+        }
     }
-  }
 
-  return String(value);
+    return String(value);
 }
 
 function formatPlural(config, state, value) {
-  var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-  var locale = config.locale;
+    var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var locale = config.locale;
 
 
-  var filteredOptions = filterProps(options, PLURAL_FORMAT_OPTIONS);
+    var filteredOptions = filterProps(options, PLURAL_FORMAT_OPTIONS);
 
-  try {
-    return state.getPluralFormat(locale, filteredOptions).format(value);
-  } catch (e) {
-    if (false) {
-      console.error('[React Intl] Error formatting plural.\n' + e);
+    try {
+        return state.getPluralFormat(locale, filteredOptions).format(value);
+    } catch (e) {
+        if (false) {
+            console.error('[React Intl] Error formatting plural.\n' + e);
+        }
     }
-  }
 
-  return 'other';
+    return 'other';
 }
 
 function formatMessage(config, state) {
-  var messageDescriptor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-  var values = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-  var locale = config.locale,
-      formats = config.formats,
-      messages = config.messages,
-      defaultLocale = config.defaultLocale,
-      defaultFormats = config.defaultFormats;
-  var id = messageDescriptor.id,
-      defaultMessage = messageDescriptor.defaultMessage;
+    var messageDescriptor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var values = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var locale = config.locale,
+        formats = config.formats,
+        messages = config.messages,
+        defaultLocale = config.defaultLocale,
+        defaultFormats = config.defaultFormats;
+    var id = messageDescriptor.id,
+        defaultMessage = messageDescriptor.defaultMessage;
 
-  // `id` is a required field of a Message Descriptor.
+    // `id` is a required field of a Message Descriptor.
 
-  __WEBPACK_IMPORTED_MODULE_5_invariant___default()(id, '[React Intl] An `id` must be provided to format a message.');
+    __WEBPACK_IMPORTED_MODULE_5_invariant___default()(id, '[React Intl] An `id` must be provided to format a message.');
 
-  var message = messages && messages[id];
-  var hasValues = Object.keys(values).length > 0;
+    var message = messages && messages[id];
+    var hasValues = Object.keys(values).length > 0;
 
-  // Avoid expensive message formatting for simple messages without values. In
-  // development messages will always be formatted in case of missing values.
-  if (!hasValues && "production" === 'production') {
-    return message || defaultMessage || id;
-  }
-
-  var formattedMessage = void 0;
-
-  if (message) {
-    try {
-      var formatter = state.getMessageFormat(message, locale, formats);
-
-      formattedMessage = formatter.format(values);
-    } catch (e) {
-      if (false) {
-        console.error('[React Intl] Error formatting message: "' + id + '" for locale: "' + locale + '"' + (defaultMessage ? ', using default message as fallback.' : '') + ('\n' + e));
-      }
+    // Avoid expensive message formatting for simple messages without values. In
+    // development messages will always be formatted in case of missing values.
+    if (!hasValues && "production" === 'production') {
+        return message || defaultMessage || id;
     }
-  } else {
-    if (false) {
-      // This prevents warnings from littering the console in development
-      // when no `messages` are passed into the <IntlProvider> for the
-      // default locale, and a default message is in the source.
-      if (!defaultMessage || locale && locale.toLowerCase() !== defaultLocale.toLowerCase()) {
-        console.error('[React Intl] Missing message: "' + id + '" for locale: "' + locale + '"' + (defaultMessage ? ', using default message as fallback.' : ''));
-      }
+
+    var formattedMessage = void 0;
+
+    if (message) {
+        try {
+            var formatter = state.getMessageFormat(message, locale, formats);
+
+            formattedMessage = formatter.format(values);
+        } catch (e) {
+            if (false) {
+                console.error('[React Intl] Error formatting message: "' + id + '" for locale: "' + locale + '"' + (defaultMessage ? ', using default message as fallback.' : '') + ('\n' + e));
+            }
+        }
+    } else {
+        if (false) {
+            // This prevents warnings from littering the console in development
+            // when no `messages` are passed into the <IntlProvider> for the
+            // default locale, and a default message is in the source.
+            if (!defaultMessage || locale && locale.toLowerCase() !== defaultLocale.toLowerCase()) {
+
+                console.error('[React Intl] Missing message: "' + id + '" for locale: "' + locale + '"' + (defaultMessage ? ', using default message as fallback.' : ''));
+            }
+        }
     }
-  }
 
-  if (!formattedMessage && defaultMessage) {
-    try {
-      var _formatter = state.getMessageFormat(defaultMessage, defaultLocale, defaultFormats);
+    if (!formattedMessage && defaultMessage) {
+        try {
+            var _formatter = state.getMessageFormat(defaultMessage, defaultLocale, defaultFormats);
 
-      formattedMessage = _formatter.format(values);
-    } catch (e) {
-      if (false) {
-        console.error('[React Intl] Error formatting the default message for: "' + id + '"' + ('\n' + e));
-      }
+            formattedMessage = _formatter.format(values);
+        } catch (e) {
+            if (false) {
+                console.error('[React Intl] Error formatting the default message for: "' + id + '"' + ('\n' + e));
+            }
+        }
     }
-  }
 
-  if (!formattedMessage) {
-    if (false) {
-      console.error('[React Intl] Cannot format message: "' + id + '", ' + ('using message ' + (message || defaultMessage ? 'source' : 'id') + ' as fallback.'));
+    if (!formattedMessage) {
+        if (false) {
+            console.error('[React Intl] Cannot format message: "' + id + '", ' + ('using message ' + (message || defaultMessage ? 'source' : 'id') + ' as fallback.'));
+        }
     }
-  }
 
-  return formattedMessage || message || defaultMessage || id;
+    return formattedMessage || message || defaultMessage || id;
 }
 
 function formatHTMLMessage(config, state, messageDescriptor) {
-  var rawValues = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    var rawValues = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
 
-  // Process all the values before they are used when formatting the ICU
-  // Message string. Since the formatted message might be injected via
-  // `innerHTML`, all String-based values need to be HTML-escaped.
-  var escapedValues = Object.keys(rawValues).reduce(function (escaped, name) {
-    var value = rawValues[name];
-    escaped[name] = typeof value === 'string' ? escape(value) : value;
-    return escaped;
-  }, {});
+    // Process all the values before they are used when formatting the ICU
+    // Message string. Since the formatted message might be injected via
+    // `innerHTML`, all String-based values need to be HTML-escaped.
+    var escapedValues = Object.keys(rawValues).reduce(function (escaped, name) {
+        var value = rawValues[name];
+        escaped[name] = typeof value === 'string' ? escape(value) : value;
+        return escaped;
+    }, {});
 
-  return formatMessage(config, state, messageDescriptor, escapedValues);
+    return formatMessage(config, state, messageDescriptor, escapedValues);
 }
 
 
@@ -31067,170 +31113,170 @@ var intlFormatPropNames = Object.keys(intlFormatPropTypes);
 // These are not a static property on the `IntlProvider` class so the intl
 // config values can be inherited from an <IntlProvider> ancestor.
 var defaultProps = {
-  formats: {},
-  messages: {},
-  textComponent: 'span',
+    formats: {},
+    messages: {},
+    textComponent: 'span',
 
-  defaultLocale: 'en',
-  defaultFormats: {}
+    defaultLocale: 'en',
+    defaultFormats: {}
 };
 
 var IntlProvider = function (_Component) {
-  inherits(IntlProvider, _Component);
+    inherits(IntlProvider, _Component);
 
-  function IntlProvider(props) {
-    var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    classCallCheck(this, IntlProvider);
+    function IntlProvider(props) {
+        var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        classCallCheck(this, IntlProvider);
 
-    var _this = possibleConstructorReturn(this, (IntlProvider.__proto__ || Object.getPrototypeOf(IntlProvider)).call(this, props, context));
+        var _this = possibleConstructorReturn(this, (IntlProvider.__proto__ || Object.getPrototypeOf(IntlProvider)).call(this, props, context));
 
-    __WEBPACK_IMPORTED_MODULE_5_invariant___default()(typeof Intl !== 'undefined', '[React Intl] The `Intl` APIs must be available in the runtime, ' + 'and do not appear to be built-in. An `Intl` polyfill should be loaded.\n' + 'See: http://formatjs.io/guides/runtime-environments/');
+        __WEBPACK_IMPORTED_MODULE_5_invariant___default()(typeof Intl !== 'undefined', '[React Intl] The `Intl` APIs must be available in the runtime, ' + 'and do not appear to be built-in. An `Intl` polyfill should be loaded.\n' + 'See: http://formatjs.io/guides/runtime-environments/');
 
-    var intlContext = context.intl;
+        var intlContext = context.intl;
 
-    // Used to stabilize time when performing an initial rendering so that
-    // all relative times use the same reference "now" time.
+        // Used to stabilize time when performing an initial rendering so that
+        // all relative times use the same reference "now" time.
 
-    var initialNow = void 0;
-    if (isFinite(props.initialNow)) {
-      initialNow = Number(props.initialNow);
-    } else {
-      // When an `initialNow` isn't provided via `props`, look to see an
-      // <IntlProvider> exists in the ancestry and call its `now()`
-      // function to propagate its value for "now".
-      initialNow = intlContext ? intlContext.now() : Date.now();
-    }
-
-    // Creating `Intl*` formatters is expensive. If there's a parent
-    // `<IntlProvider>`, then its formatters will be used. Otherwise, this
-    // memoize the `Intl*` constructors and cache them for the lifecycle of
-    // this IntlProvider instance.
-
-    var _ref = intlContext || {},
-        _ref$formatters = _ref.formatters,
-        formatters = _ref$formatters === undefined ? {
-      getDateTimeFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(Intl.DateTimeFormat),
-      getNumberFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(Intl.NumberFormat),
-      getMessageFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(__WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a),
-      getRelativeFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(__WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a),
-      getPluralFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(IntlPluralFormat)
-    } : _ref$formatters;
-
-    _this.state = _extends({}, formatters, {
-
-      // Wrapper to provide stable "now" time for initial render.
-      now: function now() {
-        return _this._didDisplay ? Date.now() : initialNow;
-      }
-    });
-    return _this;
-  }
-
-  createClass(IntlProvider, [{
-    key: 'getConfig',
-    value: function getConfig() {
-      var intlContext = this.context.intl;
-
-      // Build a whitelisted config object from `props`, defaults, and
-      // `context.intl`, if an <IntlProvider> exists in the ancestry.
-
-      var config = filterProps(this.props, intlConfigPropNames$1, intlContext);
-
-      // Apply default props. This must be applied last after the props have
-      // been resolved and inherited from any <IntlProvider> in the ancestry.
-      // This matches how React resolves `defaultProps`.
-      for (var propName in defaultProps) {
-        if (config[propName] === undefined) {
-          config[propName] = defaultProps[propName];
-        }
-      }
-
-      if (!hasLocaleData(config.locale)) {
-        var _config = config,
-            locale = _config.locale,
-            defaultLocale = _config.defaultLocale,
-            defaultFormats = _config.defaultFormats;
-
-
-        if (false) {
-          console.error('[React Intl] Missing locale data for locale: "' + locale + '". ' + ('Using default locale: "' + defaultLocale + '" as fallback.'));
+        var initialNow = void 0;
+        if (isFinite(props.initialNow)) {
+            initialNow = Number(props.initialNow);
+        } else {
+            // When an `initialNow` isn't provided via `props`, look to see an
+            // <IntlProvider> exists in the ancestry and call its `now()`
+            // function to propagate its value for "now".
+            initialNow = intlContext ? intlContext.now() : Date.now();
         }
 
-        // Since there's no registered locale data for `locale`, this will
-        // fallback to the `defaultLocale` to make sure things can render.
-        // The `messages` are overridden to the `defaultProps` empty object
-        // to maintain referential equality across re-renders. It's assumed
-        // each <FormattedMessage> contains a `defaultMessage` prop.
-        config = _extends({}, config, {
-          locale: defaultLocale,
-          formats: defaultFormats,
-          messages: defaultProps.messages
+        // Creating `Intl*` formatters is expensive. If there's a parent
+        // `<IntlProvider>`, then its formatters will be used. Otherwise, this
+        // memoize the `Intl*` constructors and cache them for the lifecycle of
+        // this IntlProvider instance.
+
+        var _ref = intlContext || {},
+            _ref$formatters = _ref.formatters,
+            formatters = _ref$formatters === undefined ? {
+            getDateTimeFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(Intl.DateTimeFormat),
+            getNumberFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(Intl.NumberFormat),
+            getMessageFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(__WEBPACK_IMPORTED_MODULE_1_intl_messageformat___default.a),
+            getRelativeFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(__WEBPACK_IMPORTED_MODULE_2_intl_relativeformat___default.a),
+            getPluralFormat: __WEBPACK_IMPORTED_MODULE_6_intl_format_cache___default()(IntlPluralFormat)
+        } : _ref$formatters;
+
+        _this.state = _extends({}, formatters, {
+
+            // Wrapper to provide stable "now" time for initial render.
+            now: function now() {
+                return _this._didDisplay ? Date.now() : initialNow;
+            }
         });
-      }
-
-      return config;
+        return _this;
     }
-  }, {
-    key: 'getBoundFormatFns',
-    value: function getBoundFormatFns(config, state) {
-      return intlFormatPropNames.reduce(function (boundFormatFns, name) {
-        boundFormatFns[name] = format[name].bind(null, config, state);
-        return boundFormatFns;
-      }, {});
-    }
-  }, {
-    key: 'getChildContext',
-    value: function getChildContext() {
-      var config = this.getConfig();
 
-      // Bind intl factories and current config to the format functions.
-      var boundFormatFns = this.getBoundFormatFns(config, this.state);
+    createClass(IntlProvider, [{
+        key: 'getConfig',
+        value: function getConfig() {
+            var intlContext = this.context.intl;
 
-      var _state = this.state,
-          now = _state.now,
-          formatters = objectWithoutProperties(_state, ['now']);
+            // Build a whitelisted config object from `props`, defaults, and
+            // `context.intl`, if an <IntlProvider> exists in the ancestry.
+
+            var config = filterProps(this.props, intlConfigPropNames$1, intlContext);
+
+            // Apply default props. This must be applied last after the props have
+            // been resolved and inherited from any <IntlProvider> in the ancestry.
+            // This matches how React resolves `defaultProps`.
+            for (var propName in defaultProps) {
+                if (config[propName] === undefined) {
+                    config[propName] = defaultProps[propName];
+                }
+            }
+
+            if (!hasLocaleData(config.locale)) {
+                var _config = config,
+                    locale = _config.locale,
+                    defaultLocale = _config.defaultLocale,
+                    defaultFormats = _config.defaultFormats;
 
 
-      return {
-        intl: _extends({}, config, boundFormatFns, {
-          formatters: formatters,
-          now: now
-        })
-      };
-    }
-  }, {
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate() {
-      for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
-        next[_key] = arguments[_key];
-      }
+                if (false) {
+                    console.error('[React Intl] Missing locale data for locale: "' + locale + '". ' + ('Using default locale: "' + defaultLocale + '" as fallback.'));
+                }
 
-      return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this._didDisplay = true;
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_4_react__["Children"].only(this.props.children);
-    }
-  }]);
-  return IntlProvider;
+                // Since there's no registered locale data for `locale`, this will
+                // fallback to the `defaultLocale` to make sure things can render.
+                // The `messages` are overridden to the `defaultProps` empty object
+                // to maintain referential equality across re-renders. It's assumed
+                // each <FormattedMessage> contains a `defaultMessage` prop.
+                config = _extends({}, config, {
+                    locale: defaultLocale,
+                    formats: defaultFormats,
+                    messages: defaultProps.messages
+                });
+            }
+
+            return config;
+        }
+    }, {
+        key: 'getBoundFormatFns',
+        value: function getBoundFormatFns(config, state) {
+            return intlFormatPropNames.reduce(function (boundFormatFns, name) {
+                boundFormatFns[name] = format[name].bind(null, config, state);
+                return boundFormatFns;
+            }, {});
+        }
+    }, {
+        key: 'getChildContext',
+        value: function getChildContext() {
+            var config = this.getConfig();
+
+            // Bind intl factories and current config to the format functions.
+            var boundFormatFns = this.getBoundFormatFns(config, this.state);
+
+            var _state = this.state,
+                now = _state.now,
+                formatters = objectWithoutProperties(_state, ['now']);
+
+
+            return {
+                intl: _extends({}, config, boundFormatFns, {
+                    formatters: formatters,
+                    now: now
+                })
+            };
+        }
+    }, {
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate() {
+            for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
+                next[_key] = arguments[_key];
+            }
+
+            return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        }
+    }, {
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this._didDisplay = true;
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_4_react__["Children"].only(this.props.children);
+        }
+    }]);
+    return IntlProvider;
 }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
 
 IntlProvider.displayName = 'IntlProvider';
 IntlProvider.contextTypes = {
-  intl: intlShape
+    intl: intlShape
 };
 IntlProvider.childContextTypes = {
-  intl: intlShape.isRequired
+    intl: intlShape.isRequired
 };
  false ? IntlProvider.propTypes = _extends({}, intlConfigPropTypes, {
-  children: PropTypes.element.isRequired,
-  initialNow: PropTypes.any
+    children: PropTypes.element.isRequired,
+    initialNow: PropTypes.any
 }) : void 0;
 
 /*
@@ -31240,61 +31286,61 @@ IntlProvider.childContextTypes = {
  */
 
 var FormattedDate = function (_Component) {
-  inherits(FormattedDate, _Component);
+    inherits(FormattedDate, _Component);
 
-  function FormattedDate(props, context) {
-    classCallCheck(this, FormattedDate);
+    function FormattedDate(props, context) {
+        classCallCheck(this, FormattedDate);
 
-    var _this = possibleConstructorReturn(this, (FormattedDate.__proto__ || Object.getPrototypeOf(FormattedDate)).call(this, props, context));
+        var _this = possibleConstructorReturn(this, (FormattedDate.__proto__ || Object.getPrototypeOf(FormattedDate)).call(this, props, context));
 
-    invariantIntlContext(context);
-    return _this;
-  }
-
-  createClass(FormattedDate, [{
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate() {
-      for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
-        next[_key] = arguments[_key];
-      }
-
-      return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        invariantIntlContext(context);
+        return _this;
     }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _context$intl = this.context.intl,
-          formatDate = _context$intl.formatDate,
-          Text = _context$intl.textComponent;
-      var _props = this.props,
-          value = _props.value,
-          children = _props.children;
+
+    createClass(FormattedDate, [{
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate() {
+            for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
+                next[_key] = arguments[_key];
+            }
+
+            return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _context$intl = this.context.intl,
+                formatDate = _context$intl.formatDate,
+                Text = _context$intl.textComponent;
+            var _props = this.props,
+                value = _props.value,
+                children = _props.children;
 
 
-      var formattedDate = formatDate(value, this.props);
+            var formattedDate = formatDate(value, this.props);
 
-      if (typeof children === 'function') {
-        return children(formattedDate);
-      }
+            if (typeof children === 'function') {
+                return children(formattedDate);
+            }
 
-      return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-        Text,
-        null,
-        formattedDate
-      );
-    }
-  }]);
-  return FormattedDate;
+            return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
+                Text,
+                null,
+                formattedDate
+            );
+        }
+    }]);
+    return FormattedDate;
 }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
 
 FormattedDate.displayName = 'FormattedDate';
 FormattedDate.contextTypes = {
-  intl: intlShape
+    intl: intlShape
 };
  false ? FormattedDate.propTypes = _extends({}, dateTimeFormatPropTypes, {
-  value: PropTypes.any.isRequired,
-  format: PropTypes.string,
-  children: PropTypes.func
+    value: PropTypes.any.isRequired,
+    format: PropTypes.string,
+    children: PropTypes.func
 }) : void 0;
 
 /*
@@ -31304,61 +31350,61 @@ FormattedDate.contextTypes = {
  */
 
 var FormattedTime = function (_Component) {
-  inherits(FormattedTime, _Component);
+    inherits(FormattedTime, _Component);
 
-  function FormattedTime(props, context) {
-    classCallCheck(this, FormattedTime);
+    function FormattedTime(props, context) {
+        classCallCheck(this, FormattedTime);
 
-    var _this = possibleConstructorReturn(this, (FormattedTime.__proto__ || Object.getPrototypeOf(FormattedTime)).call(this, props, context));
+        var _this = possibleConstructorReturn(this, (FormattedTime.__proto__ || Object.getPrototypeOf(FormattedTime)).call(this, props, context));
 
-    invariantIntlContext(context);
-    return _this;
-  }
-
-  createClass(FormattedTime, [{
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate() {
-      for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
-        next[_key] = arguments[_key];
-      }
-
-      return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        invariantIntlContext(context);
+        return _this;
     }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _context$intl = this.context.intl,
-          formatTime = _context$intl.formatTime,
-          Text = _context$intl.textComponent;
-      var _props = this.props,
-          value = _props.value,
-          children = _props.children;
+
+    createClass(FormattedTime, [{
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate() {
+            for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
+                next[_key] = arguments[_key];
+            }
+
+            return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _context$intl = this.context.intl,
+                formatTime = _context$intl.formatTime,
+                Text = _context$intl.textComponent;
+            var _props = this.props,
+                value = _props.value,
+                children = _props.children;
 
 
-      var formattedTime = formatTime(value, this.props);
+            var formattedTime = formatTime(value, this.props);
 
-      if (typeof children === 'function') {
-        return children(formattedTime);
-      }
+            if (typeof children === 'function') {
+                return children(formattedTime);
+            }
 
-      return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-        Text,
-        null,
-        formattedTime
-      );
-    }
-  }]);
-  return FormattedTime;
+            return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
+                Text,
+                null,
+                formattedTime
+            );
+        }
+    }]);
+    return FormattedTime;
 }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
 
 FormattedTime.displayName = 'FormattedTime';
 FormattedTime.contextTypes = {
-  intl: intlShape
+    intl: intlShape
 };
  false ? FormattedTime.propTypes = _extends({}, dateTimeFormatPropTypes, {
-  value: PropTypes.any.isRequired,
-  format: PropTypes.string,
-  children: PropTypes.func
+    value: PropTypes.any.isRequired,
+    format: PropTypes.string,
+    children: PropTypes.func
 }) : void 0;
 
 /*
@@ -31377,179 +31423,179 @@ var DAY = 1000 * 60 * 60 * 24;
 var MAX_TIMER_DELAY = 2147483647;
 
 function selectUnits(delta) {
-  var absDelta = Math.abs(delta);
+    var absDelta = Math.abs(delta);
 
-  if (absDelta < MINUTE) {
-    return 'second';
-  }
+    if (absDelta < MINUTE) {
+        return 'second';
+    }
 
-  if (absDelta < HOUR) {
-    return 'minute';
-  }
+    if (absDelta < HOUR) {
+        return 'minute';
+    }
 
-  if (absDelta < DAY) {
-    return 'hour';
-  }
+    if (absDelta < DAY) {
+        return 'hour';
+    }
 
-  // The maximum scheduled delay will be measured in days since the maximum
-  // timer delay is less than the number of milliseconds in 25 days.
-  return 'day';
+    // The maximum scheduled delay will be measured in days since the maximum
+    // timer delay is less than the number of milliseconds in 25 days.
+    return 'day';
 }
 
 function getUnitDelay(units) {
-  switch (units) {
-    case 'second':
-      return SECOND;
-    case 'minute':
-      return MINUTE;
-    case 'hour':
-      return HOUR;
-    case 'day':
-      return DAY;
-    default:
-      return MAX_TIMER_DELAY;
-  }
+    switch (units) {
+        case 'second':
+            return SECOND;
+        case 'minute':
+            return MINUTE;
+        case 'hour':
+            return HOUR;
+        case 'day':
+            return DAY;
+        default:
+            return MAX_TIMER_DELAY;
+    }
 }
 
 function isSameDate(a, b) {
-  if (a === b) {
-    return true;
-  }
+    if (a === b) {
+        return true;
+    }
 
-  var aTime = new Date(a).getTime();
-  var bTime = new Date(b).getTime();
+    var aTime = new Date(a).getTime();
+    var bTime = new Date(b).getTime();
 
-  return isFinite(aTime) && isFinite(bTime) && aTime === bTime;
+    return isFinite(aTime) && isFinite(bTime) && aTime === bTime;
 }
 
 var FormattedRelative = function (_Component) {
-  inherits(FormattedRelative, _Component);
+    inherits(FormattedRelative, _Component);
 
-  function FormattedRelative(props, context) {
-    classCallCheck(this, FormattedRelative);
+    function FormattedRelative(props, context) {
+        classCallCheck(this, FormattedRelative);
 
-    var _this = possibleConstructorReturn(this, (FormattedRelative.__proto__ || Object.getPrototypeOf(FormattedRelative)).call(this, props, context));
+        var _this = possibleConstructorReturn(this, (FormattedRelative.__proto__ || Object.getPrototypeOf(FormattedRelative)).call(this, props, context));
 
-    invariantIntlContext(context);
+        invariantIntlContext(context);
 
-    var now = isFinite(props.initialNow) ? Number(props.initialNow) : context.intl.now();
+        var now = isFinite(props.initialNow) ? Number(props.initialNow) : context.intl.now();
 
-    // `now` is stored as state so that `render()` remains a function of
-    // props + state, instead of accessing `Date.now()` inside `render()`.
-    _this.state = { now: now };
-    return _this;
-  }
-
-  createClass(FormattedRelative, [{
-    key: 'scheduleNextUpdate',
-    value: function scheduleNextUpdate(props, state) {
-      var _this2 = this;
-
-      // Cancel and pending update because we're scheduling a new update.
-      clearTimeout(this._timer);
-
-      var value = props.value,
-          units = props.units,
-          updateInterval = props.updateInterval;
-
-      var time = new Date(value).getTime();
-
-      // If the `updateInterval` is falsy, including `0` or we don't have a
-      // valid date, then auto updates have been turned off, so we bail and
-      // skip scheduling an update.
-      if (!updateInterval || !isFinite(time)) {
-        return;
-      }
-
-      var delta = time - state.now;
-      var unitDelay = getUnitDelay(units || selectUnits(delta));
-      var unitRemainder = Math.abs(delta % unitDelay);
-
-      // We want the largest possible timer delay which will still display
-      // accurate information while reducing unnecessary re-renders. The delay
-      // should be until the next "interesting" moment, like a tick from
-      // "1 minute ago" to "2 minutes ago" when the delta is 120,000ms.
-      var delay = delta < 0 ? Math.max(updateInterval, unitDelay - unitRemainder) : Math.max(updateInterval, unitRemainder);
-
-      this._timer = setTimeout(function () {
-        _this2.setState({ now: _this2.context.intl.now() });
-      }, delay);
+        // `now` is stored as state so that `render()` remains a function of
+        // props + state, instead of accessing `Date.now()` inside `render()`.
+        _this.state = { now: now };
+        return _this;
     }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.scheduleNextUpdate(this.props, this.state);
-    }
-  }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(_ref) {
-      var nextValue = _ref.value;
 
-      // When the `props.value` date changes, `state.now` needs to be updated,
-      // and the next update can be rescheduled.
-      if (!isSameDate(nextValue, this.props.value)) {
-        this.setState({ now: this.context.intl.now() });
-      }
-    }
-  }, {
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate() {
-      for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
-        next[_key] = arguments[_key];
-      }
+    createClass(FormattedRelative, [{
+        key: 'scheduleNextUpdate',
+        value: function scheduleNextUpdate(props, state) {
+            var _this2 = this;
 
-      return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
-    }
-  }, {
-    key: 'componentWillUpdate',
-    value: function componentWillUpdate(nextProps, nextState) {
-      this.scheduleNextUpdate(nextProps, nextState);
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      clearTimeout(this._timer);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _context$intl = this.context.intl,
-          formatRelative = _context$intl.formatRelative,
-          Text = _context$intl.textComponent;
-      var _props = this.props,
-          value = _props.value,
-          children = _props.children;
+            // Cancel and pending update because we're scheduling a new update.
+            clearTimeout(this._timer);
+
+            var value = props.value,
+                units = props.units,
+                updateInterval = props.updateInterval;
+
+            var time = new Date(value).getTime();
+
+            // If the `updateInterval` is falsy, including `0` or we don't have a
+            // valid date, then auto updates have been turned off, so we bail and
+            // skip scheduling an update.
+            if (!updateInterval || !isFinite(time)) {
+                return;
+            }
+
+            var delta = time - state.now;
+            var unitDelay = getUnitDelay(units || selectUnits(delta));
+            var unitRemainder = Math.abs(delta % unitDelay);
+
+            // We want the largest possible timer delay which will still display
+            // accurate information while reducing unnecessary re-renders. The delay
+            // should be until the next "interesting" moment, like a tick from
+            // "1 minute ago" to "2 minutes ago" when the delta is 120,000ms.
+            var delay = delta < 0 ? Math.max(updateInterval, unitDelay - unitRemainder) : Math.max(updateInterval, unitRemainder);
+
+            this._timer = setTimeout(function () {
+                _this2.setState({ now: _this2.context.intl.now() });
+            }, delay);
+        }
+    }, {
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.scheduleNextUpdate(this.props, this.state);
+        }
+    }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(_ref) {
+            var nextValue = _ref.value;
+
+            // When the `props.value` date changes, `state.now` needs to be updated,
+            // and the next update can be rescheduled.
+            if (!isSameDate(nextValue, this.props.value)) {
+                this.setState({ now: this.context.intl.now() });
+            }
+        }
+    }, {
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate() {
+            for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
+                next[_key] = arguments[_key];
+            }
+
+            return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        }
+    }, {
+        key: 'componentWillUpdate',
+        value: function componentWillUpdate(nextProps, nextState) {
+            this.scheduleNextUpdate(nextProps, nextState);
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            clearTimeout(this._timer);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _context$intl = this.context.intl,
+                formatRelative = _context$intl.formatRelative,
+                Text = _context$intl.textComponent;
+            var _props = this.props,
+                value = _props.value,
+                children = _props.children;
 
 
-      var formattedRelative = formatRelative(value, _extends({}, this.props, this.state));
+            var formattedRelative = formatRelative(value, _extends({}, this.props, this.state));
 
-      if (typeof children === 'function') {
-        return children(formattedRelative);
-      }
+            if (typeof children === 'function') {
+                return children(formattedRelative);
+            }
 
-      return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-        Text,
-        null,
-        formattedRelative
-      );
-    }
-  }]);
-  return FormattedRelative;
+            return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
+                Text,
+                null,
+                formattedRelative
+            );
+        }
+    }]);
+    return FormattedRelative;
 }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
 
 FormattedRelative.displayName = 'FormattedRelative';
 FormattedRelative.contextTypes = {
-  intl: intlShape
+    intl: intlShape
 };
 FormattedRelative.defaultProps = {
-  updateInterval: 1000 * 10
+    updateInterval: 1000 * 10
 };
  false ? FormattedRelative.propTypes = _extends({}, relativeFormatPropTypes, {
-  value: PropTypes.any.isRequired,
-  format: PropTypes.string,
-  updateInterval: PropTypes.number,
-  initialNow: PropTypes.any,
-  children: PropTypes.func
+    value: PropTypes.any.isRequired,
+    format: PropTypes.string,
+    updateInterval: PropTypes.number,
+    initialNow: PropTypes.any,
+    children: PropTypes.func
 }) : void 0;
 
 /*
@@ -31559,61 +31605,61 @@ FormattedRelative.defaultProps = {
  */
 
 var FormattedNumber = function (_Component) {
-  inherits(FormattedNumber, _Component);
+    inherits(FormattedNumber, _Component);
 
-  function FormattedNumber(props, context) {
-    classCallCheck(this, FormattedNumber);
+    function FormattedNumber(props, context) {
+        classCallCheck(this, FormattedNumber);
 
-    var _this = possibleConstructorReturn(this, (FormattedNumber.__proto__ || Object.getPrototypeOf(FormattedNumber)).call(this, props, context));
+        var _this = possibleConstructorReturn(this, (FormattedNumber.__proto__ || Object.getPrototypeOf(FormattedNumber)).call(this, props, context));
 
-    invariantIntlContext(context);
-    return _this;
-  }
-
-  createClass(FormattedNumber, [{
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate() {
-      for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
-        next[_key] = arguments[_key];
-      }
-
-      return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        invariantIntlContext(context);
+        return _this;
     }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _context$intl = this.context.intl,
-          formatNumber = _context$intl.formatNumber,
-          Text = _context$intl.textComponent;
-      var _props = this.props,
-          value = _props.value,
-          children = _props.children;
+
+    createClass(FormattedNumber, [{
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate() {
+            for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
+                next[_key] = arguments[_key];
+            }
+
+            return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _context$intl = this.context.intl,
+                formatNumber = _context$intl.formatNumber,
+                Text = _context$intl.textComponent;
+            var _props = this.props,
+                value = _props.value,
+                children = _props.children;
 
 
-      var formattedNumber = formatNumber(value, this.props);
+            var formattedNumber = formatNumber(value, this.props);
 
-      if (typeof children === 'function') {
-        return children(formattedNumber);
-      }
+            if (typeof children === 'function') {
+                return children(formattedNumber);
+            }
 
-      return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-        Text,
-        null,
-        formattedNumber
-      );
-    }
-  }]);
-  return FormattedNumber;
+            return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
+                Text,
+                null,
+                formattedNumber
+            );
+        }
+    }]);
+    return FormattedNumber;
 }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
 
 FormattedNumber.displayName = 'FormattedNumber';
 FormattedNumber.contextTypes = {
-  intl: intlShape
+    intl: intlShape
 };
  false ? FormattedNumber.propTypes = _extends({}, numberFormatPropTypes, {
-  value: PropTypes.any.isRequired,
-  format: PropTypes.string,
-  children: PropTypes.func
+    value: PropTypes.any.isRequired,
+    format: PropTypes.string,
+    children: PropTypes.func
 }) : void 0;
 
 /*
@@ -31623,73 +31669,73 @@ FormattedNumber.contextTypes = {
  */
 
 var FormattedPlural = function (_Component) {
-  inherits(FormattedPlural, _Component);
+    inherits(FormattedPlural, _Component);
 
-  function FormattedPlural(props, context) {
-    classCallCheck(this, FormattedPlural);
+    function FormattedPlural(props, context) {
+        classCallCheck(this, FormattedPlural);
 
-    var _this = possibleConstructorReturn(this, (FormattedPlural.__proto__ || Object.getPrototypeOf(FormattedPlural)).call(this, props, context));
+        var _this = possibleConstructorReturn(this, (FormattedPlural.__proto__ || Object.getPrototypeOf(FormattedPlural)).call(this, props, context));
 
-    invariantIntlContext(context);
-    return _this;
-  }
-
-  createClass(FormattedPlural, [{
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate() {
-      for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
-        next[_key] = arguments[_key];
-      }
-
-      return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        invariantIntlContext(context);
+        return _this;
     }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _context$intl = this.context.intl,
-          formatPlural = _context$intl.formatPlural,
-          Text = _context$intl.textComponent;
-      var _props = this.props,
-          value = _props.value,
-          other = _props.other,
-          children = _props.children;
+
+    createClass(FormattedPlural, [{
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate() {
+            for (var _len = arguments.length, next = Array(_len), _key = 0; _key < _len; _key++) {
+                next[_key] = arguments[_key];
+            }
+
+            return shouldIntlComponentUpdate.apply(undefined, [this].concat(next));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _context$intl = this.context.intl,
+                formatPlural = _context$intl.formatPlural,
+                Text = _context$intl.textComponent;
+            var _props = this.props,
+                value = _props.value,
+                other = _props.other,
+                children = _props.children;
 
 
-      var pluralCategory = formatPlural(value, this.props);
-      var formattedPlural = this.props[pluralCategory] || other;
+            var pluralCategory = formatPlural(value, this.props);
+            var formattedPlural = this.props[pluralCategory] || other;
 
-      if (typeof children === 'function') {
-        return children(formattedPlural);
-      }
+            if (typeof children === 'function') {
+                return children(formattedPlural);
+            }
 
-      return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
-        Text,
-        null,
-        formattedPlural
-      );
-    }
-  }]);
-  return FormattedPlural;
+            return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(
+                Text,
+                null,
+                formattedPlural
+            );
+        }
+    }]);
+    return FormattedPlural;
 }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
 
 FormattedPlural.displayName = 'FormattedPlural';
 FormattedPlural.contextTypes = {
-  intl: intlShape
+    intl: intlShape
 };
 FormattedPlural.defaultProps = {
-  style: 'cardinal'
+    style: 'cardinal'
 };
  false ? FormattedPlural.propTypes = _extends({}, pluralFormatPropTypes, {
-  value: PropTypes.any.isRequired,
+    value: PropTypes.any.isRequired,
 
-  other: PropTypes.node.isRequired,
-  zero: PropTypes.node,
-  one: PropTypes.node,
-  two: PropTypes.node,
-  few: PropTypes.node,
-  many: PropTypes.node,
+    other: PropTypes.node.isRequired,
+    zero: PropTypes.node,
+    one: PropTypes.node,
+    two: PropTypes.node,
+    few: PropTypes.node,
+    many: PropTypes.node,
 
-  children: PropTypes.func
+    children: PropTypes.func
 }) : void 0;
 
 /*
@@ -31699,142 +31745,142 @@ FormattedPlural.defaultProps = {
  */
 
 var FormattedMessage = function (_Component) {
-  inherits(FormattedMessage, _Component);
+    inherits(FormattedMessage, _Component);
 
-  function FormattedMessage(props, context) {
-    classCallCheck(this, FormattedMessage);
+    function FormattedMessage(props, context) {
+        classCallCheck(this, FormattedMessage);
 
-    var _this = possibleConstructorReturn(this, (FormattedMessage.__proto__ || Object.getPrototypeOf(FormattedMessage)).call(this, props, context));
+        var _this = possibleConstructorReturn(this, (FormattedMessage.__proto__ || Object.getPrototypeOf(FormattedMessage)).call(this, props, context));
 
-    invariantIntlContext(context);
-    return _this;
-  }
-
-  createClass(FormattedMessage, [{
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate(nextProps) {
-      var values = this.props.values;
-      var nextValues = nextProps.values;
-
-
-      if (!shallowEquals(nextValues, values)) {
-        return true;
-      }
-
-      // Since `values` has already been checked, we know they're not
-      // different, so the current `values` are carried over so the shallow
-      // equals comparison on the other props isn't affected by the `values`.
-      var nextPropsToCheck = _extends({}, nextProps, {
-        values: values
-      });
-
-      for (var _len = arguments.length, next = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-        next[_key - 1] = arguments[_key];
-      }
-
-      return shouldIntlComponentUpdate.apply(undefined, [this, nextPropsToCheck].concat(next));
+        invariantIntlContext(context);
+        return _this;
     }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _context$intl = this.context.intl,
-          formatMessage = _context$intl.formatMessage,
-          Text = _context$intl.textComponent;
-      var _props = this.props,
-          id = _props.id,
-          description = _props.description,
-          defaultMessage = _props.defaultMessage,
-          values = _props.values,
-          _props$tagName = _props.tagName,
-          Component$$1 = _props$tagName === undefined ? Text : _props$tagName,
-          children = _props.children;
+
+    createClass(FormattedMessage, [{
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate(nextProps) {
+            var values = this.props.values;
+            var nextValues = nextProps.values;
 
 
-      var tokenDelimiter = void 0;
-      var tokenizedValues = void 0;
-      var elements = void 0;
+            if (!shallowEquals(nextValues, values)) {
+                return true;
+            }
 
-      var hasValues = values && Object.keys(values).length > 0;
-      if (hasValues) {
-        // Creates a token with a random UID that should not be guessable or
-        // conflict with other parts of the `message` string.
-        var uid = Math.floor(Math.random() * 0x10000000000).toString(16);
+            // Since `values` has already been checked, we know they're not
+            // different, so the current `values` are carried over so the shallow
+            // equals comparison on the other props isn't affected by the `values`.
+            var nextPropsToCheck = _extends({}, nextProps, {
+                values: values
+            });
 
-        var generateToken = function () {
-          var counter = 0;
-          return function () {
-            return 'ELEMENT-' + uid + '-' + (counter += 1);
-          };
-        }();
+            for (var _len = arguments.length, next = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                next[_key - 1] = arguments[_key];
+            }
 
-        // Splitting with a delimiter to support IE8. When using a regex
-        // with a capture group IE8 does not include the capture group in
-        // the resulting array.
-        tokenDelimiter = '@__' + uid + '__@';
-        tokenizedValues = {};
-        elements = {};
+            return shouldIntlComponentUpdate.apply(undefined, [this, nextPropsToCheck].concat(next));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _context$intl = this.context.intl,
+                formatMessage = _context$intl.formatMessage,
+                Text = _context$intl.textComponent;
+            var _props = this.props,
+                id = _props.id,
+                description = _props.description,
+                defaultMessage = _props.defaultMessage,
+                values = _props.values,
+                _props$tagName = _props.tagName,
+                Component$$1 = _props$tagName === undefined ? Text : _props$tagName,
+                children = _props.children;
 
-        // Iterates over the `props` to keep track of any React Element
-        // values so they can be represented by the `token` as a placeholder
-        // when the `message` is formatted. This allows the formatted
-        // message to then be broken-up into parts with references to the
-        // React Elements inserted back in.
-        Object.keys(values).forEach(function (name) {
-          var value = values[name];
 
-          if (Object(__WEBPACK_IMPORTED_MODULE_4_react__["isValidElement"])(value)) {
-            var token = generateToken();
-            tokenizedValues[name] = tokenDelimiter + token + tokenDelimiter;
-            elements[token] = value;
-          } else {
-            tokenizedValues[name] = value;
-          }
-        });
-      }
+            var tokenDelimiter = void 0;
+            var tokenizedValues = void 0;
+            var elements = void 0;
 
-      var descriptor = { id: id, description: description, defaultMessage: defaultMessage };
-      var formattedMessage = formatMessage(descriptor, tokenizedValues || values);
+            var hasValues = values && Object.keys(values).length > 0;
+            if (hasValues) {
+                // Creates a token with a random UID that should not be guessable or
+                // conflict with other parts of the `message` string.
+                var uid = Math.floor(Math.random() * 0x10000000000).toString(16);
 
-      var nodes = void 0;
+                var generateToken = function () {
+                    var counter = 0;
+                    return function () {
+                        return 'ELEMENT-' + uid + '-' + (counter += 1);
+                    };
+                }();
 
-      var hasElements = elements && Object.keys(elements).length > 0;
-      if (hasElements) {
-        // Split the message into parts so the React Element values captured
-        // above can be inserted back into the rendered message. This
-        // approach allows messages to render with React Elements while
-        // keeping React's virtual diffing working properly.
-        nodes = formattedMessage.split(tokenDelimiter).filter(function (part) {
-          return !!part;
-        }).map(function (part) {
-          return elements[part] || part;
-        });
-      } else {
-        nodes = [formattedMessage];
-      }
+                // Splitting with a delimiter to support IE8. When using a regex
+                // with a capture group IE8 does not include the capture group in
+                // the resulting array.
+                tokenDelimiter = '@__' + uid + '__@';
+                tokenizedValues = {};
+                elements = {};
 
-      if (typeof children === 'function') {
-        return children.apply(undefined, toConsumableArray(nodes));
-      }
+                // Iterates over the `props` to keep track of any React Element
+                // values so they can be represented by the `token` as a placeholder
+                // when the `message` is formatted. This allows the formatted
+                // message to then be broken-up into parts with references to the
+                // React Elements inserted back in.
+                Object.keys(values).forEach(function (name) {
+                    var value = values[name];
 
-      // Needs to use `createElement()` instead of JSX, otherwise React will
-      // warn about a missing `key` prop with rich-text message formatting.
-      return __WEBPACK_IMPORTED_MODULE_4_react__["createElement"].apply(undefined, [Component$$1, null].concat(toConsumableArray(nodes)));
-    }
-  }]);
-  return FormattedMessage;
+                    if (Object(__WEBPACK_IMPORTED_MODULE_4_react__["isValidElement"])(value)) {
+                        var token = generateToken();
+                        tokenizedValues[name] = tokenDelimiter + token + tokenDelimiter;
+                        elements[token] = value;
+                    } else {
+                        tokenizedValues[name] = value;
+                    }
+                });
+            }
+
+            var descriptor = { id: id, description: description, defaultMessage: defaultMessage };
+            var formattedMessage = formatMessage(descriptor, tokenizedValues || values);
+
+            var nodes = void 0;
+
+            var hasElements = elements && Object.keys(elements).length > 0;
+            if (hasElements) {
+                // Split the message into parts so the React Element values captured
+                // above can be inserted back into the rendered message. This
+                // approach allows messages to render with React Elements while
+                // keeping React's virtual diffing working properly.
+                nodes = formattedMessage.split(tokenDelimiter).filter(function (part) {
+                    return !!part;
+                }).map(function (part) {
+                    return elements[part] || part;
+                });
+            } else {
+                nodes = [formattedMessage];
+            }
+
+            if (typeof children === 'function') {
+                return children.apply(undefined, toConsumableArray(nodes));
+            }
+
+            // Needs to use `createElement()` instead of JSX, otherwise React will
+            // warn about a missing `key` prop with rich-text message formatting.
+            return __WEBPACK_IMPORTED_MODULE_4_react__["createElement"].apply(undefined, [Component$$1, null].concat(toConsumableArray(nodes)));
+        }
+    }]);
+    return FormattedMessage;
 }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
 
 FormattedMessage.displayName = 'FormattedMessage';
 FormattedMessage.contextTypes = {
-  intl: intlShape
+    intl: intlShape
 };
 FormattedMessage.defaultProps = {
-  values: {}
+    values: {}
 };
  false ? FormattedMessage.propTypes = _extends({}, messageDescriptorPropTypes, {
-  values: PropTypes.object,
-  tagName: PropTypes.string,
-  children: PropTypes.func
+    values: PropTypes.object,
+    tagName: PropTypes.string,
+    children: PropTypes.func
 }) : void 0;
 
 /*
@@ -31844,90 +31890,90 @@ FormattedMessage.defaultProps = {
  */
 
 var FormattedHTMLMessage = function (_Component) {
-  inherits(FormattedHTMLMessage, _Component);
+    inherits(FormattedHTMLMessage, _Component);
 
-  function FormattedHTMLMessage(props, context) {
-    classCallCheck(this, FormattedHTMLMessage);
+    function FormattedHTMLMessage(props, context) {
+        classCallCheck(this, FormattedHTMLMessage);
 
-    var _this = possibleConstructorReturn(this, (FormattedHTMLMessage.__proto__ || Object.getPrototypeOf(FormattedHTMLMessage)).call(this, props, context));
+        var _this = possibleConstructorReturn(this, (FormattedHTMLMessage.__proto__ || Object.getPrototypeOf(FormattedHTMLMessage)).call(this, props, context));
 
-    invariantIntlContext(context);
-    return _this;
-  }
-
-  createClass(FormattedHTMLMessage, [{
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate(nextProps) {
-      var values = this.props.values;
-      var nextValues = nextProps.values;
-
-
-      if (!shallowEquals(nextValues, values)) {
-        return true;
-      }
-
-      // Since `values` has already been checked, we know they're not
-      // different, so the current `values` are carried over so the shallow
-      // equals comparison on the other props isn't affected by the `values`.
-      var nextPropsToCheck = _extends({}, nextProps, {
-        values: values
-      });
-
-      for (var _len = arguments.length, next = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-        next[_key - 1] = arguments[_key];
-      }
-
-      return shouldIntlComponentUpdate.apply(undefined, [this, nextPropsToCheck].concat(next));
+        invariantIntlContext(context);
+        return _this;
     }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _context$intl = this.context.intl,
-          formatHTMLMessage = _context$intl.formatHTMLMessage,
-          Text = _context$intl.textComponent;
-      var _props = this.props,
-          id = _props.id,
-          description = _props.description,
-          defaultMessage = _props.defaultMessage,
-          rawValues = _props.values,
-          _props$tagName = _props.tagName,
-          Component$$1 = _props$tagName === undefined ? Text : _props$tagName,
-          children = _props.children;
+
+    createClass(FormattedHTMLMessage, [{
+        key: 'shouldComponentUpdate',
+        value: function shouldComponentUpdate(nextProps) {
+            var values = this.props.values;
+            var nextValues = nextProps.values;
 
 
-      var descriptor = { id: id, description: description, defaultMessage: defaultMessage };
-      var formattedHTMLMessage = formatHTMLMessage(descriptor, rawValues);
+            if (!shallowEquals(nextValues, values)) {
+                return true;
+            }
 
-      if (typeof children === 'function') {
-        return children(formattedHTMLMessage);
-      }
+            // Since `values` has already been checked, we know they're not
+            // different, so the current `values` are carried over so the shallow
+            // equals comparison on the other props isn't affected by the `values`.
+            var nextPropsToCheck = _extends({}, nextProps, {
+                values: values
+            });
 
-      // Since the message presumably has HTML in it, we need to set
-      // `innerHTML` in order for it to be rendered and not escaped by React.
-      // To be safe, all string prop values were escaped when formatting the
-      // message. It is assumed that the message is not UGC, and came from the
-      // developer making it more like a template.
-      //
-      // Note: There's a perf impact of using this component since there's no
-      // way for React to do its virtual DOM diffing.
-      var html = { __html: formattedHTMLMessage };
-      return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(Component$$1, { dangerouslySetInnerHTML: html });
-    }
-  }]);
-  return FormattedHTMLMessage;
+            for (var _len = arguments.length, next = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                next[_key - 1] = arguments[_key];
+            }
+
+            return shouldIntlComponentUpdate.apply(undefined, [this, nextPropsToCheck].concat(next));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _context$intl = this.context.intl,
+                formatHTMLMessage = _context$intl.formatHTMLMessage,
+                Text = _context$intl.textComponent;
+            var _props = this.props,
+                id = _props.id,
+                description = _props.description,
+                defaultMessage = _props.defaultMessage,
+                rawValues = _props.values,
+                _props$tagName = _props.tagName,
+                Component$$1 = _props$tagName === undefined ? Text : _props$tagName,
+                children = _props.children;
+
+
+            var descriptor = { id: id, description: description, defaultMessage: defaultMessage };
+            var formattedHTMLMessage = formatHTMLMessage(descriptor, rawValues);
+
+            if (typeof children === 'function') {
+                return children(formattedHTMLMessage);
+            }
+
+            // Since the message presumably has HTML in it, we need to set
+            // `innerHTML` in order for it to be rendered and not escaped by React.
+            // To be safe, all string prop values were escaped when formatting the
+            // message. It is assumed that the message is not UGC, and came from the
+            // developer making it more like a template.
+            //
+            // Note: There's a perf impact of using this component since there's no
+            // way for React to do its virtual DOM diffing.
+            var html = { __html: formattedHTMLMessage };
+            return __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(Component$$1, { dangerouslySetInnerHTML: html });
+        }
+    }]);
+    return FormattedHTMLMessage;
 }(__WEBPACK_IMPORTED_MODULE_4_react__["Component"]);
 
 FormattedHTMLMessage.displayName = 'FormattedHTMLMessage';
 FormattedHTMLMessage.contextTypes = {
-  intl: intlShape
+    intl: intlShape
 };
 FormattedHTMLMessage.defaultProps = {
-  values: {}
+    values: {}
 };
  false ? FormattedHTMLMessage.propTypes = _extends({}, messageDescriptorPropTypes, {
-  values: PropTypes.object,
-  tagName: PropTypes.string,
-  children: PropTypes.func
+    values: PropTypes.object,
+    tagName: PropTypes.string,
+    children: PropTypes.func
 }) : void 0;
 
 /*
@@ -32017,18 +32063,7 @@ function MessageFormat(message, locales, formats) {
     // the other `Intl` APIs.
     var messageFormat = this;
     this.format = function (values) {
-      try {
         return messageFormat._format(pattern, values);
-      } catch (e) {
-        if (e.variableId) {
-          throw new Error(
-            'The intl string context variable \'' + e.variableId + '\'' +
-            ' was not provided to the string \'' + message + '\''
-          );
-        } else {
-          throw e;
-        }
-      }
     };
 }
 
@@ -32163,7 +32198,7 @@ MessageFormat.prototype._findPluralRuleFunction = function (locale) {
 
 MessageFormat.prototype._format = function (pattern, values) {
     var result = '',
-        i, len, part, id, value, err;
+        i, len, part, id, value;
 
     for (i = 0, len = pattern.length; i < len; i += 1) {
         part = pattern[i];
@@ -32178,9 +32213,7 @@ MessageFormat.prototype._format = function (pattern, values) {
 
         // Enforce that all required values are provided by the caller.
         if (!(values && src$utils$$.hop.call(values, id))) {
-          err = new Error('A value must be provided for: ' + id);
-          err.variableId = id;
-          throw err;
+            throw new Error('A value must be provided for: ' + id);
         }
 
         value = values[id];
@@ -32306,7 +32339,6 @@ var objCreate = Object.create || function (proto, props) {
 
     return obj;
 };
-
 exports.defineProperty = defineProperty, exports.objCreate = objCreate;
 
 //# sourceMappingURL=es5.js.map
@@ -32475,7 +32507,7 @@ function StringFormat(id) {
 }
 
 StringFormat.prototype.format = function (value) {
-    if (!value && typeof value !== 'number') {
+    if (!value) {
         return '';
     }
 
@@ -32545,12 +32577,10 @@ exports['default'] = exports;
 
 
 exports["default"] = (function() {
-  "use strict";
-
   /*
-   * Generated by PEG.js 0.9.0.
+   * Generated by PEG.js 0.8.0.
    *
-   * http://pegjs.org/
+   * http://pegjs.majda.cz/
    */
 
   function peg$subclass(child, parent) {
@@ -32559,37 +32589,36 @@ exports["default"] = (function() {
     child.prototype = new ctor();
   }
 
-  function peg$SyntaxError(message, expected, found, location) {
+  function SyntaxError(message, expected, found, offset, line, column) {
     this.message  = message;
     this.expected = expected;
     this.found    = found;
-    this.location = location;
-    this.name     = "SyntaxError";
+    this.offset   = offset;
+    this.line     = line;
+    this.column   = column;
 
-    if (typeof Error.captureStackTrace === "function") {
-      Error.captureStackTrace(this, peg$SyntaxError);
-    }
+    this.name     = "SyntaxError";
   }
 
-  peg$subclass(peg$SyntaxError, Error);
+  peg$subclass(SyntaxError, Error);
 
-  function peg$parse(input) {
+  function parse(input) {
     var options = arguments.length > 1 ? arguments[1] : {},
-        parser  = this,
 
         peg$FAILED = {},
 
         peg$startRuleFunctions = { start: peg$parsestart },
         peg$startRuleFunction  = peg$parsestart,
 
-        peg$c0 = function(elements) {
+        peg$c0 = [],
+        peg$c1 = function(elements) {
                 return {
                     type    : 'messageFormatPattern',
-                    elements: elements,
-                    location: location()
+                    elements: elements
                 };
             },
-        peg$c1 = function(text) {
+        peg$c2 = peg$FAILED,
+        peg$c3 = function(text) {
                 var string = '',
                     i, j, outerLen, inner, innerLen;
 
@@ -32603,135 +32632,129 @@ exports["default"] = (function() {
 
                 return string;
             },
-        peg$c2 = function(messageText) {
+        peg$c4 = function(messageText) {
                 return {
                     type : 'messageTextElement',
-                    value: messageText,
-                    location: location()
+                    value: messageText
                 };
             },
-        peg$c3 = /^[^ \t\n\r,.+={}#]/,
-        peg$c4 = { type: "class", value: "[^ \\t\\n\\r,.+={}#]", description: "[^ \\t\\n\\r,.+={}#]" },
-        peg$c5 = "{",
-        peg$c6 = { type: "literal", value: "{", description: "\"{\"" },
-        peg$c7 = ",",
-        peg$c8 = { type: "literal", value: ",", description: "\",\"" },
-        peg$c9 = "}",
-        peg$c10 = { type: "literal", value: "}", description: "\"}\"" },
-        peg$c11 = function(id, format) {
+        peg$c5 = /^[^ \t\n\r,.+={}#]/,
+        peg$c6 = { type: "class", value: "[^ \\t\\n\\r,.+={}#]", description: "[^ \\t\\n\\r,.+={}#]" },
+        peg$c7 = "{",
+        peg$c8 = { type: "literal", value: "{", description: "\"{\"" },
+        peg$c9 = null,
+        peg$c10 = ",",
+        peg$c11 = { type: "literal", value: ",", description: "\",\"" },
+        peg$c12 = "}",
+        peg$c13 = { type: "literal", value: "}", description: "\"}\"" },
+        peg$c14 = function(id, format) {
                 return {
                     type  : 'argumentElement',
                     id    : id,
-                    format: format && format[2],
-                    location: location()
+                    format: format && format[2]
                 };
             },
-        peg$c12 = "number",
-        peg$c13 = { type: "literal", value: "number", description: "\"number\"" },
-        peg$c14 = "date",
-        peg$c15 = { type: "literal", value: "date", description: "\"date\"" },
-        peg$c16 = "time",
-        peg$c17 = { type: "literal", value: "time", description: "\"time\"" },
-        peg$c18 = function(type, style) {
+        peg$c15 = "number",
+        peg$c16 = { type: "literal", value: "number", description: "\"number\"" },
+        peg$c17 = "date",
+        peg$c18 = { type: "literal", value: "date", description: "\"date\"" },
+        peg$c19 = "time",
+        peg$c20 = { type: "literal", value: "time", description: "\"time\"" },
+        peg$c21 = function(type, style) {
                 return {
                     type : type + 'Format',
-                    style: style && style[2],
-                    location: location()
+                    style: style && style[2]
                 };
             },
-        peg$c19 = "plural",
-        peg$c20 = { type: "literal", value: "plural", description: "\"plural\"" },
-        peg$c21 = function(pluralStyle) {
+        peg$c22 = "plural",
+        peg$c23 = { type: "literal", value: "plural", description: "\"plural\"" },
+        peg$c24 = function(pluralStyle) {
                 return {
                     type   : pluralStyle.type,
                     ordinal: false,
                     offset : pluralStyle.offset || 0,
-                    options: pluralStyle.options,
-                    location: location()
+                    options: pluralStyle.options
                 };
             },
-        peg$c22 = "selectordinal",
-        peg$c23 = { type: "literal", value: "selectordinal", description: "\"selectordinal\"" },
-        peg$c24 = function(pluralStyle) {
+        peg$c25 = "selectordinal",
+        peg$c26 = { type: "literal", value: "selectordinal", description: "\"selectordinal\"" },
+        peg$c27 = function(pluralStyle) {
                 return {
                     type   : pluralStyle.type,
                     ordinal: true,
                     offset : pluralStyle.offset || 0,
-                    options: pluralStyle.options,
-                    location: location()
+                    options: pluralStyle.options
                 }
             },
-        peg$c25 = "select",
-        peg$c26 = { type: "literal", value: "select", description: "\"select\"" },
-        peg$c27 = function(options) {
+        peg$c28 = "select",
+        peg$c29 = { type: "literal", value: "select", description: "\"select\"" },
+        peg$c30 = function(options) {
                 return {
                     type   : 'selectFormat',
-                    options: options,
-                    location: location()
+                    options: options
                 };
             },
-        peg$c28 = "=",
-        peg$c29 = { type: "literal", value: "=", description: "\"=\"" },
-        peg$c30 = function(selector, pattern) {
+        peg$c31 = "=",
+        peg$c32 = { type: "literal", value: "=", description: "\"=\"" },
+        peg$c33 = function(selector, pattern) {
                 return {
                     type    : 'optionalFormatPattern',
                     selector: selector,
-                    value   : pattern,
-                    location: location()
+                    value   : pattern
                 };
             },
-        peg$c31 = "offset:",
-        peg$c32 = { type: "literal", value: "offset:", description: "\"offset:\"" },
-        peg$c33 = function(number) {
+        peg$c34 = "offset:",
+        peg$c35 = { type: "literal", value: "offset:", description: "\"offset:\"" },
+        peg$c36 = function(number) {
                 return number;
             },
-        peg$c34 = function(offset, options) {
+        peg$c37 = function(offset, options) {
                 return {
                     type   : 'pluralFormat',
                     offset : offset,
-                    options: options,
-                    location: location()
+                    options: options
                 };
             },
-        peg$c35 = { type: "other", description: "whitespace" },
-        peg$c36 = /^[ \t\n\r]/,
-        peg$c37 = { type: "class", value: "[ \\t\\n\\r]", description: "[ \\t\\n\\r]" },
-        peg$c38 = { type: "other", description: "optionalWhitespace" },
-        peg$c39 = /^[0-9]/,
-        peg$c40 = { type: "class", value: "[0-9]", description: "[0-9]" },
-        peg$c41 = /^[0-9a-f]/i,
-        peg$c42 = { type: "class", value: "[0-9a-f]i", description: "[0-9a-f]i" },
-        peg$c43 = "0",
-        peg$c44 = { type: "literal", value: "0", description: "\"0\"" },
-        peg$c45 = /^[1-9]/,
-        peg$c46 = { type: "class", value: "[1-9]", description: "[1-9]" },
-        peg$c47 = function(digits) {
+        peg$c38 = { type: "other", description: "whitespace" },
+        peg$c39 = /^[ \t\n\r]/,
+        peg$c40 = { type: "class", value: "[ \\t\\n\\r]", description: "[ \\t\\n\\r]" },
+        peg$c41 = { type: "other", description: "optionalWhitespace" },
+        peg$c42 = /^[0-9]/,
+        peg$c43 = { type: "class", value: "[0-9]", description: "[0-9]" },
+        peg$c44 = /^[0-9a-f]/i,
+        peg$c45 = { type: "class", value: "[0-9a-f]i", description: "[0-9a-f]i" },
+        peg$c46 = "0",
+        peg$c47 = { type: "literal", value: "0", description: "\"0\"" },
+        peg$c48 = /^[1-9]/,
+        peg$c49 = { type: "class", value: "[1-9]", description: "[1-9]" },
+        peg$c50 = function(digits) {
             return parseInt(digits, 10);
         },
-        peg$c48 = /^[^{}\\\0-\x1F \t\n\r]/,
-        peg$c49 = { type: "class", value: "[^{}\\\\\\0-\\x1F\\x7f \\t\\n\\r]", description: "[^{}\\\\\\0-\\x1F\\x7f \\t\\n\\r]" },
-        peg$c50 = "\\\\",
-        peg$c51 = { type: "literal", value: "\\\\", description: "\"\\\\\\\\\"" },
-        peg$c52 = function() { return '\\'; },
-        peg$c53 = "\\#",
-        peg$c54 = { type: "literal", value: "\\#", description: "\"\\\\#\"" },
-        peg$c55 = function() { return '\\#'; },
-        peg$c56 = "\\{",
-        peg$c57 = { type: "literal", value: "\\{", description: "\"\\\\{\"" },
-        peg$c58 = function() { return '\u007B'; },
-        peg$c59 = "\\}",
-        peg$c60 = { type: "literal", value: "\\}", description: "\"\\\\}\"" },
-        peg$c61 = function() { return '\u007D'; },
-        peg$c62 = "\\u",
-        peg$c63 = { type: "literal", value: "\\u", description: "\"\\\\u\"" },
-        peg$c64 = function(digits) {
+        peg$c51 = /^[^{}\\\0-\x1F \t\n\r]/,
+        peg$c52 = { type: "class", value: "[^{}\\\\\\0-\\x1F \\t\\n\\r]", description: "[^{}\\\\\\0-\\x1F \\t\\n\\r]" },
+        peg$c53 = "\\\\",
+        peg$c54 = { type: "literal", value: "\\\\", description: "\"\\\\\\\\\"" },
+        peg$c55 = function() { return '\\'; },
+        peg$c56 = "\\#",
+        peg$c57 = { type: "literal", value: "\\#", description: "\"\\\\#\"" },
+        peg$c58 = function() { return '\\#'; },
+        peg$c59 = "\\{",
+        peg$c60 = { type: "literal", value: "\\{", description: "\"\\\\{\"" },
+        peg$c61 = function() { return '\u007B'; },
+        peg$c62 = "\\}",
+        peg$c63 = { type: "literal", value: "\\}", description: "\"\\\\}\"" },
+        peg$c64 = function() { return '\u007D'; },
+        peg$c65 = "\\u",
+        peg$c66 = { type: "literal", value: "\\u", description: "\"\\\\u\"" },
+        peg$c67 = function(digits) {
                 return String.fromCharCode(parseInt(digits, 16));
             },
-        peg$c65 = function(chars) { return chars.join(''); },
+        peg$c68 = function(chars) { return chars.join(''); },
 
         peg$currPos          = 0,
-        peg$savedPos         = 0,
-        peg$posDetailsCache  = [{ line: 1, column: 1, seenCR: false }],
+        peg$reportedPos      = 0,
+        peg$cachedPos        = 0,
+        peg$cachedPosDetails = { line: 1, column: 1, seenCR: false },
         peg$maxFailPos       = 0,
         peg$maxFailExpected  = [],
         peg$silentFails      = 0,
@@ -32747,51 +32770,38 @@ exports["default"] = (function() {
     }
 
     function text() {
-      return input.substring(peg$savedPos, peg$currPos);
+      return input.substring(peg$reportedPos, peg$currPos);
     }
 
-    function location() {
-      return peg$computeLocation(peg$savedPos, peg$currPos);
+    function offset() {
+      return peg$reportedPos;
+    }
+
+    function line() {
+      return peg$computePosDetails(peg$reportedPos).line;
+    }
+
+    function column() {
+      return peg$computePosDetails(peg$reportedPos).column;
     }
 
     function expected(description) {
       throw peg$buildException(
         null,
         [{ type: "other", description: description }],
-        input.substring(peg$savedPos, peg$currPos),
-        peg$computeLocation(peg$savedPos, peg$currPos)
+        peg$reportedPos
       );
     }
 
     function error(message) {
-      throw peg$buildException(
-        message,
-        null,
-        input.substring(peg$savedPos, peg$currPos),
-        peg$computeLocation(peg$savedPos, peg$currPos)
-      );
+      throw peg$buildException(message, null, peg$reportedPos);
     }
 
     function peg$computePosDetails(pos) {
-      var details = peg$posDetailsCache[pos],
-          p, ch;
+      function advance(details, startPos, endPos) {
+        var p, ch;
 
-      if (details) {
-        return details;
-      } else {
-        p = pos - 1;
-        while (!peg$posDetailsCache[p]) {
-          p--;
-        }
-
-        details = peg$posDetailsCache[p];
-        details = {
-          line:   details.line,
-          column: details.column,
-          seenCR: details.seenCR
-        };
-
-        while (p < pos) {
+        for (p = startPos; p < endPos; p++) {
           ch = input.charAt(p);
           if (ch === "\n") {
             if (!details.seenCR) { details.line++; }
@@ -32805,31 +32815,19 @@ exports["default"] = (function() {
             details.column++;
             details.seenCR = false;
           }
-
-          p++;
         }
-
-        peg$posDetailsCache[pos] = details;
-        return details;
       }
-    }
 
-    function peg$computeLocation(startPos, endPos) {
-      var startPosDetails = peg$computePosDetails(startPos),
-          endPosDetails   = peg$computePosDetails(endPos);
-
-      return {
-        start: {
-          offset: startPos,
-          line:   startPosDetails.line,
-          column: startPosDetails.column
-        },
-        end: {
-          offset: endPos,
-          line:   endPosDetails.line,
-          column: endPosDetails.column
+      if (peg$cachedPos !== pos) {
+        if (peg$cachedPos > pos) {
+          peg$cachedPos = 0;
+          peg$cachedPosDetails = { line: 1, column: 1, seenCR: false };
         }
-      };
+        advance(peg$cachedPosDetails, peg$cachedPos, pos);
+        peg$cachedPos = pos;
+      }
+
+      return peg$cachedPosDetails;
     }
 
     function peg$fail(expected) {
@@ -32843,7 +32841,7 @@ exports["default"] = (function() {
       peg$maxFailExpected.push(expected);
     }
 
-    function peg$buildException(message, expected, found, location) {
+    function peg$buildException(message, expected, pos) {
       function cleanupExpected(expected) {
         var i = 1;
 
@@ -32880,8 +32878,8 @@ exports["default"] = (function() {
             .replace(/\r/g,   '\\r')
             .replace(/[\x00-\x07\x0B\x0E\x0F]/g, function(ch) { return '\\x0' + hex(ch); })
             .replace(/[\x10-\x1F\x80-\xFF]/g,    function(ch) { return '\\x'  + hex(ch); })
-            .replace(/[\u0100-\u0FFF]/g,         function(ch) { return '\\u0' + hex(ch); })
-            .replace(/[\u1000-\uFFFF]/g,         function(ch) { return '\\u'  + hex(ch); });
+            .replace(/[\u0180-\u0FFF]/g,         function(ch) { return '\\u0' + hex(ch); })
+            .replace(/[\u1080-\uFFFF]/g,         function(ch) { return '\\u'  + hex(ch); });
         }
 
         var expectedDescs = new Array(expected.length),
@@ -32902,15 +32900,20 @@ exports["default"] = (function() {
         return "Expected " + expectedDesc + " but " + foundDesc + " found.";
       }
 
+      var posDetails = peg$computePosDetails(pos),
+          found      = pos < input.length ? input.charAt(pos) : null;
+
       if (expected !== null) {
         cleanupExpected(expected);
       }
 
-      return new peg$SyntaxError(
+      return new SyntaxError(
         message !== null ? message : buildMessage(expected, found),
         expected,
         found,
-        location
+        pos,
+        posDetails.line,
+        posDetails.column
       );
     }
 
@@ -32933,8 +32936,8 @@ exports["default"] = (function() {
         s2 = peg$parsemessageFormatElement();
       }
       if (s1 !== peg$FAILED) {
-        peg$savedPos = s0;
-        s1 = peg$c0(s1);
+        peg$reportedPos = s0;
+        s1 = peg$c1(s1);
       }
       s0 = s1;
 
@@ -32968,15 +32971,15 @@ exports["default"] = (function() {
             s2 = s3;
           } else {
             peg$currPos = s2;
-            s2 = peg$FAILED;
+            s2 = peg$c2;
           }
         } else {
           peg$currPos = s2;
-          s2 = peg$FAILED;
+          s2 = peg$c2;
         }
       } else {
         peg$currPos = s2;
-        s2 = peg$FAILED;
+        s2 = peg$c2;
       }
       if (s2 !== peg$FAILED) {
         while (s2 !== peg$FAILED) {
@@ -32992,33 +32995,32 @@ exports["default"] = (function() {
                 s2 = s3;
               } else {
                 peg$currPos = s2;
-                s2 = peg$FAILED;
+                s2 = peg$c2;
               }
             } else {
               peg$currPos = s2;
-              s2 = peg$FAILED;
+              s2 = peg$c2;
             }
           } else {
             peg$currPos = s2;
-            s2 = peg$FAILED;
+            s2 = peg$c2;
           }
         }
       } else {
-        s1 = peg$FAILED;
+        s1 = peg$c2;
       }
       if (s1 !== peg$FAILED) {
-        peg$savedPos = s0;
-        s1 = peg$c1(s1);
+        peg$reportedPos = s0;
+        s1 = peg$c3(s1);
       }
       s0 = s1;
       if (s0 === peg$FAILED) {
         s0 = peg$currPos;
         s1 = peg$parsews();
         if (s1 !== peg$FAILED) {
-          s0 = input.substring(s0, peg$currPos);
-        } else {
-          s0 = s1;
+          s1 = input.substring(s0, peg$currPos);
         }
+        s0 = s1;
       }
 
       return s0;
@@ -33030,8 +33032,8 @@ exports["default"] = (function() {
       s0 = peg$currPos;
       s1 = peg$parsemessageText();
       if (s1 !== peg$FAILED) {
-        peg$savedPos = s0;
-        s1 = peg$c2(s1);
+        peg$reportedPos = s0;
+        s1 = peg$c4(s1);
       }
       s0 = s1;
 
@@ -33045,32 +33047,31 @@ exports["default"] = (function() {
       if (s0 === peg$FAILED) {
         s0 = peg$currPos;
         s1 = [];
-        if (peg$c3.test(input.charAt(peg$currPos))) {
+        if (peg$c5.test(input.charAt(peg$currPos))) {
           s2 = input.charAt(peg$currPos);
           peg$currPos++;
         } else {
           s2 = peg$FAILED;
-          if (peg$silentFails === 0) { peg$fail(peg$c4); }
+          if (peg$silentFails === 0) { peg$fail(peg$c6); }
         }
         if (s2 !== peg$FAILED) {
           while (s2 !== peg$FAILED) {
             s1.push(s2);
-            if (peg$c3.test(input.charAt(peg$currPos))) {
+            if (peg$c5.test(input.charAt(peg$currPos))) {
               s2 = input.charAt(peg$currPos);
               peg$currPos++;
             } else {
               s2 = peg$FAILED;
-              if (peg$silentFails === 0) { peg$fail(peg$c4); }
+              if (peg$silentFails === 0) { peg$fail(peg$c6); }
             }
           }
         } else {
-          s1 = peg$FAILED;
+          s1 = peg$c2;
         }
         if (s1 !== peg$FAILED) {
-          s0 = input.substring(s0, peg$currPos);
-        } else {
-          s0 = s1;
+          s1 = input.substring(s0, peg$currPos);
         }
+        s0 = s1;
       }
 
       return s0;
@@ -33081,11 +33082,11 @@ exports["default"] = (function() {
 
       s0 = peg$currPos;
       if (input.charCodeAt(peg$currPos) === 123) {
-        s1 = peg$c5;
+        s1 = peg$c7;
         peg$currPos++;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c6); }
+        if (peg$silentFails === 0) { peg$fail(peg$c8); }
       }
       if (s1 !== peg$FAILED) {
         s2 = peg$parse_();
@@ -33096,11 +33097,11 @@ exports["default"] = (function() {
             if (s4 !== peg$FAILED) {
               s5 = peg$currPos;
               if (input.charCodeAt(peg$currPos) === 44) {
-                s6 = peg$c7;
+                s6 = peg$c10;
                 peg$currPos++;
               } else {
                 s6 = peg$FAILED;
-                if (peg$silentFails === 0) { peg$fail(peg$c8); }
+                if (peg$silentFails === 0) { peg$fail(peg$c11); }
               }
               if (s6 !== peg$FAILED) {
                 s7 = peg$parse_();
@@ -33111,60 +33112,60 @@ exports["default"] = (function() {
                     s5 = s6;
                   } else {
                     peg$currPos = s5;
-                    s5 = peg$FAILED;
+                    s5 = peg$c2;
                   }
                 } else {
                   peg$currPos = s5;
-                  s5 = peg$FAILED;
+                  s5 = peg$c2;
                 }
               } else {
                 peg$currPos = s5;
-                s5 = peg$FAILED;
+                s5 = peg$c2;
               }
               if (s5 === peg$FAILED) {
-                s5 = null;
+                s5 = peg$c9;
               }
               if (s5 !== peg$FAILED) {
                 s6 = peg$parse_();
                 if (s6 !== peg$FAILED) {
                   if (input.charCodeAt(peg$currPos) === 125) {
-                    s7 = peg$c9;
+                    s7 = peg$c12;
                     peg$currPos++;
                   } else {
                     s7 = peg$FAILED;
-                    if (peg$silentFails === 0) { peg$fail(peg$c10); }
+                    if (peg$silentFails === 0) { peg$fail(peg$c13); }
                   }
                   if (s7 !== peg$FAILED) {
-                    peg$savedPos = s0;
-                    s1 = peg$c11(s3, s5);
+                    peg$reportedPos = s0;
+                    s1 = peg$c14(s3, s5);
                     s0 = s1;
                   } else {
                     peg$currPos = s0;
-                    s0 = peg$FAILED;
+                    s0 = peg$c2;
                   }
                 } else {
                   peg$currPos = s0;
-                  s0 = peg$FAILED;
+                  s0 = peg$c2;
                 }
               } else {
                 peg$currPos = s0;
-                s0 = peg$FAILED;
+                s0 = peg$c2;
               }
             } else {
               peg$currPos = s0;
-              s0 = peg$FAILED;
+              s0 = peg$c2;
             }
           } else {
             peg$currPos = s0;
-            s0 = peg$FAILED;
+            s0 = peg$c2;
           }
         } else {
           peg$currPos = s0;
-          s0 = peg$FAILED;
+          s0 = peg$c2;
         }
       } else {
         peg$currPos = s0;
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
 
       return s0;
@@ -33191,28 +33192,28 @@ exports["default"] = (function() {
       var s0, s1, s2, s3, s4, s5, s6;
 
       s0 = peg$currPos;
-      if (input.substr(peg$currPos, 6) === peg$c12) {
-        s1 = peg$c12;
+      if (input.substr(peg$currPos, 6) === peg$c15) {
+        s1 = peg$c15;
         peg$currPos += 6;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c13); }
+        if (peg$silentFails === 0) { peg$fail(peg$c16); }
       }
       if (s1 === peg$FAILED) {
-        if (input.substr(peg$currPos, 4) === peg$c14) {
-          s1 = peg$c14;
+        if (input.substr(peg$currPos, 4) === peg$c17) {
+          s1 = peg$c17;
           peg$currPos += 4;
         } else {
           s1 = peg$FAILED;
-          if (peg$silentFails === 0) { peg$fail(peg$c15); }
+          if (peg$silentFails === 0) { peg$fail(peg$c18); }
         }
         if (s1 === peg$FAILED) {
-          if (input.substr(peg$currPos, 4) === peg$c16) {
-            s1 = peg$c16;
+          if (input.substr(peg$currPos, 4) === peg$c19) {
+            s1 = peg$c19;
             peg$currPos += 4;
           } else {
             s1 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$c17); }
+            if (peg$silentFails === 0) { peg$fail(peg$c20); }
           }
         }
       }
@@ -33221,11 +33222,11 @@ exports["default"] = (function() {
         if (s2 !== peg$FAILED) {
           s3 = peg$currPos;
           if (input.charCodeAt(peg$currPos) === 44) {
-            s4 = peg$c7;
+            s4 = peg$c10;
             peg$currPos++;
           } else {
             s4 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$c8); }
+            if (peg$silentFails === 0) { peg$fail(peg$c11); }
           }
           if (s4 !== peg$FAILED) {
             s5 = peg$parse_();
@@ -33236,34 +33237,34 @@ exports["default"] = (function() {
                 s3 = s4;
               } else {
                 peg$currPos = s3;
-                s3 = peg$FAILED;
+                s3 = peg$c2;
               }
             } else {
               peg$currPos = s3;
-              s3 = peg$FAILED;
+              s3 = peg$c2;
             }
           } else {
             peg$currPos = s3;
-            s3 = peg$FAILED;
+            s3 = peg$c2;
           }
           if (s3 === peg$FAILED) {
-            s3 = null;
+            s3 = peg$c9;
           }
           if (s3 !== peg$FAILED) {
-            peg$savedPos = s0;
-            s1 = peg$c18(s1, s3);
+            peg$reportedPos = s0;
+            s1 = peg$c21(s1, s3);
             s0 = s1;
           } else {
             peg$currPos = s0;
-            s0 = peg$FAILED;
+            s0 = peg$c2;
           }
         } else {
           peg$currPos = s0;
-          s0 = peg$FAILED;
+          s0 = peg$c2;
         }
       } else {
         peg$currPos = s0;
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
 
       return s0;
@@ -33273,50 +33274,50 @@ exports["default"] = (function() {
       var s0, s1, s2, s3, s4, s5;
 
       s0 = peg$currPos;
-      if (input.substr(peg$currPos, 6) === peg$c19) {
-        s1 = peg$c19;
+      if (input.substr(peg$currPos, 6) === peg$c22) {
+        s1 = peg$c22;
         peg$currPos += 6;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c20); }
+        if (peg$silentFails === 0) { peg$fail(peg$c23); }
       }
       if (s1 !== peg$FAILED) {
         s2 = peg$parse_();
         if (s2 !== peg$FAILED) {
           if (input.charCodeAt(peg$currPos) === 44) {
-            s3 = peg$c7;
+            s3 = peg$c10;
             peg$currPos++;
           } else {
             s3 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$c8); }
+            if (peg$silentFails === 0) { peg$fail(peg$c11); }
           }
           if (s3 !== peg$FAILED) {
             s4 = peg$parse_();
             if (s4 !== peg$FAILED) {
               s5 = peg$parsepluralStyle();
               if (s5 !== peg$FAILED) {
-                peg$savedPos = s0;
-                s1 = peg$c21(s5);
+                peg$reportedPos = s0;
+                s1 = peg$c24(s5);
                 s0 = s1;
               } else {
                 peg$currPos = s0;
-                s0 = peg$FAILED;
+                s0 = peg$c2;
               }
             } else {
               peg$currPos = s0;
-              s0 = peg$FAILED;
+              s0 = peg$c2;
             }
           } else {
             peg$currPos = s0;
-            s0 = peg$FAILED;
+            s0 = peg$c2;
           }
         } else {
           peg$currPos = s0;
-          s0 = peg$FAILED;
+          s0 = peg$c2;
         }
       } else {
         peg$currPos = s0;
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
 
       return s0;
@@ -33326,50 +33327,50 @@ exports["default"] = (function() {
       var s0, s1, s2, s3, s4, s5;
 
       s0 = peg$currPos;
-      if (input.substr(peg$currPos, 13) === peg$c22) {
-        s1 = peg$c22;
+      if (input.substr(peg$currPos, 13) === peg$c25) {
+        s1 = peg$c25;
         peg$currPos += 13;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c23); }
+        if (peg$silentFails === 0) { peg$fail(peg$c26); }
       }
       if (s1 !== peg$FAILED) {
         s2 = peg$parse_();
         if (s2 !== peg$FAILED) {
           if (input.charCodeAt(peg$currPos) === 44) {
-            s3 = peg$c7;
+            s3 = peg$c10;
             peg$currPos++;
           } else {
             s3 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$c8); }
+            if (peg$silentFails === 0) { peg$fail(peg$c11); }
           }
           if (s3 !== peg$FAILED) {
             s4 = peg$parse_();
             if (s4 !== peg$FAILED) {
               s5 = peg$parsepluralStyle();
               if (s5 !== peg$FAILED) {
-                peg$savedPos = s0;
-                s1 = peg$c24(s5);
+                peg$reportedPos = s0;
+                s1 = peg$c27(s5);
                 s0 = s1;
               } else {
                 peg$currPos = s0;
-                s0 = peg$FAILED;
+                s0 = peg$c2;
               }
             } else {
               peg$currPos = s0;
-              s0 = peg$FAILED;
+              s0 = peg$c2;
             }
           } else {
             peg$currPos = s0;
-            s0 = peg$FAILED;
+            s0 = peg$c2;
           }
         } else {
           peg$currPos = s0;
-          s0 = peg$FAILED;
+          s0 = peg$c2;
         }
       } else {
         peg$currPos = s0;
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
 
       return s0;
@@ -33379,22 +33380,22 @@ exports["default"] = (function() {
       var s0, s1, s2, s3, s4, s5, s6;
 
       s0 = peg$currPos;
-      if (input.substr(peg$currPos, 6) === peg$c25) {
-        s1 = peg$c25;
+      if (input.substr(peg$currPos, 6) === peg$c28) {
+        s1 = peg$c28;
         peg$currPos += 6;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c26); }
+        if (peg$silentFails === 0) { peg$fail(peg$c29); }
       }
       if (s1 !== peg$FAILED) {
         s2 = peg$parse_();
         if (s2 !== peg$FAILED) {
           if (input.charCodeAt(peg$currPos) === 44) {
-            s3 = peg$c7;
+            s3 = peg$c10;
             peg$currPos++;
           } else {
             s3 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$c8); }
+            if (peg$silentFails === 0) { peg$fail(peg$c11); }
           }
           if (s3 !== peg$FAILED) {
             s4 = peg$parse_();
@@ -33407,31 +33408,31 @@ exports["default"] = (function() {
                   s6 = peg$parseoptionalFormatPattern();
                 }
               } else {
-                s5 = peg$FAILED;
+                s5 = peg$c2;
               }
               if (s5 !== peg$FAILED) {
-                peg$savedPos = s0;
-                s1 = peg$c27(s5);
+                peg$reportedPos = s0;
+                s1 = peg$c30(s5);
                 s0 = s1;
               } else {
                 peg$currPos = s0;
-                s0 = peg$FAILED;
+                s0 = peg$c2;
               }
             } else {
               peg$currPos = s0;
-              s0 = peg$FAILED;
+              s0 = peg$c2;
             }
           } else {
             peg$currPos = s0;
-            s0 = peg$FAILED;
+            s0 = peg$c2;
           }
         } else {
           peg$currPos = s0;
-          s0 = peg$FAILED;
+          s0 = peg$c2;
         }
       } else {
         peg$currPos = s0;
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
 
       return s0;
@@ -33443,11 +33444,11 @@ exports["default"] = (function() {
       s0 = peg$currPos;
       s1 = peg$currPos;
       if (input.charCodeAt(peg$currPos) === 61) {
-        s2 = peg$c28;
+        s2 = peg$c31;
         peg$currPos++;
       } else {
         s2 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c29); }
+        if (peg$silentFails === 0) { peg$fail(peg$c32); }
       }
       if (s2 !== peg$FAILED) {
         s3 = peg$parsenumber();
@@ -33456,17 +33457,16 @@ exports["default"] = (function() {
           s1 = s2;
         } else {
           peg$currPos = s1;
-          s1 = peg$FAILED;
+          s1 = peg$c2;
         }
       } else {
         peg$currPos = s1;
-        s1 = peg$FAILED;
+        s1 = peg$c2;
       }
       if (s1 !== peg$FAILED) {
-        s0 = input.substring(s0, peg$currPos);
-      } else {
-        s0 = s1;
+        s1 = input.substring(s0, peg$currPos);
       }
+      s0 = s1;
       if (s0 === peg$FAILED) {
         s0 = peg$parsechars();
       }
@@ -33485,11 +33485,11 @@ exports["default"] = (function() {
           s3 = peg$parse_();
           if (s3 !== peg$FAILED) {
             if (input.charCodeAt(peg$currPos) === 123) {
-              s4 = peg$c5;
+              s4 = peg$c7;
               peg$currPos++;
             } else {
               s4 = peg$FAILED;
-              if (peg$silentFails === 0) { peg$fail(peg$c6); }
+              if (peg$silentFails === 0) { peg$fail(peg$c8); }
             }
             if (s4 !== peg$FAILED) {
               s5 = peg$parse_();
@@ -33499,47 +33499,47 @@ exports["default"] = (function() {
                   s7 = peg$parse_();
                   if (s7 !== peg$FAILED) {
                     if (input.charCodeAt(peg$currPos) === 125) {
-                      s8 = peg$c9;
+                      s8 = peg$c12;
                       peg$currPos++;
                     } else {
                       s8 = peg$FAILED;
-                      if (peg$silentFails === 0) { peg$fail(peg$c10); }
+                      if (peg$silentFails === 0) { peg$fail(peg$c13); }
                     }
                     if (s8 !== peg$FAILED) {
-                      peg$savedPos = s0;
-                      s1 = peg$c30(s2, s6);
+                      peg$reportedPos = s0;
+                      s1 = peg$c33(s2, s6);
                       s0 = s1;
                     } else {
                       peg$currPos = s0;
-                      s0 = peg$FAILED;
+                      s0 = peg$c2;
                     }
                   } else {
                     peg$currPos = s0;
-                    s0 = peg$FAILED;
+                    s0 = peg$c2;
                   }
                 } else {
                   peg$currPos = s0;
-                  s0 = peg$FAILED;
+                  s0 = peg$c2;
                 }
               } else {
                 peg$currPos = s0;
-                s0 = peg$FAILED;
+                s0 = peg$c2;
               }
             } else {
               peg$currPos = s0;
-              s0 = peg$FAILED;
+              s0 = peg$c2;
             }
           } else {
             peg$currPos = s0;
-            s0 = peg$FAILED;
+            s0 = peg$c2;
           }
         } else {
           peg$currPos = s0;
-          s0 = peg$FAILED;
+          s0 = peg$c2;
         }
       } else {
         peg$currPos = s0;
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
 
       return s0;
@@ -33549,32 +33549,32 @@ exports["default"] = (function() {
       var s0, s1, s2, s3;
 
       s0 = peg$currPos;
-      if (input.substr(peg$currPos, 7) === peg$c31) {
-        s1 = peg$c31;
+      if (input.substr(peg$currPos, 7) === peg$c34) {
+        s1 = peg$c34;
         peg$currPos += 7;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c32); }
+        if (peg$silentFails === 0) { peg$fail(peg$c35); }
       }
       if (s1 !== peg$FAILED) {
         s2 = peg$parse_();
         if (s2 !== peg$FAILED) {
           s3 = peg$parsenumber();
           if (s3 !== peg$FAILED) {
-            peg$savedPos = s0;
-            s1 = peg$c33(s3);
+            peg$reportedPos = s0;
+            s1 = peg$c36(s3);
             s0 = s1;
           } else {
             peg$currPos = s0;
-            s0 = peg$FAILED;
+            s0 = peg$c2;
           }
         } else {
           peg$currPos = s0;
-          s0 = peg$FAILED;
+          s0 = peg$c2;
         }
       } else {
         peg$currPos = s0;
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
 
       return s0;
@@ -33586,7 +33586,7 @@ exports["default"] = (function() {
       s0 = peg$currPos;
       s1 = peg$parseoffset();
       if (s1 === peg$FAILED) {
-        s1 = null;
+        s1 = peg$c9;
       }
       if (s1 !== peg$FAILED) {
         s2 = peg$parse_();
@@ -33599,23 +33599,23 @@ exports["default"] = (function() {
               s4 = peg$parseoptionalFormatPattern();
             }
           } else {
-            s3 = peg$FAILED;
+            s3 = peg$c2;
           }
           if (s3 !== peg$FAILED) {
-            peg$savedPos = s0;
-            s1 = peg$c34(s1, s3);
+            peg$reportedPos = s0;
+            s1 = peg$c37(s1, s3);
             s0 = s1;
           } else {
             peg$currPos = s0;
-            s0 = peg$FAILED;
+            s0 = peg$c2;
           }
         } else {
           peg$currPos = s0;
-          s0 = peg$FAILED;
+          s0 = peg$c2;
         }
       } else {
         peg$currPos = s0;
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
 
       return s0;
@@ -33626,31 +33626,31 @@ exports["default"] = (function() {
 
       peg$silentFails++;
       s0 = [];
-      if (peg$c36.test(input.charAt(peg$currPos))) {
+      if (peg$c39.test(input.charAt(peg$currPos))) {
         s1 = input.charAt(peg$currPos);
         peg$currPos++;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c37); }
+        if (peg$silentFails === 0) { peg$fail(peg$c40); }
       }
       if (s1 !== peg$FAILED) {
         while (s1 !== peg$FAILED) {
           s0.push(s1);
-          if (peg$c36.test(input.charAt(peg$currPos))) {
+          if (peg$c39.test(input.charAt(peg$currPos))) {
             s1 = input.charAt(peg$currPos);
             peg$currPos++;
           } else {
             s1 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$c37); }
+            if (peg$silentFails === 0) { peg$fail(peg$c40); }
           }
         }
       } else {
-        s0 = peg$FAILED;
+        s0 = peg$c2;
       }
       peg$silentFails--;
       if (s0 === peg$FAILED) {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c35); }
+        if (peg$silentFails === 0) { peg$fail(peg$c38); }
       }
 
       return s0;
@@ -33668,14 +33668,13 @@ exports["default"] = (function() {
         s2 = peg$parsews();
       }
       if (s1 !== peg$FAILED) {
-        s0 = input.substring(s0, peg$currPos);
-      } else {
-        s0 = s1;
+        s1 = input.substring(s0, peg$currPos);
       }
+      s0 = s1;
       peg$silentFails--;
       if (s0 === peg$FAILED) {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c38); }
+        if (peg$silentFails === 0) { peg$fail(peg$c41); }
       }
 
       return s0;
@@ -33684,12 +33683,12 @@ exports["default"] = (function() {
     function peg$parsedigit() {
       var s0;
 
-      if (peg$c39.test(input.charAt(peg$currPos))) {
+      if (peg$c42.test(input.charAt(peg$currPos))) {
         s0 = input.charAt(peg$currPos);
         peg$currPos++;
       } else {
         s0 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c40); }
+        if (peg$silentFails === 0) { peg$fail(peg$c43); }
       }
 
       return s0;
@@ -33698,12 +33697,12 @@ exports["default"] = (function() {
     function peg$parsehexDigit() {
       var s0;
 
-      if (peg$c41.test(input.charAt(peg$currPos))) {
+      if (peg$c44.test(input.charAt(peg$currPos))) {
         s0 = input.charAt(peg$currPos);
         peg$currPos++;
       } else {
         s0 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c42); }
+        if (peg$silentFails === 0) { peg$fail(peg$c45); }
       }
 
       return s0;
@@ -33714,21 +33713,21 @@ exports["default"] = (function() {
 
       s0 = peg$currPos;
       if (input.charCodeAt(peg$currPos) === 48) {
-        s1 = peg$c43;
+        s1 = peg$c46;
         peg$currPos++;
       } else {
         s1 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c44); }
+        if (peg$silentFails === 0) { peg$fail(peg$c47); }
       }
       if (s1 === peg$FAILED) {
         s1 = peg$currPos;
         s2 = peg$currPos;
-        if (peg$c45.test(input.charAt(peg$currPos))) {
+        if (peg$c48.test(input.charAt(peg$currPos))) {
           s3 = input.charAt(peg$currPos);
           peg$currPos++;
         } else {
           s3 = peg$FAILED;
-          if (peg$silentFails === 0) { peg$fail(peg$c46); }
+          if (peg$silentFails === 0) { peg$fail(peg$c49); }
         }
         if (s3 !== peg$FAILED) {
           s4 = [];
@@ -33742,21 +33741,20 @@ exports["default"] = (function() {
             s2 = s3;
           } else {
             peg$currPos = s2;
-            s2 = peg$FAILED;
+            s2 = peg$c2;
           }
         } else {
           peg$currPos = s2;
-          s2 = peg$FAILED;
+          s2 = peg$c2;
         }
         if (s2 !== peg$FAILED) {
-          s1 = input.substring(s1, peg$currPos);
-        } else {
-          s1 = s2;
+          s2 = input.substring(s1, peg$currPos);
         }
+        s1 = s2;
       }
       if (s1 !== peg$FAILED) {
-        peg$savedPos = s0;
-        s1 = peg$c47(s1);
+        peg$reportedPos = s0;
+        s1 = peg$c50(s1);
       }
       s0 = s1;
 
@@ -33766,77 +33764,77 @@ exports["default"] = (function() {
     function peg$parsechar() {
       var s0, s1, s2, s3, s4, s5, s6, s7;
 
-      if (peg$c48.test(input.charAt(peg$currPos))) {
+      if (peg$c51.test(input.charAt(peg$currPos))) {
         s0 = input.charAt(peg$currPos);
         peg$currPos++;
       } else {
         s0 = peg$FAILED;
-        if (peg$silentFails === 0) { peg$fail(peg$c49); }
+        if (peg$silentFails === 0) { peg$fail(peg$c52); }
       }
       if (s0 === peg$FAILED) {
         s0 = peg$currPos;
-        if (input.substr(peg$currPos, 2) === peg$c50) {
-          s1 = peg$c50;
+        if (input.substr(peg$currPos, 2) === peg$c53) {
+          s1 = peg$c53;
           peg$currPos += 2;
         } else {
           s1 = peg$FAILED;
-          if (peg$silentFails === 0) { peg$fail(peg$c51); }
+          if (peg$silentFails === 0) { peg$fail(peg$c54); }
         }
         if (s1 !== peg$FAILED) {
-          peg$savedPos = s0;
-          s1 = peg$c52();
+          peg$reportedPos = s0;
+          s1 = peg$c55();
         }
         s0 = s1;
         if (s0 === peg$FAILED) {
           s0 = peg$currPos;
-          if (input.substr(peg$currPos, 2) === peg$c53) {
-            s1 = peg$c53;
+          if (input.substr(peg$currPos, 2) === peg$c56) {
+            s1 = peg$c56;
             peg$currPos += 2;
           } else {
             s1 = peg$FAILED;
-            if (peg$silentFails === 0) { peg$fail(peg$c54); }
+            if (peg$silentFails === 0) { peg$fail(peg$c57); }
           }
           if (s1 !== peg$FAILED) {
-            peg$savedPos = s0;
-            s1 = peg$c55();
+            peg$reportedPos = s0;
+            s1 = peg$c58();
           }
           s0 = s1;
           if (s0 === peg$FAILED) {
             s0 = peg$currPos;
-            if (input.substr(peg$currPos, 2) === peg$c56) {
-              s1 = peg$c56;
+            if (input.substr(peg$currPos, 2) === peg$c59) {
+              s1 = peg$c59;
               peg$currPos += 2;
             } else {
               s1 = peg$FAILED;
-              if (peg$silentFails === 0) { peg$fail(peg$c57); }
+              if (peg$silentFails === 0) { peg$fail(peg$c60); }
             }
             if (s1 !== peg$FAILED) {
-              peg$savedPos = s0;
-              s1 = peg$c58();
+              peg$reportedPos = s0;
+              s1 = peg$c61();
             }
             s0 = s1;
             if (s0 === peg$FAILED) {
               s0 = peg$currPos;
-              if (input.substr(peg$currPos, 2) === peg$c59) {
-                s1 = peg$c59;
+              if (input.substr(peg$currPos, 2) === peg$c62) {
+                s1 = peg$c62;
                 peg$currPos += 2;
               } else {
                 s1 = peg$FAILED;
-                if (peg$silentFails === 0) { peg$fail(peg$c60); }
+                if (peg$silentFails === 0) { peg$fail(peg$c63); }
               }
               if (s1 !== peg$FAILED) {
-                peg$savedPos = s0;
-                s1 = peg$c61();
+                peg$reportedPos = s0;
+                s1 = peg$c64();
               }
               s0 = s1;
               if (s0 === peg$FAILED) {
                 s0 = peg$currPos;
-                if (input.substr(peg$currPos, 2) === peg$c62) {
-                  s1 = peg$c62;
+                if (input.substr(peg$currPos, 2) === peg$c65) {
+                  s1 = peg$c65;
                   peg$currPos += 2;
                 } else {
                   s1 = peg$FAILED;
-                  if (peg$silentFails === 0) { peg$fail(peg$c63); }
+                  if (peg$silentFails === 0) { peg$fail(peg$c66); }
                 }
                 if (s1 !== peg$FAILED) {
                   s2 = peg$currPos;
@@ -33853,36 +33851,35 @@ exports["default"] = (function() {
                           s3 = s4;
                         } else {
                           peg$currPos = s3;
-                          s3 = peg$FAILED;
+                          s3 = peg$c2;
                         }
                       } else {
                         peg$currPos = s3;
-                        s3 = peg$FAILED;
+                        s3 = peg$c2;
                       }
                     } else {
                       peg$currPos = s3;
-                      s3 = peg$FAILED;
+                      s3 = peg$c2;
                     }
                   } else {
                     peg$currPos = s3;
-                    s3 = peg$FAILED;
+                    s3 = peg$c2;
                   }
                   if (s3 !== peg$FAILED) {
-                    s2 = input.substring(s2, peg$currPos);
-                  } else {
-                    s2 = s3;
+                    s3 = input.substring(s2, peg$currPos);
                   }
+                  s2 = s3;
                   if (s2 !== peg$FAILED) {
-                    peg$savedPos = s0;
-                    s1 = peg$c64(s2);
+                    peg$reportedPos = s0;
+                    s1 = peg$c67(s2);
                     s0 = s1;
                   } else {
                     peg$currPos = s0;
-                    s0 = peg$FAILED;
+                    s0 = peg$c2;
                   }
                 } else {
                   peg$currPos = s0;
-                  s0 = peg$FAILED;
+                  s0 = peg$c2;
                 }
               }
             }
@@ -33905,11 +33902,11 @@ exports["default"] = (function() {
           s2 = peg$parsechar();
         }
       } else {
-        s1 = peg$FAILED;
+        s1 = peg$c2;
       }
       if (s1 !== peg$FAILED) {
-        peg$savedPos = s0;
-        s1 = peg$c65(s1);
+        peg$reportedPos = s0;
+        s1 = peg$c68(s1);
       }
       s0 = s1;
 
@@ -33925,20 +33922,13 @@ exports["default"] = (function() {
         peg$fail({ type: "end", description: "end of input" });
       }
 
-      throw peg$buildException(
-        null,
-        peg$maxFailExpected,
-        peg$maxFailPos < input.length ? input.charAt(peg$maxFailPos) : null,
-        peg$maxFailPos < input.length
-          ? peg$computeLocation(peg$maxFailPos, peg$maxFailPos + 1)
-          : peg$computeLocation(peg$maxFailPos, peg$maxFailPos)
-      );
+      throw peg$buildException(null, peg$maxFailExpected, peg$maxFailPos);
     }
   }
 
   return {
-    SyntaxError: peg$SyntaxError,
-    parse:       peg$parse
+    SyntaxError: SyntaxError,
+    parse:       parse
   };
 })();
 
@@ -34019,14 +34009,7 @@ exports["default"] = RelativeFormat;
 
 // -----------------------------------------------------------------------------
 
-var FIELDS = [
-    'second', 'second-short',
-    'minute', 'minute-short',
-    'hour', 'hour-short',
-    'day', 'day-short',
-    'month', 'month-short',
-    'year', 'year-short'
-];
+var FIELDS = ['second', 'minute', 'hour', 'day', 'month', 'year'];
 var STYLES = ['best fit', 'numeric'];
 
 // -- RelativeFormat -----------------------------------------------------------
@@ -34089,11 +34072,11 @@ src$es5$$.defineProperty(RelativeFormat, 'thresholds', {
     enumerable: true,
 
     value: {
-        second: 45, 'second-short': 45,  // seconds to minute
-        minute: 45, 'minute-short': 45, // minutes to hour
-        hour  : 22, 'hour-short': 22, // hours to day
-        day   : 26, 'day-short': 26, // days to month
-        month : 11, 'month-short': 11 // months to year
+        second: 45,  // seconds to minute
+        minute: 45,  // minutes to hour
+        hour  : 22,  // hours to day
+        day   : 26,  // days to month
+        month : 11   // months to year
     }
 });
 
@@ -34296,12 +34279,9 @@ RelativeFormat.prototype._resolveStyle = function (style) {
 
 RelativeFormat.prototype._selectUnits = function (diffReport) {
     var i, l, units;
-    var fields = FIELDS.filter(function(field) {
-        return field.indexOf('-short') < 1;
-    });
 
-    for (i = 0, l = fields.length; i < l; i += 1) {
-        units = fields[i];
+    for (i = 0, l = FIELDS.length; i < l; i += 1) {
+        units = FIELDS[i];
 
         if (Math.abs(diffReport[units]) < RelativeFormat.thresholds[units]) {
             break;
@@ -34352,21 +34332,14 @@ exports["default"] = function (from, to) {
         year     = round(rawYears);
 
     return {
-        millisecond    : millisecond,
-        second         : second,
-        'second-short' : second,
-        minute         : minute,
-        'minute-short' : minute,
-        hour           : hour,
-        'hour-short'   : hour,
-        day            : day,
-        'day-short'    : day,
-        week           : week,
-        'week-short'   : week,
-        month          : month,
-        'month-short'  : month,
-        year           : year,
-        'year-short'   : year
+        millisecond: millisecond,
+        second     : second,
+        minute     : minute,
+        hour       : hour,
+        day        : day,
+        week       : week,
+        month      : month,
+        year       : year
     };
 };
 
@@ -34385,10 +34358,10 @@ See the accompanying LICENSE file for terms.
 
 /* jslint esnext: true */
 
+
+
 // Purposely using the same implementation as the Intl.js `Intl` polyfill.
 // Copyright 2013 Andy Earnshaw, MIT License
-
-
 
 var hop = Object.prototype.hasOwnProperty;
 var toString = Object.prototype.toString;
@@ -34449,7 +34422,6 @@ var isArray = Array.isArray || function (obj) {
 var dateNow = Date.now || function () {
     return new Date().getTime();
 };
-
 exports.defineProperty = defineProperty, exports.objCreate = objCreate, exports.arrIndexOf = arrIndexOf, exports.isArray = isArray, exports.dateNow = dateNow;
 
 //# sourceMappingURL=es5.js.map
@@ -34461,7 +34433,7 @@ exports.defineProperty = defineProperty, exports.objCreate = objCreate, exports.
 "use strict";
 // GENERATED FILE
 
-exports["default"] = {"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"},"fields":{"year":{"displayName":"year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"one":"in {0} year","other":"in {0} years"},"past":{"one":"{0} year ago","other":"{0} years ago"}}},"year-short":{"displayName":"yr.","relative":{"0":"this yr.","1":"next yr.","-1":"last yr."},"relativeTime":{"future":{"one":"in {0} yr.","other":"in {0} yr."},"past":{"one":"{0} yr. ago","other":"{0} yr. ago"}}},"month":{"displayName":"month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"one":"in {0} month","other":"in {0} months"},"past":{"one":"{0} month ago","other":"{0} months ago"}}},"month-short":{"displayName":"mo.","relative":{"0":"this mo.","1":"next mo.","-1":"last mo."},"relativeTime":{"future":{"one":"in {0} mo.","other":"in {0} mo."},"past":{"one":"{0} mo. ago","other":"{0} mo. ago"}}},"day":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"day-short":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"hour":{"displayName":"hour","relative":{"0":"this hour"},"relativeTime":{"future":{"one":"in {0} hour","other":"in {0} hours"},"past":{"one":"{0} hour ago","other":"{0} hours ago"}}},"hour-short":{"displayName":"hr.","relative":{"0":"this hour"},"relativeTime":{"future":{"one":"in {0} hr.","other":"in {0} hr."},"past":{"one":"{0} hr. ago","other":"{0} hr. ago"}}},"minute":{"displayName":"minute","relative":{"0":"this minute"},"relativeTime":{"future":{"one":"in {0} minute","other":"in {0} minutes"},"past":{"one":"{0} minute ago","other":"{0} minutes ago"}}},"minute-short":{"displayName":"min.","relative":{"0":"this minute"},"relativeTime":{"future":{"one":"in {0} min.","other":"in {0} min."},"past":{"one":"{0} min. ago","other":"{0} min. ago"}}},"second":{"displayName":"second","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} second","other":"in {0} seconds"},"past":{"one":"{0} second ago","other":"{0} seconds ago"}}},"second-short":{"displayName":"sec.","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} sec.","other":"in {0} sec."},"past":{"one":"{0} sec. ago","other":"{0} sec. ago"}}}}};
+exports["default"] = {"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"},"fields":{"year":{"displayName":"year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"one":"in {0} year","other":"in {0} years"},"past":{"one":"{0} year ago","other":"{0} years ago"}}},"month":{"displayName":"month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"one":"in {0} month","other":"in {0} months"},"past":{"one":"{0} month ago","other":"{0} months ago"}}},"day":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"hour":{"displayName":"hour","relativeTime":{"future":{"one":"in {0} hour","other":"in {0} hours"},"past":{"one":"{0} hour ago","other":"{0} hours ago"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"in {0} minute","other":"in {0} minutes"},"past":{"one":"{0} minute ago","other":"{0} minutes ago"}}},"second":{"displayName":"second","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} second","other":"in {0} seconds"},"past":{"one":"{0} second ago","other":"{0} seconds ago"}}}}};
 
 //# sourceMappingURL=en.js.map
 
@@ -34487,14 +34459,6 @@ exports['default'] = exports;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/*
-Copyright (c) 2014, Yahoo! Inc. All rights reserved.
-Copyrights licensed under the New BSD License.
-See the accompanying LICENSE file for terms.
-*/
-
-/* jshint esnext: true */
-
 
 var src$es5$$ = __webpack_require__(233);
 exports["default"] = createFormatCache;
@@ -34576,6 +34540,7 @@ function orderedProps(obj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
 /*
 Copyright (c) 2014, Yahoo! Inc. All rights reserved.
 Copyrights licensed under the New BSD License.
@@ -34586,8 +34551,6 @@ See the accompanying LICENSE file for terms.
 
 // Function.prototype.bind implementation from Mozilla Developer Network:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind#Polyfill
-
-
 
 var bind = Function.prototype.bind || function (oThis) {
     if (typeof this !== 'function') {
@@ -34762,7 +34725,6 @@ var AutosizeInput = createClass({
 		className: PropTypes.string, // className for the outer element
 		defaultValue: PropTypes.any, // default field value
 		inputClassName: PropTypes.string, // className for the input element
-		inputRef: PropTypes.func, // ref callback for the input element
 		inputStyle: PropTypes.object, // css styles for the input element
 		minWidth: PropTypes.oneOfType([// minimum width for input element
 		PropTypes.number, PropTypes.string]),
@@ -34780,8 +34742,7 @@ var AutosizeInput = createClass({
 	},
 	getInitialState: function getInitialState() {
 		return {
-			inputWidth: this.props.minWidth,
-			inputId: '_' + Math.random().toString(36).substr(2, 12)
+			inputWidth: this.props.minWidth
 		};
 	},
 	componentDidMount: function componentDidMount() {
@@ -34802,9 +34763,6 @@ var AutosizeInput = createClass({
 	},
 	inputRef: function inputRef(el) {
 		this.input = el;
-		if (typeof this.props.inputRef === 'function') {
-			this.props.inputRef(el);
-		}
 	},
 	placeHolderSizerRef: function placeHolderSizerRef(el) {
 		this.placeHolderSizer = el;
@@ -34813,7 +34771,7 @@ var AutosizeInput = createClass({
 		this.sizer = el;
 	},
 	copyInputStyles: function copyInputStyles() {
-		if (!this.mounted || !window.getComputedStyle) {
+		if (this.mounted || !window.getComputedStyle) {
 			return;
 		}
 		var inputStyle = this.input && window.getComputedStyle(this.input);
@@ -34890,14 +34848,10 @@ var AutosizeInput = createClass({
 		delete inputProps.minWidth;
 		delete inputProps.onAutosize;
 		delete inputProps.placeholderIsMinWidth;
-		delete inputProps.inputRef;
 		return React.createElement(
 			'div',
 			{ className: this.props.className, style: wrapperStyle },
-			React.createElement('style', { dangerouslySetInnerHTML: {
-					__html: ['input#' + this.state.id + '::-ms-clear {display: none;}'].join('\n')
-				} }),
-			React.createElement('input', _extends({ id: this.state.id }, inputProps, { ref: this.inputRef })),
+			React.createElement('input', _extends({}, inputProps, { ref: this.inputRef })),
 			React.createElement(
 				'div',
 				{ ref: this.sizerRef, style: sizerStyle },
@@ -36000,7 +35954,7 @@ module.exports = function (css) {
 /* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.2 */
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.0 */
 
 (function(root, factory) {
   if (true) {
@@ -36083,7 +36037,7 @@ function getScrollParents(el) {
     var overflowX = _style.overflowX;
     var overflowY = _style.overflowY;
 
-    if (/(auto|scroll|overlay)/.test(overflow + overflowY + overflowX)) {
+    if (/(auto|scroll)/.test(overflow + overflowY + overflowX)) {
       if (position !== 'absolute' || ['relative', 'absolute', 'fixed'].indexOf(style.position) >= 0) {
         parents.push(parent);
       }
@@ -36482,7 +36436,7 @@ var position = function position() {
 };
 
 function now() {
-  if (performance && performance.now) {
+  if (typeof performance !== 'undefined' && typeof performance.now !== 'undefined') {
     return performance.now();
   }
   return +new Date();
@@ -37254,9 +37208,7 @@ var TetherClass = (function (_Evented) {
 
       if (!moved) {
         if (this.options.bodyElement) {
-          if (this.element.parentNode !== this.options.bodyElement) {
-            this.options.bodyElement.appendChild(this.element);
-          }
+          this.options.bodyElement.appendChild(this.element);
         } else {
           var offsetParentIsBody = true;
           var currentNode = this.element.parentNode;
@@ -37859,7 +37811,7 @@ exports = module.exports = __webpack_require__(65)(undefined);
 
 
 // module
-exports.push([module.i, ".tether-element {\n  z-index: 10000; }\n\n.Select-option {\n  min-height: 32px; }\n\n.Select.is-focused .Select-control {\n  border-color: #FECA1D;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(254, 202, 29, 0.6);\n  outline: 0; }\n\n/* This can be removed when https://github.com/JedWatson/react-select/issues/2178 is fixed. */\n\n.Select--single .Select-control .Select-multi-value-wrapper .Select-value {\n  padding-right: 25px; }\n", ""]);
+exports.push([module.i, ".tether-element {\n  z-index: 10000; }\n\n.Select-option {\n  min-height: 32px; }\n", ""]);
 
 // exports
 
