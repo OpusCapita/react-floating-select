@@ -15,3 +15,8 @@
     }  
   }
 }
+
+/* This can be removed when https://github.com/JedWatson/react-select/issues/2178 is fixed. */
+.Select--single .Select-control .Select-multi-value-wrapper .Select-value {
+  padding-right: 25px;
+}
