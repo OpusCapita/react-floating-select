@@ -2,6 +2,9 @@
 
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
+## 1.1.2
+* Code formatting
+
 ## 1.1.1
 * Fixed overflowed content
 

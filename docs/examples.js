@@ -16563,9 +16563,9 @@ var _temp4 = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(TetheredChildrenComponent, 'TetheredChildrenComponent', 'C:/Users/ristoje1/bug89244/react-floating-select/src/floating-select/tether.component.jsx');
+  __REACT_HOT_LOADER__.register(TetheredChildrenComponent, 'TetheredChildrenComponent', 'C:/Users/ristoje1/react-floating-select/src/floating-select/tether.component.jsx');
 
-  __REACT_HOT_LOADER__.register(tether_component_TetherComponent, 'TetherComponent', 'C:/Users/ristoje1/bug89244/react-floating-select/src/floating-select/tether.component.jsx');
+  __REACT_HOT_LOADER__.register(tether_component_TetherComponent, 'TetherComponent', 'C:/Users/ristoje1/react-floating-select/src/floating-select/tether.component.jsx');
 }();
 
 ;
@@ -16649,7 +16649,7 @@ var floating_select_component__temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(floating_select_component_FloatingSelect, 'FloatingSelect', 'C:/Users/ristoje1/bug89244/react-floating-select/src/floating-select/floating-select.component.jsx');
+  __REACT_HOT_LOADER__.register(floating_select_component_FloatingSelect, 'FloatingSelect', 'C:/Users/ristoje1/react-floating-select/src/floating-select/floating-select.component.jsx');
 }();
 
 ;
@@ -16700,7 +16700,7 @@ var floating_select_creatable_component__temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(floating_select_creatable_component_FloatingSelectCreatable, 'FloatingSelectCreatable', 'C:/Users/ristoje1/bug89244/react-floating-select/src/floating-select/floating-select-creatable.component.jsx');
+  __REACT_HOT_LOADER__.register(floating_select_creatable_component_FloatingSelectCreatable, 'FloatingSelectCreatable', 'C:/Users/ristoje1/react-floating-select/src/floating-select/floating-select-creatable.component.jsx');
 }();
 
 ;
@@ -16856,7 +16856,7 @@ var floating_select_floating_select_component__temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(floating_select_component_FloatingSelectView, 'FloatingSelectView', 'C:/Users/ristoje1/bug89244/react-floating-select/examples/components/floating-select/floating-select.component.jsx');
+  __REACT_HOT_LOADER__.register(floating_select_component_FloatingSelectView, 'FloatingSelectView', 'C:/Users/ristoje1/react-floating-select/examples/components/floating-select/floating-select.component.jsx');
 }();
 
 ;
@@ -16903,9 +16903,9 @@ var examples__temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(composeEnhancers, 'composeEnhancers', 'C:/Users/ristoje1/bug89244/react-floating-select/examples/index.jsx');
+  __REACT_HOT_LOADER__.register(composeEnhancers, 'composeEnhancers', 'C:/Users/ristoje1/react-floating-select/examples/index.jsx');
 
-  __REACT_HOT_LOADER__.register(store, 'store', 'C:/Users/ristoje1/bug89244/react-floating-select/examples/index.jsx');
+  __REACT_HOT_LOADER__.register(store, 'store', 'C:/Users/ristoje1/react-floating-select/examples/index.jsx');
 }();
 
 ;
@@ -37859,7 +37859,7 @@ exports = module.exports = __webpack_require__(65)(undefined);
 
 
 // module
-exports.push([module.i, ".tether-element {\n  z-index: 10000; }\n\n.Select-option {\n  min-height: 32px; }\n\n.Select.is-focused .Select-control {\n  border-color: #FECA1D;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(254, 202, 29, 0.6);\n  outline: 0; }\n", ""]);
+exports.push([module.i, ".tether-element {\n  z-index: 10000; }\n\n.Select-option {\n  min-height: 32px; }\n\n.Select.is-focused .Select-control {\n  border-color: #FECA1D;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(254, 202, 29, 0.6);\n  outline: 0; }\n\n/* This can be removed when https://github.com/JedWatson/react-select/issues/2178 is fixed. */\n\n.Select--single .Select-control .Select-multi-value-wrapper .Select-value {\n  padding-right: 25px; }\n", ""]);
 
 // exports
 
