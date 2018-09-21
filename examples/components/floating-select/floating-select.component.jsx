@@ -64,7 +64,8 @@ export default class FloatingSelectView extends React.PureComponent {
         <div style={{ marginTop: '20px' }}>
           Create and/or select option
         </div>
-        <FloatingSelectCreatable
+        <FloatingSelect
+          creatable
           clearable={false}
           inputProps={{ id: 'select-creatable-example' }}
           name="select-creatable-example"

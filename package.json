@@ -82,8 +82,10 @@
     "write-file-webpack-plugin": "4.1.0"
   },
   "dependencies": {
+    "@opuscapita/oc-cm-common-styles": "2.2.0",
     "prop-types": "15.5.10",
-    "react-select": "1.2.1",
+    "react-icons": "2.2.7",
+    "react-select": "2.0.0",
     "tether": "1.4.3"
   },
   "repository": {
