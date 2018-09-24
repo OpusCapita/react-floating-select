@@ -59,7 +59,7 @@ export default class ComponentView extends React.PureComponent {
         <div>Select option</div>
         <FloatingSelect
           clearable={false}
-          id="select-example"
+          inputId="select-example"
           name="select-example"
           options={this.state.options}
           onChange={this.onChange}
@@ -70,7 +70,7 @@ export default class ComponentView extends React.PureComponent {
         </div>
         <FloatingSelectCreatable
           clearable={false}
-          id="select-creatable-example"
+          inputId="select-creatable-example"
           name="select-creatable-example"
           options={this.state.creatableOptions}
           onChange={this.onCreatableChange}

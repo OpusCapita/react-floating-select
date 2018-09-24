@@ -8,9 +8,10 @@ export default {
   control: (base, state) => ({
     ...base,
     backgroundColor: colors.colorWhite,
-    borderColor: (state.isFocused && !state.isOpen) || state.isHovered ? `${colors.colorPseudoFocused}!important` : colors.colorLightGray,
+    borderColor: (state.isFocused && !state.isOpen) || state.isHovered ?
+      `${colors.colorPseudoFocused}!important` : `${colors.colorLightGray}!important`,
     borderRadius: 0,
-    boxShadow: state.isFocused && !state.isOpen ? 0 : 0,
+    boxShadow: state.isFocused && !state.isOpen ? `inset 0 1px 1px ${colors.colorWhite}, 0 0 8px ${colors.colorPseudoFocused}` : 0,
     outline: 0,
     height: '34px',
     minHeight: '34px',
@@ -26,9 +27,10 @@ export default {
   }),
   menu: base => ({
     ...base,
+    border: `1px solid ${colors.colorLightGray}`,
     borderRadius: 0,
     boxShadow: 0,
-    border: `1px solid ${colors.colorLightGray}`,
+    marginBottom: 0,
     marginTop: 0,
   }),
   menuList: base => ({
