@@ -1,4 +1,5 @@
 import colors from '@opuscapita/oc-cm-common-styles/styles/_colors.scss';
+import { theme } from '@opuscapita/oc-cm-common-layouts';
 
 export default {
   container: base => ({
@@ -19,6 +20,10 @@ export default {
   dropdownIndicator: base => ({
     ...base,
     color: `${colors.colorText}!important`,
+  }),
+  groupHeading: () => ({
+    paddingLeft: theme.gutterWidth,
+    fontWeight: 'bold',
   }),
   indicatorSeparator: () => ({}),
   input: base => ({

@@ -88,6 +88,7 @@
     "sass-loader": "7.0.3",
     "sinon": "6.0.0",
     "style-loader": "0.21.0",
+    "styled-components": "3.3.3",
     "url-loader": "1.0.1",
     "webpack": "3.11.0",
     "webpack-dev-server": "2.11.2",
@@ -97,6 +98,7 @@
     "write-file-webpack-plugin": "4.3.2"
   },
   "dependencies": {
+    "@opuscapita/oc-cm-common-layouts": "2.0.0",
     "@opuscapita/oc-cm-common-styles": "2.2.0",
     "react-icons": "2.2.7",
     "react-select": "2.0.0"

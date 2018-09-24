@@ -1,5 +1,8 @@
 import React from 'react';
 import { FloatingSelect, FloatingSelectCreatable } from '../../src/index';
+import FaFolder from 'react-icons/lib/fa/folder';
+import CaretRight from 'react-icons/lib/fa/caret-right';
+import CaretDown from 'react-icons/lib/fa/caret-down';
 
 export default class ComponentView extends React.PureComponent {
   constructor(props) {
@@ -9,6 +12,8 @@ export default class ComponentView extends React.PureComponent {
       options: this.initializeOptions(),
       selectedCreatableOption: 0,
       creatableOptions: this.initializeOptions(),
+      selectedGroupedOption: 0,
+      groupedOptions: this.initializeGroupedOptions(),
     };
   }
 
@@ -18,6 +23,10 @@ export default class ComponentView extends React.PureComponent {
 
   onCreatableChange = (e) => {
     this.setState({ selectedCreatableOption: e });
+  }
+
+  onGroupedChange = (e) => {
+    this.setState({ selectedGroupedOption: e });
   }
 
   handleCreateOption = (e) => {
@@ -51,12 +60,76 @@ export default class ComponentView extends React.PureComponent {
         label: 'EUR FI00 3333 3333 1111 11 Account ABCDEF',
       },
     ]);
+  
+  initializeGroupedOptions = () => (
+    [
+      {
+        label: 'Group A',
+        options: [
+          {
+            value: '1',
+            label: 'Item 1',
+          },
+          {
+            value: '2',
+            label: 'Item 2',
+          },
+        ],
+      },
+      {
+        label: 'Group B',
+        isOpen: true,
+        options: [
+          {
+            value: '3',
+            label: 'Item 3',
+            isVisible: true,
+          },
+          {
+            value: '4',
+            label: 'Item 4',
+            isVisibel: true,
+          },
+          {
+            value: '5',
+            label: 'Item 5',
+            isVisible: true,
+          },
+        ],
+      },
+      {
+        label: 'Group C',
+        options: [
+          {
+            value: '6',
+            label: 'Item 6',
+          },
+        ],
+      },
+    ]);
 
+  formatGroupLabel = data => (
+    <div>
+      {this.renderArrow(data.isOpen)}
+      <FaFolder style={{ marginRight: '.5rem' }} />
+      <span>{data.label}</span>
+    </div>
+  );
+
+  formatOptionLabel = data => (
+    data.isVisible ? data.label : undefined
+  );
+
+  renderArrow = isOpen => (
+    isOpen ?
+      <CaretDown style={{ marginRight: '.5rem' }} /> :
+      <CaretRight style={{ marginRight: '.5rem' }} />
+  );
 
   render() {
     return (
       <div style={{ padding: '20px' }}>
-        <div>Select option</div>
+        <div style={{ marginBottom: '0.5rem' }}>Select option</div>
         <FloatingSelect
           clearable={false}
           inputId="select-example"
@@ -65,7 +138,18 @@ export default class ComponentView extends React.PureComponent {
           onChange={this.onChange}
           value={this.state.selectedOption}
         />
-        <div style={{ marginTop: '20px' }}>
+        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Select grouped option</div>
+        <FloatingSelect
+          clearable={false}
+          formatGroupLabel={this.formatGroupLabel}
+          formatOptionLabel={this.formatOptionLabel}
+          inputId="select-grouped-option"
+          name="select-grouped-option"
+          options={this.state.groupedOptions}
+          onChange={this.onGroupedChange}
+          value={this.state.selectedGroupedOption}
+        />
+        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>
           Create and/or select option
         </div>
         <FloatingSelectCreatable
