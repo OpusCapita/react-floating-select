@@ -1,19 +1,15 @@
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import Creatable from 'react-select/lib/Creatable';
+import DropdownIndicator from './dropdown-indicator.component';
+import styles from './styles';
 
-import FloatingSelect from './floating-select.component';
-
-
-export default class FloatingSelectCreatable extends React.PureComponent {
-  render() {
-    return (
-      <FloatingSelect {...this.props}>
-        {creatableProps => (
-          <FloatingSelect
-            {...creatableProps}
-          />
-        )}
-      </FloatingSelect>
-    );
-  }
+export default function FloatingSelectCreatable(props) {
+  return (
+    <Creatable
+      {...props}
+      components={{ DropdownIndicator }}
+      menuPlacement="auto"
+      styles={styles}
+    />
+  );
 }

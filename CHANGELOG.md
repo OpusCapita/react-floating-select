@@ -3,6 +3,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Updated react-select v2.0.0
+* Updated repo https://github.com/OpusCapita/react-component-template
 
 ## 2.0.1
 * Removed border rounding

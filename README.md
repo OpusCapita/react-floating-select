@@ -1,54 +1,42 @@
-# react-floating-select
-* Run `npm install` to get the project's dependencies
-* Run `npm run build` to produce minified version of the library
-* Run `npm run dev` to produce development version of the library.
-* Run `npm run test` to run tests
-* Run `npm run docs` to run generate examples
+# react-component-template
 
-### To use react-floating-select
-```javascript
-import { FloatingSelect } from '@opuscapita/react-floating-select';
+### Description
+Describe the component here
+
+### Installation
 ```
-### Development workflow
-* Run `npm run docs`
-* Open `index.html`
+npm install @opuscapita/react-component-template
+```
 
-### Development workflow with project using the package
-##### Link local package to your project
-* Run `npm link` at `react-floating-select` root to make your local package linkable
-* Run `npm link @opuscapita/react-floating-select` at project's dir that's using `react-floating-select` to use local package
-##### Build and watch the package
-* Run `npm run dev` to run webpack in watch mode
-##### Unlink local package
-* Run `npm unlink @opuscapita/react-floating-select` at project's dir that's using `react-floating-select`
-* Run `npm install` to install remote copy of the `react-floating-select` package
+### Demo
+View the [Demo](https://opuscapita.github.io/react-floating-select)
 
-### Changelog
-* Remember to update the CHANGELOG.md file with information about the changes to `src`
+### Builds
+#### UMD
+The default build with compiled styles in the .js file. Also minified version available in the lib/umd directory.
+#### CommonJS/ES Module
+You need to configure your module loader to use `cjs` or `es` fields of the package.json to use these module types.
+Also you need to configure sass loader, since all the styles are in sass format.
+* With webpack use [resolve.mainFields](https://webpack.js.org/configuration/resolve/#resolve-mainfields) to configure the module type.
+* Add [SASS loader](https://github.com/webpack-contrib/sass-loader) to support importing of SASS styles.
 
-### Contributing
-* Make a new branch for the changes
-* Update `CHANGELOG.md` file
-* Update `LICENSE-3RD-PARTY.md` in case lib changes
-* Commit changes (not `lib`)
-* Push changes
-* Make a pull request
-* Merge the pull request and delete the development branch
+### API
+| Prop name                | Type             | Default                                  | Description                              |
+| ------------------------ | ---------------- | ---------------------------------------- | ---------------------------------------- |
+| propName                 | string           |                                          | Describe the prop here                   |
 
-### Creating a new release tag
-* Run `npm version [major|minor|patch]` [Info](https://docs.npmjs.com/cli/version)
+### Code example
+```jsx
+import React from 'react';
+import { FloatingSelect } from '@opuscapita/react-floating-select';
 
-### Trouble shooting
-* If you get any errors about running many instances of certain npm libraries eg. React, check that your project's webpack is configured to resolve those conflicting packages to your projects `node_modules` directory. [Docs](https://webpack.github.io/docs/configuration.html#resolve-alias)
-
-### Examples
-* [Demo](https://opuscapita.github.io/react-floating-select) implementations of the components
-* Run `npm run docs` to create output to `examples-build` or `npm run hot` for using hot reload functionality
-
-### Component descriptions
-
-- [FloatingSelect](./src/floating-select/README.md)
-
-## Links
-
-Cheatseet for [Markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+export default class ReactView extends React.Component {
+  render() {
+    return (
+      <FloatingSelect
+        propName="propValue"
+      />
+    );
+  }
+}
+```
