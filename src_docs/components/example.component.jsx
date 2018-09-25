@@ -1,8 +1,10 @@
 import React from 'react';
-import { FloatingSelect, FloatingSelectCreatable } from '../../src/index';
+import { Primitive } from '@opuscapita/oc-cm-common-layouts';
 import FaFolder from 'react-icons/lib/fa/folder';
 import CaretRight from 'react-icons/lib/fa/caret-right';
 import CaretDown from 'react-icons/lib/fa/caret-down';
+
+import { FloatingSelect, FloatingSelectCreatable } from '../../src/index';
 
 export default class ComponentView extends React.PureComponent {
   constructor(props) {
@@ -17,15 +19,15 @@ export default class ComponentView extends React.PureComponent {
     };
   }
 
-  onChange = (e) => {
+  handleChange = (e) => {
     this.setState({ selectedOption: e });
   }
 
-  onCreatableChange = (e) => {
+  handleCreatableChange = (e) => {
     this.setState({ selectedCreatableOption: e });
   }
 
-  onGroupedChange = (e) => {
+  handleGroupedChange = (e) => {
     this.setState({ selectedGroupedOption: e });
   }
 
@@ -39,6 +41,21 @@ export default class ComponentView extends React.PureComponent {
       selectedCreatableOption: option,
       creatableOptions,
     });
+  }
+
+  handleInputChange = (inputValue) => {
+    let { groupedOptions } = this.state;
+    groupedOptions = groupedOptions.map((group) => {
+      const options = group.options.map(option => ({
+        ...option,
+        match: option.label && option.label.includes(inputValue) && inputValue,
+      }));
+      return {
+        ...group,
+        options,
+      };
+    });
+    this.setState({ groupedOptions });
   }
 
   initializeOptions = () => (
@@ -60,7 +77,7 @@ export default class ComponentView extends React.PureComponent {
         label: 'EUR FI00 3333 3333 1111 11 Account ABCDEF',
       },
     ]);
-  
+
   initializeGroupedOptions = () => (
     [
       {
@@ -69,10 +86,14 @@ export default class ComponentView extends React.PureComponent {
           {
             value: '1',
             label: 'Item 1',
+            group: 'Group A',
+            isHidden: true,
           },
           {
             value: '2',
             label: 'Item 2',
+            group: 'Group A',
+            isHidden: true,
           },
         ],
       },
@@ -83,17 +104,17 @@ export default class ComponentView extends React.PureComponent {
           {
             value: '3',
             label: 'Item 3',
-            isVisible: true,
+            group: 'Group B',
           },
           {
             value: '4',
             label: 'Item 4',
-            isVisibel: true,
+            group: 'Group B',
           },
           {
             value: '5',
             label: 'Item 5',
-            isVisible: true,
+            group: 'Group B',
           },
         ],
       },
@@ -103,22 +124,34 @@ export default class ComponentView extends React.PureComponent {
           {
             value: '6',
             label: 'Item 6',
+            group: 'Group C',
+            isHidden: true,
           },
         ],
       },
     ]);
 
-  formatGroupLabel = data => (
-    <div>
-      {this.renderArrow(data.isOpen)}
-      <FaFolder style={{ marginRight: '.5rem' }} />
-      <span>{data.label}</span>
-    </div>
-  );
-
-  formatOptionLabel = data => (
-    data.isVisible ? data.label : undefined
-  );
+  formatGroupLabel = (data) => {
+    const handleClick = () => {
+      const options = data.options.map(option => ({
+        ...option,
+        isHidden: data.isOpen,
+      }));
+      const group = { ...data, options, isOpen: !data.isOpen };
+      let { groupedOptions } = this.state;
+      groupedOptions = groupedOptions.map(groupedOption => (groupedOption.label && groupedOption.label === data.label ? group : groupedOption));
+      this.setState({ groupedOptions });
+    };
+    return (
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <Primitive.BorderlessButton onClick={handleClick}>
+          {this.renderArrow(data.isOpen)}
+        </Primitive.BorderlessButton>
+        <FaFolder style={{ marginRight: '.5rem' }} />
+        <span>{data.label}</span>
+      </div>
+    );
+  };
 
   renderArrow = isOpen => (
     isOpen ?
@@ -135,18 +168,18 @@ export default class ComponentView extends React.PureComponent {
           inputId="select-example"
           name="select-example"
           options={this.state.options}
-          onChange={this.onChange}
+          onChange={this.handleChange}
           value={this.state.selectedOption}
         />
         <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Select grouped option</div>
         <FloatingSelect
           clearable={false}
           formatGroupLabel={this.formatGroupLabel}
-          formatOptionLabel={this.formatOptionLabel}
           inputId="select-grouped-option"
           name="select-grouped-option"
           options={this.state.groupedOptions}
-          onChange={this.onGroupedChange}
+          onChange={this.handleGroupedChange}
+          onInputChange={this.handleInputChange}
           value={this.state.selectedGroupedOption}
         />
         <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>
@@ -157,7 +190,7 @@ export default class ComponentView extends React.PureComponent {
           inputId="select-creatable-example"
           name="select-creatable-example"
           options={this.state.creatableOptions}
-          onChange={this.onCreatableChange}
+          onChange={this.handleCreatableChange}
           onCreateOption={this.handleCreateOption}
           value={this.state.selectedCreatableOption}
         />

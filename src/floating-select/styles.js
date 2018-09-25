@@ -4,18 +4,20 @@ import { theme } from '@opuscapita/oc-cm-common-layouts';
 export default {
   container: base => ({
     ...base,
-    height: '34px',
+    height: theme.formControls.input.height,
   }),
   control: (base, state) => ({
     ...base,
     backgroundColor: colors.colorWhite,
-    borderColor: (state.isFocused && !state.isOpen) || state.isHovered ?
-      `${colors.colorPseudoFocused}!important` : `${colors.colorLightGray}!important`,
+    borderColor: state.isFocused ? colors.colorPseudoFocused : colors.colorLightGray,
     borderRadius: 0,
     boxShadow: state.isFocused && !state.isOpen ? `inset 0 1px 1px ${colors.colorWhite}, 0 0 8px ${colors.colorPseudoFocused}` : 0,
+    height: theme.formControls.input.height,
+    '&:hover': {
+      borderColor: state.isFocused ? colors.colorPseudoFocused : colors.colorLightGray,
+    },
+    minHeight: theme.formControls.input.height,
     outline: 0,
-    height: '34px',
-    minHeight: '34px',
   }),
   dropdownIndicator: base => ({
     ...base,
@@ -26,7 +28,7 @@ export default {
     fontWeight: 'bold',
   }),
   indicatorSeparator: () => ({}),
-  input: base => ({
+  input: (base, state) => ({
     ...base,
     color: colors.colorText,
   }),
@@ -44,10 +46,15 @@ export default {
   }),
   option: (base, state) => ({
     ...base,
-    height: '32px',
-    backgroundColor: state.isSelected ? colors.colorOrange : colors.colorWhite,
+    ':active': { backgroundColor: 'none' },
+    backgroundColor: state.isSelected ? colors.colorSelectSelected : colors.colorWhite,
+    color: colors.colorText,
+    display: state.data.isHidden && !state.data.match ? 'none' : 'block',
+    height: theme.formControls.input.height,
+    ':hover': { backgroundColor: colors.colorSelectHover },
+    paddingLeft: state.data.group ? '40px' : '12px',
   }),
-  singleValue: base => ({
+  singleValue: (base, state) => ({
     ...base,
     color: colors.colorText,
   }),

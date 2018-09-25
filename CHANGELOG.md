@@ -3,6 +3,10 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* configurable height
+* arrow up
+* liian pitkät option labelit
+* Selected and hovered option styles
 * Updated react-select v2.0.0
 * Updated repo https://github.com/OpusCapita/react-component-template
 
