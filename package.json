@@ -39,7 +39,7 @@
   "devDependencies": {
     "autoprefixer": "8.6.3",
     "babel-cli": "6.26.0",
-    "babel-eslint": "8.2.3",
+    "babel-eslint": "9.0.0",
     "babel-loader": "7.1.4",
     "babel-plugin-dynamic-import-node": "1.2.0",
     "babel-plugin-react-transform": "3.0.0",

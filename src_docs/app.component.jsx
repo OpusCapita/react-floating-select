@@ -6,8 +6,7 @@ import ExampleContainer from './containers/example.container';
 import './app.component.scss';
 import './images/favicon.ico';
 
-@hot(module)
-export default class App extends React.PureComponent {
+export default @hot(module) class App extends React.PureComponent {
   render() {
     return (
       <Router>

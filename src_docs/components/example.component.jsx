@@ -66,7 +66,7 @@ export default class ComponentView extends React.PureComponent {
       },
       {
         value: '1',
-        label: 'Account 1',
+        label: 'EUR FI00 1234 5678 9012 34 Account ABCDEF GHIJKL MNOPQR STUVWX YZ',
       },
       {
         value: '2',
@@ -139,7 +139,8 @@ export default class ComponentView extends React.PureComponent {
       }));
       const group = { ...data, options, isOpen: !data.isOpen };
       let { groupedOptions } = this.state;
-      groupedOptions = groupedOptions.map(groupedOption => (groupedOption.label && groupedOption.label === data.label ? group : groupedOption));
+      groupedOptions = groupedOptions.map(groupedOption =>
+        (groupedOption.label && groupedOption.label === data.label ? group : groupedOption));
       this.setState({ groupedOptions });
     };
     return (
@@ -162,25 +163,15 @@ export default class ComponentView extends React.PureComponent {
   render() {
     return (
       <div style={{ padding: '20px' }}>
-        <div style={{ marginBottom: '0.5rem' }}>Select option</div>
+        <div style={{ marginBottom: '0.5rem' }}>Select option (height 30px)</div>
         <FloatingSelect
           clearable={false}
+          controlHeight="30px"
           inputId="select-example"
           name="select-example"
           options={this.state.options}
           onChange={this.handleChange}
           value={this.state.selectedOption}
-        />
-        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Select grouped option</div>
-        <FloatingSelect
-          clearable={false}
-          formatGroupLabel={this.formatGroupLabel}
-          inputId="select-grouped-option"
-          name="select-grouped-option"
-          options={this.state.groupedOptions}
-          onChange={this.handleGroupedChange}
-          onInputChange={this.handleInputChange}
-          value={this.state.selectedGroupedOption}
         />
         <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>
           Create and/or select option
@@ -193,6 +184,27 @@ export default class ComponentView extends React.PureComponent {
           onChange={this.handleCreatableChange}
           onCreateOption={this.handleCreateOption}
           value={this.state.selectedCreatableOption}
+        />
+        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Select grouped option</div>
+        <FloatingSelect
+          clearable={false}
+          formatGroupLabel={this.formatGroupLabel}
+          inputId="select-grouped-option"
+          name="select-grouped-option"
+          options={this.state.groupedOptions}
+          onChange={this.handleGroupedChange}
+          onInputChange={this.handleInputChange}
+          value={this.state.selectedGroupedOption}
+        />
+        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Multi-select option</div>
+        <FloatingSelect
+          clearable={false}
+          inputId="select-example"
+          isMulti
+          name="select-example"
+          options={this.state.options}
+          onChange={this.handleChange}
+          value={this.state.selectedOption}
         />
       </div>
     );

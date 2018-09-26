@@ -1,11 +1,11 @@
-# react-component-template
+# react-floating-select
 
 ### Description
-Describe the component here
+Originally this component was introduced in order to enhance react-select by fixing [bug#810](https://github.com/JedWatson/react-select/issues/810). When react-select was upgraded to version 2.0.0, the original need for this component disappeared. Since react-select v2.0.0 this component is needed for specifying OC specific styles for the floating select component.
 
 ### Installation
 ```
-npm install @opuscapita/react-component-template
+npm install @opuscapita/react-floating-select
 ```
 
 ### Demo
@@ -21,9 +21,16 @@ Also you need to configure sass loader, since all the styles are in sass format.
 * Add [SASS loader](https://github.com/webpack-contrib/sass-loader) to support importing of SASS styles.
 
 ### API
-| Prop name                | Type             | Default                                  | Description                              |
-| ------------------------ | ---------------- | ---------------------------------------- | ---------------------------------------- |
-| propName                 | string           |                                          | Describe the prop here                   |
+
+* [react-select props](https://react-select.com/props)
+* [Grouped options](https://github.com/JedWatson/react-select/issues/2417)
+
+Additionally
+
+| Prop name     | Type   | Default | Description                  |
+| ------------- | ------ | ------- | ---------------------------- |
+| controlHeight | string |         | Custom height of the control |
+
 
 ### Code example
 ```jsx

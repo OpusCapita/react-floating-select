@@ -1,2 +1,2 @@
-export FloatingSelect from './floating-select.component.jsx';
-export FloatingSelectCreatable from './floating-select-creatable.component.jsx';
+export FloatingSelect from './floating-select.component';
+export FloatingSelectCreatable from './floating-select-creatable.component';
