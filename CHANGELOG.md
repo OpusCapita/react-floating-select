@@ -3,6 +3,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.0.0
 * Updated react-select v2.0.0 in order to support grouped options
 * Added controlHeight prop
 * Finetuned styles
