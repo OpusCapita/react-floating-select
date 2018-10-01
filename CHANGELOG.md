@@ -3,6 +3,11 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Updated react-select v2.0.0 in order to support grouped options
+* Added controlHeight prop
+* Finetuned styles
+* Updated repo https://github.com/OpusCapita/react-component-template
+* Removed depencency to tether which became useless after updating react-select V2.
 
 ## 2.0.1
 * Removed border rounding

@@ -25,7 +25,7 @@ describe('FloatingSelect component', () => {
     };
 
     const wrapper = mount(<FloatingSelect {...props} />);
-    expect(wrapper.find('input').at(0).props().name).to.eql('floating-select-example');
+    expect(wrapper.find('input').at(1).props().name).to.eql('floating-select-example');
     wrapper.unmount();
   });
 });

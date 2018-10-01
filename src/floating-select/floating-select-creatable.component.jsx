@@ -1,18 +1,17 @@
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import Creatable from 'react-select/lib/Creatable';
+import styles from './styles';
+import FloatingSelectBase from './floating-select-base.component';
 
-import FloatingSelect from './floating-select.component';
-
-export default class FloatingSelectCreatable extends React.PureComponent {
-  render() {
-    return (
-      <FloatingSelect.Creatable {...this.props}>
-        {creatableProps => (
-          <FloatingSelect
-            {...creatableProps}
-          />
-        )}
-      </FloatingSelect.Creatable>
-    );
-  }
+export default class FloatingSelectCreatable extends FloatingSelectBase {
+  render = () => (
+    <Creatable
+      {...this.props}
+      components={this.state.components}
+      menuPlacement="auto"
+      onMenuOpen={this.handleOpenMenu}
+      onMenuClose={this.handleCloseMenu}
+      styles={styles(this.props.controlHeight)}
+    />
+  );
 }

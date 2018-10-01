@@ -1,54 +1,49 @@
 # react-floating-select
-* Run `npm install` to get the project's dependencies
-* Run `npm run build` to produce minified version of the library
-* Run `npm run dev` to produce development version of the library.
-* Run `npm run test` to run tests
-* Run `npm run docs` to run generate examples
 
-### To use react-floating-select
-```javascript
-import { FloatingSelect } from '@opuscapita/react-floating-select';
+### Description
+Originally this component was introduced in order to enhance react-select by fixing [bug#810](https://github.com/JedWatson/react-select/issues/810). When react-select was upgraded to version 2.0.0, the original need for this component disappeared. Since react-select v2.0.0 this component is needed for specifying OC specific styles for the floating select component.
+
+### Installation
 ```
-### Development workflow
-* Run `npm run docs`
-* Open `index.html`
+npm install @opuscapita/react-floating-select
+```
 
-### Development workflow with project using the package
-##### Link local package to your project
-* Run `npm link` at `react-floating-select` root to make your local package linkable
-* Run `npm link @opuscapita/react-floating-select` at project's dir that's using `react-floating-select` to use local package
-##### Build and watch the package
-* Run `npm run dev` to run webpack in watch mode
-##### Unlink local package
-* Run `npm unlink @opuscapita/react-floating-select` at project's dir that's using `react-floating-select`
-* Run `npm install` to install remote copy of the `react-floating-select` package
+### Demo
+View the [Demo](https://opuscapita.github.io/react-floating-select)
 
-### Changelog
-* Remember to update the CHANGELOG.md file with information about the changes to `src`
+### Builds
+#### UMD
+The default build with compiled styles in the .js file. Also minified version available in the lib/umd directory.
+#### CommonJS/ES Module
+You need to configure your module loader to use `cjs` or `es` fields of the package.json to use these module types.
+Also you need to configure sass loader, since all the styles are in sass format.
+* With webpack use [resolve.mainFields](https://webpack.js.org/configuration/resolve/#resolve-mainfields) to configure the module type.
+* Add [SASS loader](https://github.com/webpack-contrib/sass-loader) to support importing of SASS styles.
 
-### Contributing
-* Make a new branch for the changes
-* Update `CHANGELOG.md` file
-* Update `LICENSE-3RD-PARTY.md` in case lib changes
-* Commit changes (not `lib`)
-* Push changes
-* Make a pull request
-* Merge the pull request and delete the development branch
+### API
 
-### Creating a new release tag
-* Run `npm version [major|minor|patch]` [Info](https://docs.npmjs.com/cli/version)
+* [react-select props](https://react-select.com/props)
+* [Grouped options](https://github.com/JedWatson/react-select/issues/2417)
 
-### Trouble shooting
-* If you get any errors about running many instances of certain npm libraries eg. React, check that your project's webpack is configured to resolve those conflicting packages to your projects `node_modules` directory. [Docs](https://webpack.github.io/docs/configuration.html#resolve-alias)
+Additionally
 
-### Examples
-* [Demo](https://opuscapita.github.io/react-floating-select) implementations of the components
-* Run `npm run docs` to create output to `examples-build` or `npm run hot` for using hot reload functionality
+| Prop name     | Type   | Default | Description                  |
+| ------------- | ------ | ------- | ---------------------------- |
+| controlHeight | string |         | Custom height of the control |
 
-### Component descriptions
 
-- [FloatingSelect](./src/floating-select/README.md)
+### Code example
+```jsx
+import React from 'react';
+import { FloatingSelect } from '@opuscapita/react-floating-select';
 
-## Links
-
-Cheatseet for [Markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+export default class ReactView extends React.Component {
+  render() {
+    return (
+      <FloatingSelect
+        propName="propValue"
+      />
+    );
+  }
+}
+```
