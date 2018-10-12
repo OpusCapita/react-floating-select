@@ -42,6 +42,7 @@ const styles = inputHeight => ({
     boxShadow: 0,
     marginBottom: 0,
     marginTop: 0,
+    zIndex: 3,
   }),
   menuList: base => ({
     ...base,

@@ -3,6 +3,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Added z-index for dropdown menu in order to avoid react-grid header column stack over
 
 ## 3.0.0
 * Updated react-select v2.0.0 in order to support grouped options
