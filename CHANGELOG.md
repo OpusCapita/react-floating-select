@@ -4,6 +4,9 @@
 
 ## <next>
 
+## 3.0.2
+* Update packages
+
 ## 3.0.1
 * Added z-index for dropdown menu in order to avoid react-grid header column stack over
 
