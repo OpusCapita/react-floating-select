@@ -5,6 +5,7 @@
 ## <next>
 
 ## 3.0.2
+* Add missing dependency `styled-components`
 * Update packages
 
 ## 3.0.1
