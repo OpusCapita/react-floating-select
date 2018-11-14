@@ -1,1 +1,2 @@
-export * from './floating-select/index.js';
+export * from './floating-select/index';
+export * from './floating-select-portal/index';
