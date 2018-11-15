@@ -4,6 +4,9 @@
 
 ## <next>
 
+## 3.1.0
+* Add FloatingSelectPortal & FloatingSelectPortalCreatable component for rendering select menu into document body
+
 ## 3.0.2
 * Add missing dependency `styled-components`
 * Update packages
