@@ -1,11 +1,10 @@
 import colors from '@opuscapita/oc-cm-common-styles/styles/_colors.scss';
 import { theme } from '@opuscapita/oc-cm-common-layouts';
 
-const styles = inputHeight => ({
-  container: base => ({
-    ...base,
-    height: inputHeight,
-  }),
+// Styles shared between both FloatingSelect implementations
+const mainStyles = inputHeight => ({
+  container: base => ({ ...base, height: inputHeight }),
+
   control: (base, state) => ({
     ...base,
     backgroundColor: colors.colorWhite,
@@ -19,22 +18,13 @@ const styles = inputHeight => ({
     minHeight: inputHeight,
     outline: 0,
   }),
-  dropdownIndicator: base => ({
-    ...base,
-    color: colors.colorText,
-    ':hover': {
-      color: colors.colorText,
-    },
-  }),
-  groupHeading: () => ({
-    fontWeight: 'bold',
-    paddingLeft: theme.gutterWidth,
-  }),
-  indicatorSeparator: () => ({}),
-  input: base => ({
-    ...base,
-    color: colors.colorText,
-  }),
+
+  groupHeading: () => ({ fontWeight: 'bold', paddingLeft: theme.gutterWidth }),
+
+  indicatorSeparator: () => ({ display: 'none' }),
+
+  input: base => ({ ...base, color: colors.colorText }),
+
   menu: base => ({
     ...base,
     border: `1px solid ${colors.colorLightGray}`,
@@ -44,10 +34,7 @@ const styles = inputHeight => ({
     marginTop: 0,
     zIndex: 3,
   }),
-  menuList: base => ({
-    ...base,
-    padding: 0,
-  }),
+  menuList: base => ({ ...base, padding: 0 }),
   multiValueLabel: base => ({
     ...base,
     backgroundColor: colors.colorSelectSelected,
@@ -75,17 +62,43 @@ const styles = inputHeight => ({
     minHeight: inputHeight,
     paddingLeft: state.data.group ? '50px' : '12px',
   }),
-  singleValue: base => ({
-    ...base,
-    color: colors.colorText,
-  }),
+  singleValue: base => ({ ...base, color: colors.colorText }),
   valueContainer: base => ({
     ...base,
     display: 'flex',
     flexWrap: 'no-wrap',
     height: inputHeight,
+    'min-height': inputHeight,
     overflow: 'hidden',
   }),
 });
+
+const portalStyles = () => ({
+  clearIndicator: base => ({
+    ...base,
+    padding: 0,
+    color: colors.colorText,
+    ':hover': {
+      color: colors.colorText,
+    },
+  }),
+  dropdownIndicator: base => ({
+    ...base,
+    color: colors.colorText,
+    ':hover': {
+      color: colors.colorText,
+    },
+    padding: '0 2px 0 0',
+  }),
+  menuPortal: base => ({ ...base, zIndex: 9999 }),
+});
+
+const styles = (inputHeight, portal = false) => {
+  const baseStyles = mainStyles(inputHeight);
+  if (portal) {
+    return { ...baseStyles, ...portalStyles() };
+  }
+  return baseStyles;
+};
 
 export default styles;

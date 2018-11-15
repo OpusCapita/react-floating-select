@@ -165,7 +165,7 @@ export default class ComponentView extends React.PureComponent {
       <div style={{ padding: '20px' }}>
         <div style={{ marginBottom: '0.5rem' }}>Select option (height 30px)</div>
         <FloatingSelect
-          clearable={false}
+          isClearable={false}
           controlHeight="30px"
           inputId="select-example"
           name="select-example"
@@ -177,7 +177,7 @@ export default class ComponentView extends React.PureComponent {
           Create and/or select option
         </div>
         <FloatingSelectCreatable
-          clearable={false}
+          isClearable={false}
           inputId="select-creatable-example"
           name="select-creatable-example"
           options={this.state.creatableOptions}
@@ -187,7 +187,7 @@ export default class ComponentView extends React.PureComponent {
         />
         <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Select grouped option</div>
         <FloatingSelect
-          clearable={false}
+          isClearable={false}
           formatGroupLabel={this.formatGroupLabel}
           inputId="select-grouped-option"
           name="select-grouped-option"
@@ -198,7 +198,7 @@ export default class ComponentView extends React.PureComponent {
         />
         <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Multi-select option</div>
         <FloatingSelect
-          clearable={false}
+          isClearable={false}
           inputId="select-example"
           isMulti
           name="select-example"
