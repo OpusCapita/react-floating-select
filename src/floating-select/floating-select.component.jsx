@@ -4,15 +4,6 @@ import styles from './styles';
 import FloatingSelectBase from './floating-select-base.component';
 
 export default class FloatingSelect extends FloatingSelectBase {
-  constructor() {
-    super();
-    this.selectRef = null;
-  }
-
-  getRef = () => {
-    return this.selectRef;
-  };
-
   render = () => (
     <Select
       {...this.props}
