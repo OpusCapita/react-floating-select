@@ -12,6 +12,9 @@ export default class FloatingSelectCreatable extends FloatingSelectBase {
       onMenuOpen={this.handleOpenMenu}
       onMenuClose={this.handleCloseMenu}
       styles={styles(this.props.controlHeight)}
+      ref={(el) => {
+        this.selectRef = el;
+      }}
     />
   );
 }
