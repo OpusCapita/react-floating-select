@@ -3,6 +3,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.2.0
 * Add a reference to the react-select component
 
 ## 3.1.0
