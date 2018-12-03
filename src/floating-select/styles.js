@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import colors from '@opuscapita/oc-cm-common-styles/styles/_colors.scss';
 import { theme } from '@opuscapita/oc-cm-common-layouts';
 
@@ -5,7 +6,7 @@ import { theme } from '@opuscapita/oc-cm-common-layouts';
 const mainStyles = inputHeight => ({
   container: base => ({
     ...base,
-    height: inputHeight
+    height: inputHeight,
   }),
 
   control: (base, state) => ({
@@ -24,14 +25,14 @@ const mainStyles = inputHeight => ({
 
   groupHeading: () => ({
     fontWeight: 'bold',
-    paddingLeft: theme.gutterWidth
+    paddingLeft: theme.gutterWidth,
   }),
 
   indicatorSeparator: () => ({ display: 'none' }),
 
   input: base => ({
     ...base,
-    color: colors.colorText
+    color: colors.colorText,
   }),
 
   menu: base => ({
@@ -80,7 +81,7 @@ const mainStyles = inputHeight => ({
   }),
   singleValue: base => ({
     ...base,
-    color: colors.colorText
+    color: colors.colorText,
   }),
   valueContainer: base => ({
     ...base,
@@ -111,7 +112,7 @@ const portalStyles = () => ({
   }),
   menuPortal: base => ({
     ...base,
-    zIndex: 9999
+    zIndex: 9999,
   }),
 });
 
