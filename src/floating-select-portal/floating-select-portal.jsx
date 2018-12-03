@@ -18,7 +18,10 @@ export default class FloatingSelectPortal extends FloatingSelectBase {
         onMenuOpen={this.handleOpenMenu}
         onMenuClose={this.handleCloseMenu}
         styles={styles(this.props.controlHeight, Portal)}
+        ref={(el) => {
+          this.selectRef = el;
+        }}
       />
     );
-  }
+  };
 }

@@ -3,6 +3,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Add a reference to the react-select component
 
 ## 3.1.0
 * Add FloatingSelectPortal & FloatingSelectPortalCreatable component for rendering select menu into document body
