@@ -3,6 +3,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Fix focused menu option styles
 
 ## 3.2.0
 * Add a reference to the react-select component

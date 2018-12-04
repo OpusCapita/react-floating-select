@@ -1,9 +1,13 @@
+/* eslint-disable no-nested-ternary */
 import colors from '@opuscapita/oc-cm-common-styles/styles/_colors.scss';
 import { theme } from '@opuscapita/oc-cm-common-layouts';
 
 // Styles shared between both FloatingSelect implementations
 const mainStyles = inputHeight => ({
-  container: base => ({ ...base, height: inputHeight }),
+  container: base => ({
+    ...base,
+    height: inputHeight,
+  }),
 
   control: (base, state) => ({
     ...base,
@@ -19,11 +23,17 @@ const mainStyles = inputHeight => ({
     outline: 0,
   }),
 
-  groupHeading: () => ({ fontWeight: 'bold', paddingLeft: theme.gutterWidth }),
+  groupHeading: () => ({
+    fontWeight: 'bold',
+    paddingLeft: theme.gutterWidth,
+  }),
 
   indicatorSeparator: () => ({ display: 'none' }),
 
-  input: base => ({ ...base, color: colors.colorText }),
+  input: base => ({
+    ...base,
+    color: colors.colorText,
+  }),
 
   menu: base => ({
     ...base,
@@ -34,7 +44,10 @@ const mainStyles = inputHeight => ({
     marginTop: 0,
     zIndex: 3,
   }),
-  menuList: base => ({ ...base, padding: 0 }),
+  menuList: base => ({
+    ...base,
+    padding: 0,
+  }),
   multiValueLabel: base => ({
     ...base,
     backgroundColor: colors.colorSelectSelected,
@@ -55,14 +68,21 @@ const mainStyles = inputHeight => ({
   option: (base, state) => ({
     ...base,
     ':active': { backgroundColor: 'none' },
-    backgroundColor: state.isSelected ? colors.colorSelectSelected : colors.colorWhite,
-    color: colors.colorText,
+    backgroundColor: state.isSelected
+      ? colors.colorSelectSelected
+      : state.isFocused ? colors.colorSelectHover : 'transparent',
+    color: state.isDisabled
+      ? colors.colorText
+      : state.isSelected ? colors.colorText : 'inherit',
     display: state.data.isHidden && !state.data.match ? 'none' : 'block',
     ':hover': { backgroundColor: colors.colorSelectHover },
     minHeight: inputHeight,
     paddingLeft: state.data.group ? '50px' : '12px',
   }),
-  singleValue: base => ({ ...base, color: colors.colorText }),
+  singleValue: base => ({
+    ...base,
+    color: colors.colorText,
+  }),
   valueContainer: base => ({
     ...base,
     display: 'flex',
@@ -90,7 +110,10 @@ const portalStyles = () => ({
     },
     padding: '0 2px 0 0',
   }),
-  menuPortal: base => ({ ...base, zIndex: 9999 }),
+  menuPortal: base => ({
+    ...base,
+    zIndex: 9999,
+  }),
 });
 
 const styles = (inputHeight, portal = false) => {
