@@ -1,8 +1,10 @@
 # Changelog
-
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.2.2
+* Fix multiselect styles
 
 ## 3.2.1
 * Fix focused menu option styles

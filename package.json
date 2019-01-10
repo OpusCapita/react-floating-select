@@ -100,7 +100,7 @@
     "@opuscapita/oc-cm-common-layouts": "2.5.2",
     "@opuscapita/oc-cm-common-styles": "3.0.0",
     "react-icons": "2.2.7",
-    "react-select": "2.1.1",
+    "react-select": "2.2.0",
     "styled-components": "4.1.1"
   },
   "repository": {
