@@ -27,6 +27,9 @@
     "version": "npm run build && git add -A lib docs",
     "postversion": "git push && git push --tags"
   },
+  "files": [
+    "/lib"
+  ],
   "engines": {
     "node": ">=6.10.0",
     "npm": ">=5.4.0"
@@ -77,6 +80,7 @@
     "precss": "3.1.2",
     "progress-bar-webpack-plugin": "1.11.0",
     "prop-types": "15.6.2",
+    "raf": "3.4.1",
     "react": "16.6.3",
     "react-bootstrap": "0.32.4",
     "react-dom": "16.6.3",
@@ -97,7 +101,7 @@
     "write-file-webpack-plugin": "4.4.1"
   },
   "dependencies": {
-    "@opuscapita/oc-cm-common-layouts": "2.5.2",
+    "@opuscapita/oc-cm-common-layouts": "2.5.3",
     "@opuscapita/oc-cm-common-styles": "3.0.0",
     "react-icons": "2.2.7",
     "react-select": "2.2.0",
