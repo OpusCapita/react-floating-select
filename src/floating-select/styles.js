@@ -6,7 +6,7 @@ import { theme } from '@opuscapita/oc-cm-common-layouts';
 const mainStyles = inputHeight => ({
   container: base => ({
     ...base,
-    height: inputHeight,
+    lineHeight: 'normal',
   }),
 
   control: (base, state) => ({
@@ -15,12 +15,14 @@ const mainStyles = inputHeight => ({
     borderColor: state.isFocused ? colors.colorPseudoFocused : colors.colorLightGray,
     borderRadius: 0,
     boxShadow: state.isFocused ? `inset 0 1px 1px ${colors.colorWhite}, 0 0 8px ${colors.colorPseudoFocused}` : 0,
-    height: inputHeight,
     '&:hover': {
       borderColor: state.isFocused ? colors.colorPseudoFocused : colors.colorLightGray,
     },
-    minHeight: inputHeight,
+    minHeight: `calc(${inputHeight} - 2px)`, // 1px borders
+    boxSizing: 'border-box',
     outline: 0,
+    flexWrap: 'no-wrap',
+    lineHeight: 'normal',
   }),
 
   groupHeading: () => ({
@@ -53,7 +55,6 @@ const mainStyles = inputHeight => ({
     backgroundColor: colors.colorSelectSelected,
     borderRadius: 0,
     color: colors.colorText,
-    flexBasis: 'fit-content',
   }),
   multiValueRemove: base => ({
     ...base,
@@ -64,6 +65,7 @@ const mainStyles = inputHeight => ({
       backgroundColor: colors.colorButtonHover,
       color: colors.colorWhite,
     },
+    flex: '0 0 auto',
   }),
   option: (base, state) => ({
     ...base,
@@ -76,7 +78,7 @@ const mainStyles = inputHeight => ({
       : state.isSelected ? colors.colorText : 'inherit',
     display: state.data.isHidden && !state.data.match ? 'none' : 'block',
     ':hover': { backgroundColor: colors.colorSelectHover },
-    minHeight: inputHeight,
+    minHeight: `calc(${inputHeight} - 2px)`, // 1px borders
     paddingLeft: state.data.group ? '50px' : '12px',
   }),
   singleValue: base => ({
@@ -86,10 +88,29 @@ const mainStyles = inputHeight => ({
   valueContainer: base => ({
     ...base,
     display: 'flex',
-    flexWrap: 'no-wrap',
-    height: inputHeight,
-    'min-height': inputHeight,
+    flex: '1 1 auto',
+    flexWrap: 'wrap',
+    minHeight: `calc(${inputHeight} - 2px)`, // 1px borders,
+    boxSizing: 'border-box',
     overflow: 'hidden',
+    lineHeight: 'normal',
+  }),
+  indicatorsContainer: base => ({
+    ...base,
+    flex: '0 0 auto',
+    flexWrap: 'no-wrap',
+    height: `calc(${inputHeight} - 2px)`, // 1px borders,
+    boxSizing: 'border-box',
+    overflow: 'hidden',
+    lineHeight: 'normal',
+  }),
+  clearIndicator: base => ({
+    ...base,
+    paddingRight: '0',
+  }),
+  dropdownIndicator: (base, state) => ({
+    ...base,
+    paddingLeft: state.selectProps.isClearable && state.hasValue ? '0' : '8px',
   }),
 });
 
