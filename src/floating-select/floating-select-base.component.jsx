@@ -23,6 +23,14 @@ export default class FloatingSelectBase extends React.PureComponent {
     };
   }
 
+  getNonce = () => {
+    let nonce = null;
+    // Couldn't figure out a way to get the __webpack_nonce__ directly, so in the meantime
+    // we'll use window.NONCE_ID
+    if (window && window.NONCE_ID) nonce = window.NONCE_ID;
+    return nonce;
+  };
+
   handleOpenMenu = () =>
     this.setState({
       components: { DropdownIndicator: DropdownCloseIndicator },
@@ -32,4 +40,5 @@ export default class FloatingSelectBase extends React.PureComponent {
     this.setState({
       components: { DropdownIndicator: DropdownOpenIndicator },
     });
+
 }

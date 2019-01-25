@@ -15,6 +15,7 @@ export default class FloatingSelect extends FloatingSelectBase {
       onMenuOpen={this.handleOpenMenu}
       onMenuClose={this.handleCloseMenu}
       styles={styles(this.props.controlHeight)}
+      nonce={this.getNonce()}
     />
   );
 }
