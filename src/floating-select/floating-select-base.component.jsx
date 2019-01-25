@@ -31,14 +31,11 @@ export default class FloatingSelectBase extends React.PureComponent {
     return nonce;
   };
 
-  handleOpenMenu = () =>
-    this.setState({
-      components: { DropdownIndicator: DropdownCloseIndicator },
-    });
+  handleOpenMenu = () => this.setState({
+    components: { DropdownIndicator: DropdownCloseIndicator },
+  });
 
-  handleCloseMenu = () =>
-    this.setState({
-      components: { DropdownIndicator: DropdownOpenIndicator },
-    });
-
+  handleCloseMenu = () => this.setState({
+    components: { DropdownIndicator: DropdownOpenIndicator },
+  });
 }
