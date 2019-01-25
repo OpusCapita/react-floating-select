@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Add nonce support. Nonce is currently derived from window.NONCE_ID
 
 ## 3.2.2
 * Fix multiselect styles
