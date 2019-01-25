@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.2.3
 * Add nonce support. Nonce is currently derived from window.NONCE_ID
 
 ## 3.2.2
