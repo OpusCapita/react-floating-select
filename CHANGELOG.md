@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.2.4
 * Expose styles.js, so it can be used in styling of other react-select based components
 
 ## 3.2.3
