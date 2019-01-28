@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Expose styles.js, so it can be used in styling of other react-select based components
 
 ## 3.2.3
 * Add nonce support. Nonce is currently derived from window.NONCE_ID
