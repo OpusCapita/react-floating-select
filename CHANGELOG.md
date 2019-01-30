@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Ditch react-window in `FloatingSelectWindowed` component, use react-infinite instead and rename the component `FloatingSelectInfinite`
 
 ## 3.3.2
 * Degrade to `react-select` 2.2 to restore nonce support

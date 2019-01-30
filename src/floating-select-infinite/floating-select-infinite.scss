@@ -1,0 +1,10 @@
+@import '~@opuscapita/oc-cm-common-styles/styles/colors';
+
+.floating-select-infinite-menu-option {
+  line-height: 32px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $oc-color-select-hover !important;
+  }
+}

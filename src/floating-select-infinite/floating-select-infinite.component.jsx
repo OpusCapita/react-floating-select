@@ -2,10 +2,10 @@ import React from 'react';
 import Select from 'react-select';
 import styles from '../floating-select/styles';
 import FloatingSelectBase from '../floating-select/floating-select-base.component';
-import MenuList from './floating-select-windowed-menu-list.component';
+import MenuList from './floating-select-infinite-menu-list.component';
 
 
-export default class FloatingSelectWindowed extends FloatingSelectBase {
+export default class FloatingSelectInfinite extends FloatingSelectBase {
   render = () => {
     const { components, ...rest } = this.props;
 
