@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.4.0
 * Ditch react-window in `FloatingSelectWindowed` component, use react-infinite instead and rename the component `FloatingSelectInfinite`
 
 ## 3.3.2
