@@ -3,6 +3,9 @@
 
 ## <next>
 
+## 3.3.1
+* Add nonce to portal version
+
 ## 3.3.0
 * Added `FloatingSelectWindowed` component, which uses `react-window` library to display large amounts of data. Implementation is based on `react-windowed-select` [component](https://github.com/bvaughn/react-window)
 
