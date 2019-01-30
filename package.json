@@ -1,7 +1,7 @@
 {
   "author": "OpusCapita (www.opuscapita.com)",
   "name": "@opuscapita/react-floating-select",
-  "version": "3.2.4",
+  "version": "3.3.0",
   "private": false,
   "license": "MIT",
   "description": "OpusCapita floating select",
