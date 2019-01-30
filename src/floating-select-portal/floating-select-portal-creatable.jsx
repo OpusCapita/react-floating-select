@@ -21,6 +21,7 @@ export default class FloatingSelectPortalCreatable extends FloatingSelectBase {
         ref={(el) => {
           this.selectRef = el;
         }}
+        nonce={this.getNonce()}
       />
     );
   };

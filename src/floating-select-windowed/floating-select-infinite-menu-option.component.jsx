@@ -25,9 +25,7 @@ export default class MenuOption extends React.PureComponent {
 
     const inputHeight = selectProps.controlHeight || '32px';
     const customStyles = styles(inputHeight);
-    let combinedStyles = customStyles.option(baseStyle, item.props);
-    combinedStyles = { ...combinedStyles, ...{ option: { height: inputHeight } } };
-
+    const combinedStyles = customStyles.option(baseStyle, item.props);
 
     return (
       /* eslint-disable jsx-a11y/no-static-element-interactions */
