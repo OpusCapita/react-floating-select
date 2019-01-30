@@ -104,8 +104,8 @@
     "@opuscapita/oc-cm-common-layouts": "2.5.3",
     "@opuscapita/oc-cm-common-styles": "3.0.0",
     "react-icons": "2.2.7",
+    "react-infinite": "0.13.0",
     "react-select": "2.2.0",
-    "react-window": "1.5.1",
     "styled-components": "4.1.1"
   },
   "repository": {

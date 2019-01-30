@@ -4,7 +4,7 @@ import FaFolder from 'react-icons/lib/fa/folder';
 import CaretRight from 'react-icons/lib/fa/caret-right';
 import CaretDown from 'react-icons/lib/fa/caret-down';
 
-import { FloatingSelect, FloatingSelectCreatable, FloatingSelectWindowed } from '../../src/index';
+import { FloatingSelect, FloatingSelectCreatable, FloatingSelectInfinite } from '../../src/index';
 
 export default class ComponentView extends React.PureComponent {
   constructor(props) {
@@ -206,8 +206,8 @@ export default class ComponentView extends React.PureComponent {
           onChange={this.handleChange}
           value={this.state.selectedOption}
         />
-        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Windowed (virtualized) select</div>
-        <FloatingSelectWindowed
+        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Infinite (virtualized) select</div>
+        <FloatingSelectInfinite
           isClearable={false}
           controlHeight="30px"
           inputId="select-example"
