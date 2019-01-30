@@ -50,7 +50,7 @@ MenuList.propTypes = {
     controlHeight: PropTypes.string,
   }).isRequired,
   children: PropTypes.node.isRequired,
-
+  selectOption: PropTypes.func.isRequired,
 };
 
 
