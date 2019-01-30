@@ -3,6 +3,9 @@
 
 ## <next>
 
+## 3.3.2
+* Degrade to `react-select` 2.2 to restore nonce support
+
 ## 3.3.1
 * Add nonce to portal version
 
