@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Added `FloatingSelectWindowed` component, which uses `react-window` library to display large amounts of data. Implementation is based on `react-windowed-select` [component](https://github.com/bvaughn/react-window)
 
 ## 3.2.4
 * Expose styles.js, so it can be used in styling of other react-select based components
