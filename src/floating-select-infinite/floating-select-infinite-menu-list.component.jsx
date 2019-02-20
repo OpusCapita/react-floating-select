@@ -5,38 +5,58 @@ import MenuOption from './floating-select-infinite-menu-option.component';
 // Other imports
 import './floating-select-infinite.scss';
 
+const CLASS_PREFIX = 'floating-select-infinite';
+
 class MenuList extends React.PureComponent {
   onOptionClick = (item) => {
     const { selectOption } = this.props;
     selectOption(item.props.data);
   };
 
-  render() {
-    const { getStyles, innerRef, children } = this.props;
-    const menuListStyles = getStyles('menuList', this.props);
+  getItems = () => {
+    const { children } = this.props;
+    if (!children || !children.length) return [];
+    return children;
+  };
 
+  renderNoOptionsMessage = () => (
+    <div className={`${CLASS_PREFIX}-no-options-message`}>
+      {this.props.selectProps.noOptionsMessage()}
+    </div>
+  );
+
+  renderMenuItems = () => (
+    this.getItems()
+      .map(child => (
+        <MenuOption
+          item={child}
+          key={child.key}
+          onOptionClick={this.onOptionClick}
+          {...this.props}
+        />))
+  );
+
+  render() {
+    const {
+      getStyles, innerRef, selectProps,
+    } = this.props;
+    const menuListStyles = getStyles('menuList', this.props);
+    const controlHeight = parseInt(selectProps.controlHeight, 10);
     const { maxHeight } = menuListStyles;
-    const itemSize = parseInt(this.props.selectProps.controlHeight, 10);
-    const itemCount = Array.isArray(children) ? children.length : null;
+    const itemCount = this.getItems().length;
     let listHeight = maxHeight;
 
-
-    if (itemCount * itemSize < maxHeight) listHeight = itemCount * itemSize;
-
+    if (itemCount * controlHeight < maxHeight) listHeight = itemCount * controlHeight;
+    if (listHeight === 0) listHeight = controlHeight;
     return (
-      <div ref={innerRef} style={menuListStyles} className="floating-select-infinite-menu-list">
+      <div ref={innerRef} style={menuListStyles} className={`${CLASS_PREFIX}-menu-list`}>
         <Infinite
+          className={!this.getItems().length && 'no-options'}
           ref={this.setListRef}
           containerHeight={listHeight}
-          elementHeight={itemSize}
+          elementHeight={controlHeight}
         >
-          {children.map(child => (
-            <MenuOption
-              item={child}
-              key={child.key}
-              onOptionClick={this.onOptionClick}
-              {...this.props}
-            />))}
+          {this.getItems().length ? this.renderMenuItems() : this.renderNoOptionsMessage()}
         </Infinite>
       </div>
     );
@@ -48,6 +68,7 @@ MenuList.propTypes = {
   innerRef: PropTypes.func.isRequired,
   selectProps: PropTypes.shape({
     controlHeight: PropTypes.string,
+    noOptionsMessage: PropTypes.func,
   }).isRequired,
   children: PropTypes.node.isRequired,
   selectOption: PropTypes.func.isRequired,

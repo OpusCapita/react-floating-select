@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Fixed a bug where `FloatingSelectInfinite` would crash, when there were no options in the `MenuList`.
 
 ## 3.4.0
 * Ditch react-window in `FloatingSelectWindowed` component, use react-infinite instead and rename the component `FloatingSelectInfinite`
