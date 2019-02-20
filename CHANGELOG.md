@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.4.1
 * Fixed a bug where `FloatingSelectInfinite` would crash, when there were no options in the `MenuList`.
 
 ## 3.4.0
