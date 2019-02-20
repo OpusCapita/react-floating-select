@@ -15,7 +15,7 @@ class MenuList extends React.PureComponent {
 
   getItems = () => {
     const { children } = this.props;
-    if (!children || !children.length) return [];
+    if (!children) return [];
     return children;
   };
 
