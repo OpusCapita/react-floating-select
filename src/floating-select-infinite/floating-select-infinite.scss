@@ -1,10 +1,28 @@
 @import '~@opuscapita/oc-cm-common-styles/styles/colors';
 
-.floating-select-infinite-menu-option {
-  line-height: 32px;
-  cursor: pointer;
+.floating-select-infinite {
+  $line-height: 32px;
 
-  &:hover {
-    background-color: $oc-color-select-hover !important;
+  &-no-options-message {
+    display: flex;
+    line-height: $line-height;
+    justify-content: center;
+  }
+
+  &-menu-list {
+    .no-options {
+      // Overwriting inline CSS created by react-infinite
+      overflow: auto !important;
+    }
+  }
+
+  &-menu-option {
+    line-height: $line-height;
+    cursor: pointer;
+
+    &:hover {
+      // Overwriting inline CSS created by emotion
+      background-color: $oc-color-select-hover !important;
+    }
   }
 }
