@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* initial Storybook stories implementation
 * styled-components dependencies -> devDependencies
 
 ## 3.4.1
