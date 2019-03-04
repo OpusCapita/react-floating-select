@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* styled-components dependencies -> devDependencies
 
 ## 3.4.1
 * Fixed a bug where `FloatingSelectInfinite` would crash, when there were no options in the `MenuList`.
