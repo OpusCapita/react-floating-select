@@ -51,7 +51,7 @@ class MenuList extends React.PureComponent {
     return (
       <div ref={innerRef} style={menuListStyles} className={`${CLASS_PREFIX}-menu-list`}>
         <Infinite
-          className={!this.getItems().length && 'no-options'}
+          className={!this.getItems().length ? 'no-options' : null}
           ref={this.setListRef}
           containerHeight={listHeight}
           elementHeight={controlHeight}
