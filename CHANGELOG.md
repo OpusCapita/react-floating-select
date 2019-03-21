@@ -4,6 +4,7 @@
 ## <next>
 * initial Storybook stories implementation
 * styled-components dependencies -> devDependencies
+* Fixed a className related bug in `FloatingSelectInfinite`
 
 ## 3.4.1
 * Fixed a bug where `FloatingSelectInfinite` would crash, when there were no options in the `MenuList`.
