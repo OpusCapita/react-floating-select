@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.5.0
 * initial Storybook stories implementation
 * styled-components dependencies -> devDependencies
 * Fixed a className related bug in `FloatingSelectInfinite`
