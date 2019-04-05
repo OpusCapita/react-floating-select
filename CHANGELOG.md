@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.5.1
 * Changed disabled input's background color (from `#fff` to `#eee`)
 * Replaced `@opuscapita/oc-cm-common-layouts` dependency with `@opuscapita/oc-cm-theme`
 

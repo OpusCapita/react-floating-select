@@ -38,7 +38,7 @@ export default class ComponentView extends React.PureComponent {
   handleCreateOption = (e) => {
     const option = {
       label: e,
-      value: e
+      value: e,
     };
     const creatableOptions = [
       ...this.state.creatableOptions,
@@ -147,7 +147,7 @@ export default class ComponentView extends React.PureComponent {
       const group = {
         ...data,
         options,
-        isOpen: !data.isOpen
+        isOpen: !data.isOpen,
       };
       let { groupedOptions } = this.state;
       groupedOptions = groupedOptions.map(groupedOption =>
@@ -155,14 +155,11 @@ export default class ComponentView extends React.PureComponent {
       this.setState({ groupedOptions });
     };
     return (
-      <div style={{
-        display: 'flex',
-        alignItems: 'center'
-      }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
         <Button onClick={handleClick}>
           {this.renderArrow(data.isOpen)}
         </Button>
-        <FaFolder style={{ marginRight: '.5rem' }}/>
+        <FaFolder style={{ marginRight: '.5rem' }} />
         <span>{data.label}</span>
       </div>
     );
@@ -170,8 +167,8 @@ export default class ComponentView extends React.PureComponent {
 
   renderArrow = isOpen => (
     isOpen ?
-      <CaretDown style={{ marginRight: '.5rem' }}/> :
-      <CaretRight style={{ marginRight: '.5rem' }}/>
+      <CaretDown style={{ marginRight: '.5rem' }} /> :
+      <CaretRight style={{ marginRight: '.5rem' }} />
   );
 
   render() {
@@ -187,10 +184,7 @@ export default class ComponentView extends React.PureComponent {
           onChange={this.handleChange}
           value={this.state.selectedOption}
         />
-        <div style={{
-          marginTop: '20px',
-          marginBottom: '0.5rem'
-        }}>
+        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>
           Create and/or select option
         </div>
         <FloatingSelectCreatable
@@ -202,10 +196,7 @@ export default class ComponentView extends React.PureComponent {
           onCreateOption={this.handleCreateOption}
           value={this.state.selectedCreatableOption}
         />
-        <div style={{
-          marginTop: '20px',
-          marginBottom: '0.5rem'
-        }}>Select grouped option
+        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Select grouped option
         </div>
         <FloatingSelect
           isClearable={false}
@@ -217,10 +208,7 @@ export default class ComponentView extends React.PureComponent {
           onInputChange={this.handleInputChange}
           value={this.state.selectedGroupedOption}
         />
-        <div style={{
-          marginTop: '20px',
-          marginBottom: '0.5rem'
-        }}>Multi-select option
+        <div style={{}}>Multi-select option
         </div>
         <FloatingSelect
           isClearable={false}
@@ -231,10 +219,7 @@ export default class ComponentView extends React.PureComponent {
           onChange={this.handleChange}
           value={this.state.selectedOption}
         />
-        <div style={{
-          marginTop: '20px',
-          marginBottom: '0.5rem'
-        }}>Infinite (virtualized) select
+        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Infinite (virtualized) select
         </div>
         <FloatingSelectInfinite
           isClearable={false}
