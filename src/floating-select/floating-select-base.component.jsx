@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unused-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { theme } from '@opuscapita/oc-cm-common-layouts';
+import theme from '@opuscapita/oc-cm-theme';
 import { DropdownCloseIndicator, DropdownOpenIndicator } from './dropdown-indicator.component';
 
 export default class FloatingSelectBase extends React.PureComponent {
