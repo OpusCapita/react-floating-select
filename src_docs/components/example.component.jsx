@@ -1,11 +1,15 @@
 import React from 'react';
-import { Primitive } from '@opuscapita/oc-cm-common-layouts';
+import styled from 'styled-components';
 import FaFolder from 'react-icons/lib/fa/folder';
 import CaretRight from 'react-icons/lib/fa/caret-right';
 import CaretDown from 'react-icons/lib/fa/caret-down';
 
 import { FloatingSelect, FloatingSelectCreatable, FloatingSelectInfinite } from '../../src/index';
 
+const Button = styled.button`
+  background-color: transparent;
+  border: none;
+`;
 export default class ComponentView extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -21,18 +25,21 @@ export default class ComponentView extends React.PureComponent {
 
   handleChange = (e) => {
     this.setState({ selectedOption: e });
-  }
+  };
 
   handleCreatableChange = (e) => {
     this.setState({ selectedCreatableOption: e });
-  }
+  };
 
   handleGroupedChange = (e) => {
     this.setState({ selectedGroupedOption: e });
-  }
+  };
 
   handleCreateOption = (e) => {
-    const option = { label: e, value: e };
+    const option = {
+      label: e,
+      value: e
+    };
     const creatableOptions = [
       ...this.state.creatableOptions,
       option,
@@ -41,7 +48,7 @@ export default class ComponentView extends React.PureComponent {
       selectedCreatableOption: option,
       creatableOptions,
     });
-  }
+  };
 
   handleInputChange = (inputValue) => {
     let { groupedOptions } = this.state;
@@ -56,7 +63,7 @@ export default class ComponentView extends React.PureComponent {
       };
     });
     this.setState({ groupedOptions });
-  }
+  };
 
   initializeOptions = () => (
     [
@@ -137,18 +144,25 @@ export default class ComponentView extends React.PureComponent {
         ...option,
         isHidden: data.isOpen,
       }));
-      const group = { ...data, options, isOpen: !data.isOpen };
+      const group = {
+        ...data,
+        options,
+        isOpen: !data.isOpen
+      };
       let { groupedOptions } = this.state;
       groupedOptions = groupedOptions.map(groupedOption =>
         (groupedOption.label && groupedOption.label === data.label ? group : groupedOption));
       this.setState({ groupedOptions });
     };
     return (
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Primitive.BorderlessButton onClick={handleClick}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center'
+      }}>
+        <Button onClick={handleClick}>
           {this.renderArrow(data.isOpen)}
-        </Primitive.BorderlessButton>
-        <FaFolder style={{ marginRight: '.5rem' }} />
+        </Button>
+        <FaFolder style={{ marginRight: '.5rem' }}/>
         <span>{data.label}</span>
       </div>
     );
@@ -156,8 +170,8 @@ export default class ComponentView extends React.PureComponent {
 
   renderArrow = isOpen => (
     isOpen ?
-      <CaretDown style={{ marginRight: '.5rem' }} /> :
-      <CaretRight style={{ marginRight: '.5rem' }} />
+      <CaretDown style={{ marginRight: '.5rem' }}/> :
+      <CaretRight style={{ marginRight: '.5rem' }}/>
   );
 
   render() {
@@ -173,7 +187,10 @@ export default class ComponentView extends React.PureComponent {
           onChange={this.handleChange}
           value={this.state.selectedOption}
         />
-        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>
+        <div style={{
+          marginTop: '20px',
+          marginBottom: '0.5rem'
+        }}>
           Create and/or select option
         </div>
         <FloatingSelectCreatable
@@ -185,7 +202,11 @@ export default class ComponentView extends React.PureComponent {
           onCreateOption={this.handleCreateOption}
           value={this.state.selectedCreatableOption}
         />
-        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Select grouped option</div>
+        <div style={{
+          marginTop: '20px',
+          marginBottom: '0.5rem'
+        }}>Select grouped option
+        </div>
         <FloatingSelect
           isClearable={false}
           formatGroupLabel={this.formatGroupLabel}
@@ -196,7 +217,11 @@ export default class ComponentView extends React.PureComponent {
           onInputChange={this.handleInputChange}
           value={this.state.selectedGroupedOption}
         />
-        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Multi-select option</div>
+        <div style={{
+          marginTop: '20px',
+          marginBottom: '0.5rem'
+        }}>Multi-select option
+        </div>
         <FloatingSelect
           isClearable={false}
           inputId="select-example"
@@ -206,7 +231,11 @@ export default class ComponentView extends React.PureComponent {
           onChange={this.handleChange}
           value={this.state.selectedOption}
         />
-        <div style={{ marginTop: '20px', marginBottom: '0.5rem' }}>Infinite (virtualized) select</div>
+        <div style={{
+          marginTop: '20px',
+          marginBottom: '0.5rem'
+        }}>Infinite (virtualized) select
+        </div>
         <FloatingSelectInfinite
           isClearable={false}
           controlHeight="30px"

@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Changed disabled input's background color (from `#fff` to `#eee`)
+* Replaced `@opuscapita/oc-cm-common-layouts` dependency with `@opuscapita/oc-cm-theme`
 
 ## 3.5.0
 * initial Storybook stories implementation

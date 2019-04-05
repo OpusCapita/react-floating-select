@@ -1,6 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import colors from '@opuscapita/oc-cm-common-styles/styles/_colors.scss';
-import { theme } from '@opuscapita/oc-cm-common-layouts';
+import theme, { colors } from '@opuscapita/oc-cm-theme';
 
 // Styles shared between both FloatingSelect implementations
 const mainStyles = inputHeight => ({
@@ -11,12 +10,12 @@ const mainStyles = inputHeight => ({
 
   control: (base, state) => ({
     ...base,
-    backgroundColor: colors.colorWhite,
-    borderColor: state.isFocused ? colors.colorPseudoFocused : colors.colorLightGray,
+    backgroundColor: state.isDisabled ? '#eee' : colors.white,
+    borderColor: state.isFocused ? colors.yellow : colors.grey3,
     borderRadius: 0,
-    boxShadow: state.isFocused ? `inset 0 1px 1px ${colors.colorWhite}, 0 0 8px ${colors.colorPseudoFocused}` : 0,
+    boxShadow: state.isFocused ? `inset 0 1px 1px ${colors.white}, 0 0 8px ${colors.yellow}` : 0,
     '&:hover': {
-      borderColor: state.isFocused ? colors.colorPseudoFocused : colors.colorLightGray,
+      borderColor: state.isFocused ? colors.yellow : colors.grey3,
     },
     minHeight: `calc(${inputHeight} - 2px)`, // 1px borders
     boxSizing: 'border-box',
@@ -34,12 +33,12 @@ const mainStyles = inputHeight => ({
 
   input: base => ({
     ...base,
-    color: colors.colorText,
+    color: colors.grey9,
   }),
 
   menu: base => ({
     ...base,
-    border: `1px solid ${colors.colorLightGray}`,
+    border: `1px solid ${colors.grey6}`,
     borderRadius: 0,
     boxShadow: 0,
     marginBottom: 0,
@@ -52,18 +51,18 @@ const mainStyles = inputHeight => ({
   }),
   multiValueLabel: base => ({
     ...base,
-    backgroundColor: colors.colorSelectSelected,
+    backgroundColor: colors.grey5,
     borderRadius: 0,
-    color: colors.colorText,
+    color: colors.grey9,
   }),
   multiValueRemove: base => ({
     ...base,
-    backgroundColor: colors.colorSelectSelected,
+    backgroundColor: colors.grey5,
     borderRadius: 0,
-    color: colors.colorText,
+    color: colors.grey9,
     ':hover': {
-      backgroundColor: colors.colorButtonHover,
-      color: colors.colorWhite,
+      backgroundColor: colors.grey8,
+      color: colors.white,
     },
     flex: '0 0 auto',
   }),
@@ -71,19 +70,19 @@ const mainStyles = inputHeight => ({
     ...base,
     ':active': { backgroundColor: 'none' },
     backgroundColor: state.isSelected
-      ? colors.colorSelectSelected
-      : state.isFocused ? colors.colorSelectHover : 'transparent',
+      ? colors.grey5
+      : state.isFocused ? colors.grey4 : 'transparent',
     color: state.isDisabled
-      ? colors.colorText
-      : state.isSelected ? colors.colorText : 'inherit',
+      ? colors.grey9
+      : state.isSelected ? colors.grey9 : 'inherit',
     display: state.data.isHidden && !state.data.match ? 'none' : 'block',
-    ':hover': { backgroundColor: colors.colorSelectHover },
+    ':hover': { backgroundColor: colors.grey4 },
     minHeight: `calc(${inputHeight} - 2px)`, // 1px borders
     paddingLeft: state.data.group ? '50px' : '12px',
   }),
   singleValue: base => ({
     ...base,
-    color: colors.colorText,
+    color: colors.grey9,
   }),
   valueContainer: base => ({
     ...base,
@@ -118,16 +117,16 @@ const portalStyles = () => ({
   clearIndicator: base => ({
     ...base,
     padding: 0,
-    color: colors.colorText,
+    color: colors.grey9,
     ':hover': {
-      color: colors.colorText,
+      color: colors.grey9,
     },
   }),
   dropdownIndicator: base => ({
     ...base,
-    color: colors.colorText,
+    color: colors.grey9,
     ':hover': {
-      color: colors.colorText,
+      color: colors.grey9,
     },
     padding: '0 2px 0 0',
   }),
