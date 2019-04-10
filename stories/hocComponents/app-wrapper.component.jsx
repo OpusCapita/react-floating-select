@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { theme } from '@opuscapita/oc-cm-common-layouts';
+import theme from '@opuscapita/oc-cm-theme';
 
 const LayoutWrapper = styled.div`
   max-width: ${props => props.maxWidth || '100vw'};

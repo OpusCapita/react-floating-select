@@ -3,6 +3,14 @@
 
 ## <next>
 
+## 3.6.0
+* Added `customStyles` prop that is merged with default style functions
+* Fixed `components` props to all exported components
+* Fixed indicator icon mouseover styles
+* Fixed 100% width when using flex as container
+* Refactored demo
+* Upgraded some components
+
 ## 3.5.1
 * Changed disabled input's background color (from `#fff` to `#eee`)
 * Replaced `@opuscapita/oc-cm-common-layouts` dependency with `@opuscapita/oc-cm-theme`

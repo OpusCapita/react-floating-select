@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 // Other imports
-import styles from '../floating-select/styles';
+import styles from '../base/styles';
 import './floating-select-infinite.scss';
 
 export default class MenuOption extends React.PureComponent {

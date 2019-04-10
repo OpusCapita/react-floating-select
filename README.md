@@ -20,28 +20,44 @@ Also you need to configure sass loader, since all the styles are in sass format.
 * With webpack use [resolve.mainFields](https://webpack.js.org/configuration/resolve/#resolve-mainfields) to configure the module type.
 * Add [SASS loader](https://github.com/webpack-contrib/sass-loader) to support importing of SASS styles.
 
-### API
+### Exported components
+* FloatingSelect
+* FloatingSelectCreatable
+* FloatingSelectInfinite
+* FloatingSelectInfiniteCreatable
+* FloatingSelectPortal **will be removed**
+* FloatingSelectPortalCreatable **will be removed**
 
+### API
 * [react-select props](https://react-select.com/props)
 * [Grouped options](https://github.com/JedWatson/react-select/issues/2417)
 
-Additionally
-
-| Prop name     | Type   | Default | Description                  |
-| ------------- | ------ | ------- | ---------------------------- |
-| controlHeight | string |         | Custom height of the control |
-
+| Prop name     | Type   | Default | Description                                                   |
+| ------------- | ------ | ------- | ------------------------------------------------------------- |
+| name          | string |         | It's recommended to give unique name for select component     |
+| controlHeight | string |         | Custom height of the control                                  |
+| customStyles  | object | {}      | Custom [style functions](https://react-select.com/styles) to be merged with default style functions |
 
 ### Code example
 ```jsx
 import React from 'react';
 import { FloatingSelect } from '@opuscapita/react-floating-select';
+import myOptions from './my-options';
 
 export default class ReactView extends React.Component {
+  state = {
+    value: null,
+  }
+
+  handleOnChange = value => this.setState({ value })
+
   render() {
     return (
       <FloatingSelect
-        propName="propValue"
+        name="my-select"
+        options={myOptions}
+        value={this.state.value}
+        onChange={this.handleOnChange}
       />
     );
   }

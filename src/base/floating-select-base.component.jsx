@@ -3,15 +3,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import theme from '@opuscapita/oc-cm-theme';
-import { DropdownCloseIndicator, DropdownOpenIndicator } from './dropdown-indicator.component';
+import {
+  DropdownCloseIndicator,
+  DropdownOpenIndicator,
+} from './components/dropdown-indicator.component';
 
 export default class FloatingSelectBase extends React.PureComponent {
   static propTypes = {
     controlHeight: PropTypes.string,
+    customStyles: PropTypes.shape({
+      clearIndicator: PropTypes.func,
+      container: PropTypes.func,
+      control: PropTypes.func,
+      dropdownIndicator: PropTypes.func,
+      group: PropTypes.func,
+      groupHeading: PropTypes.func,
+      indicatorsContainer: PropTypes.func,
+      indicatorSeparator: PropTypes.func,
+      input: PropTypes.func,
+      loadingIndicator: PropTypes.func,
+      loadingMessage: PropTypes.func,
+      menu: PropTypes.func,
+      menuList: PropTypes.func,
+      menuPortal: PropTypes.func,
+      multiValue: PropTypes.func,
+      multiValueLabel: PropTypes.func,
+      multiValueRemove: PropTypes.func,
+      noOptionsMessage: PropTypes.func,
+      option: PropTypes.func,
+      placeholder: PropTypes.func,
+      singleValue: PropTypes.func,
+      valueContainer: PropTypes.func,
+    }),
   };
 
   static defaultProps = {
     controlHeight: theme.formControls.input.height,
+    customStyles: {},
   };
 
   constructor(props) {
