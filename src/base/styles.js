@@ -31,6 +31,8 @@ const mainStyles = inputHeight => ({
   input: base => ({
     ...base,
     color: colors.grey9,
+    padding: 0,
+    margin: 0,
   }),
   menu: base => ({
     ...base,

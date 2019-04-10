@@ -8,6 +8,7 @@
 * Fixed `components` props to all exported components
 * Fixed indicator icon mouseover styles
 * Fixed 100% width when using flex as container
+* Fix `controlHeight` prop when `isSearchable` is enabled
 * Refactored demo
 * Upgraded some components
 
