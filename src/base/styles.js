@@ -5,9 +5,9 @@ import theme, { colors } from '@opuscapita/oc-cm-theme';
 const mainStyles = inputHeight => ({
   container: base => ({
     ...base,
+    width: '100%',
     lineHeight: 'normal',
   }),
-
   control: (base, state) => ({
     ...base,
     backgroundColor: state.isDisabled ? '#eee' : colors.white,
@@ -23,19 +23,17 @@ const mainStyles = inputHeight => ({
     flexWrap: 'no-wrap',
     lineHeight: 'normal',
   }),
-
   groupHeading: () => ({
     fontWeight: 'bold',
     paddingLeft: theme.gutterWidth,
   }),
-
   indicatorSeparator: () => ({ display: 'none' }),
-
   input: base => ({
     ...base,
     color: colors.grey9,
+    padding: 0,
+    margin: 0,
   }),
-
   menu: base => ({
     ...base,
     border: `1px solid ${colors.grey6}`,
@@ -44,6 +42,10 @@ const mainStyles = inputHeight => ({
     marginBottom: 0,
     marginTop: 0,
     zIndex: 3,
+  }),
+  menuPortal: base => ({
+    ...base,
+    zIndex: 9999,
   }),
   menuList: base => ({
     ...base,
@@ -105,41 +107,45 @@ const mainStyles = inputHeight => ({
   }),
   clearIndicator: base => ({
     ...base,
+    color: colors.grey9,
+    ':hover': {
+      cursor: 'pointer',
+      color: colors.grey9,
+    },
     paddingRight: '0',
   }),
   dropdownIndicator: (base, state) => ({
     ...base,
+    color: colors.grey9,
+    ':hover': {
+      cursor: 'pointer',
+      color: colors.grey9,
+    },
     paddingLeft: state.selectProps.isClearable && state.hasValue ? '0' : '8px',
   }),
 });
 
-const portalStyles = () => ({
-  clearIndicator: base => ({
-    ...base,
-    padding: 0,
-    color: colors.grey9,
-    ':hover': {
-      color: colors.grey9,
-    },
-  }),
-  dropdownIndicator: base => ({
-    ...base,
-    color: colors.grey9,
-    ':hover': {
-      color: colors.grey9,
-    },
-    padding: '0 2px 0 0',
-  }),
-  menuPortal: base => ({
-    ...base,
-    zIndex: 9999,
-  }),
-});
+// merge style functions with customStyle functions
+const mergeStyles = (baseStyles, customStyles) => {
+  const mergedStyles = Object.assign({}, baseStyles);
+  Object.keys(customStyles).forEach((key) => {
+    if (baseStyles[key]) {
+      mergedStyles[key] = (base, state) => ({
+        ...base,
+        ...baseStyles[key]({}, state),
+        ...customStyles[key]({}, state),
+      });
+    } else {
+      mergedStyles[key] = customStyles[key];
+    }
+  });
+  return mergedStyles;
+};
 
-const styles = (inputHeight, portal = false) => {
+const styles = (inputHeight, customStyles) => {
   const baseStyles = mainStyles(inputHeight);
-  if (portal) {
-    return { ...baseStyles, ...portalStyles() };
+  if (customStyles) {
+    return mergeStyles(baseStyles, customStyles);
   }
   return baseStyles;
 };
