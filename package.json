@@ -108,7 +108,7 @@
     "write-file-webpack-plugin": "4.5.0"
   },
   "dependencies": {
-    "@opuscapita/oc-cm-theme": "0.0.9",
+    "@opuscapita/oc-cm-theme": "0.1.0",
     "react-icons": "2.2.7",
     "react-infinite": "0.13.0",
     "react-select": "2.2.0"

@@ -27,6 +27,7 @@ export default class ExampleContainer extends React.PureComponent {
     isSearchable: false,
     isClearable: false,
     isMulti: false,
+    isDisabled: false,
   }
 
   changeNumberProp = prop => (e) => {
@@ -100,6 +101,7 @@ export default class ExampleContainer extends React.PureComponent {
               {this.renderCheckbox('isSearchable')}
               {this.renderCheckbox('isClearable')}
               {this.renderCheckbox('isMulti')}
+              {this.renderCheckbox('isDisabled')}
               {this.renderNumberInput('controlHeight')}
             </Panel>
           </Col>
