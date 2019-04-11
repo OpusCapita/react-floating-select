@@ -41,6 +41,7 @@
     "react-dom": "15 || 16"
   },
   "devDependencies": {
+    "@opuscapita/oc-cm-common-styles": "3.0.0",
     "@storybook/addon-knobs": "3.4.7",
     "@storybook/addon-options": "3.4.7",
     "@storybook/react": "3.4.7",
@@ -107,7 +108,6 @@
     "write-file-webpack-plugin": "4.5.0"
   },
   "dependencies": {
-    "@opuscapita/oc-cm-common-styles": "3.0.0",
     "@opuscapita/oc-cm-theme": "0.0.9",
     "react-icons": "2.2.7",
     "react-infinite": "0.13.0",

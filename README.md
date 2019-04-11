@@ -24,7 +24,6 @@ Also you need to configure sass loader, since all the styles are in sass format.
 * FloatingSelect
 * FloatingSelectCreatable
 * FloatingSelectInfinite
-* FloatingSelectInfiniteCreatable
 * FloatingSelectPortal **will be removed**
 * FloatingSelectPortalCreatable **will be removed**
 
