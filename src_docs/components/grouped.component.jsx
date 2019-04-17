@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FaFolder from 'react-icons/lib/fa/folder';
-import CaretRight from 'react-icons/lib/fa/caret-right';
-import CaretDown from 'react-icons/lib/fa/caret-down';
+import { FaFolder, FaCaretRight, FaCaretDown } from 'react-icons/fa';
 import faker from 'faker';
 import { FloatingSelect } from '../../src/index';
 
@@ -93,8 +91,8 @@ export default class GroupedExample extends React.PureComponent {
 
   renderArrow = isOpen => (
     isOpen ?
-      <CaretDown style={{ marginRight: '.5rem' }} /> :
-      <CaretRight style={{ marginRight: '.5rem' }} />
+      <FaCaretDown style={{ marginRight: '.5rem' }} /> :
+      <FaCaretRight style={{ marginRight: '.5rem' }} />
   );
 
   render() {

@@ -3,6 +3,9 @@
 
 ## <next>
 
+## 3.6.1
+* Updrade `@opuscapita/oc-cm-theme` and other dependencies
+
 ## 3.6.0
 * Added `customStyles` prop that is merged with default style functions
 * Fixed `components` props to all exported components

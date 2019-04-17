@@ -1,18 +1,17 @@
 import React from 'react';
 import { components } from 'react-select';
-import CaretDown from 'react-icons/lib/fa/caret-down';
-import CaretUp from 'react-icons/lib/fa/caret-up';
+import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
 
 export function DropdownOpenIndicator(props) {
   return components.DropdownIndicator && (
     <components.DropdownIndicator {...props}>
-      <CaretDown height="16px" width="16px" />
+      <FaCaretDown height="16px" width="16px" />
     </components.DropdownIndicator>);
 }
 
 export function DropdownCloseIndicator(props) {
   return components.DropdownIndicator && (
     <components.DropdownIndicator {...props}>
-      <CaretUp height="16px" width="16px" />
+      <FaCaretUp height="16px" width="16px" />
     </components.DropdownIndicator>);
 }
