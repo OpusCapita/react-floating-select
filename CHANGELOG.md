@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Added box-shadow for menu
 
 ## 3.6.1
 * Updrade `@opuscapita/oc-cm-theme` and other dependencies
