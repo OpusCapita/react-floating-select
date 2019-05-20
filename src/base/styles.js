@@ -38,7 +38,7 @@ const mainStyles = inputHeight => ({
     ...base,
     border: `1px solid ${colors.grey6}`,
     borderRadius: 0,
-    boxShadow: 0,
+    boxShadow: '0 6px 12px rgba(0, 0, 0, 0.175)',
     marginBottom: 0,
     marginTop: 0,
     zIndex: 3,
