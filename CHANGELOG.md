@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.6.2
 * Added box-shadow for menu
 
 ## 3.6.1
