@@ -23,9 +23,17 @@ const mainStyles = inputHeight => ({
     flexWrap: 'no-wrap',
     lineHeight: 'normal',
   }),
+  group: () => ({
+    padding: 0,
+  }),
   groupHeading: () => ({
     fontWeight: 'bold',
+    paddingTop: theme.halfGutterWidth,
     paddingLeft: theme.gutterWidth,
+    paddingBottom: theme.halfGutterWidth,
+    '&:hover': {
+      backgroundColor: colors.grey4,
+    },
   }),
   indicatorSeparator: () => ({ display: 'none' }),
   input: base => ({

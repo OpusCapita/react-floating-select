@@ -79,11 +79,11 @@ export default class GroupedExample extends React.PureComponent {
       this.setState({ groupedOptions });
     };
     return (
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Button onClick={handleClick}>
+      <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={handleClick}>
+        <Button>
           {this.renderArrow(data.isOpen)}
         </Button>
-        <FaFolder style={{ marginRight: '.5rem' }} />
+        <FaFolder style={{ marginRight: '.5rem', minHeight: '1.5rem', minWidth: '1.5rem' }} />
         <span>{data.label}</span>
       </div>
     );
