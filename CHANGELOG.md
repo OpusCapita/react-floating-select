@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Added hover background color for group heading
 
 ## 3.6.2
 * Added box-shadow for menu

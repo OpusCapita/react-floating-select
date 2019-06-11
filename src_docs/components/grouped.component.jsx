@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import styled from 'styled-components';
 import { FaFolder, FaCaretRight, FaCaretDown } from 'react-icons/fa';
@@ -79,11 +80,17 @@ export default class GroupedExample extends React.PureComponent {
       this.setState({ groupedOptions });
     };
     return (
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Button onClick={handleClick}>
+      // eslint-disable-next-line jsx-a11y/interactive-supports-focus
+      <div
+        style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
+        onClick={handleClick}
+        role="button"
+        aria-pressed="false"
+      >
+        <Button>
           {this.renderArrow(data.isOpen)}
         </Button>
-        <FaFolder style={{ marginRight: '.5rem' }} />
+        <FaFolder style={{ marginRight: '.5rem', minHeight: '1.5rem', minWidth: '1.5rem' }} />
         <span>{data.label}</span>
       </div>
     );
