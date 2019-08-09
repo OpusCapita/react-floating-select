@@ -28,7 +28,7 @@ class MenuList extends React.PureComponent {
   renderMenuItems = () => {
     const { selectProps: { components } } = this.props;
     const renderOption = components && components.Option
-      ? child => <components.Option {...child.props} />
+      ? child => <components.Option key={child.key} {...child.props} />
       : child => (
         <MenuOption
           item={child}
