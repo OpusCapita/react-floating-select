@@ -25,17 +25,6 @@ class MenuList extends React.PureComponent {
     </div>
   );
 
-  // renderMenuItems = () => (
-  //   this.getItems()
-  //     .map(child => (
-  //       <MenuOption
-  //         item={child}
-  //         key={child.key}
-  //         onOptionClick={this.onOptionClick}
-  //         {...this.props}
-  //       />))
-  // );
-
   renderMenuItems = () => {
     const { selectProps: { components } } = this.props;
     const renderOption = components && components.Option
