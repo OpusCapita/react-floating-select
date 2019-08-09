@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Added possibility to custom `FloatingSelectInfinite` menu list options
 
 ## 3.6.3
 * Added hover background color for group heading
