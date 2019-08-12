@@ -25,16 +25,19 @@ class MenuList extends React.PureComponent {
     </div>
   );
 
-  renderMenuItems = () => (
-    this.getItems()
-      .map(child => (
+  renderMenuItems = () => {
+    const { selectProps: { components } } = this.props;
+    const renderOption = components && components.Option
+      ? child => <components.Option key={child.key} {...child.props} />
+      : child => (
         <MenuOption
           item={child}
           key={child.key}
           onOptionClick={this.onOptionClick}
           {...this.props}
-        />))
-  );
+        />);
+    return this.getItems().map(renderOption);
+  };
 
   render() {
     const {
@@ -73,6 +76,5 @@ MenuList.propTypes = {
   children: PropTypes.node.isRequired,
   selectOption: PropTypes.func.isRequired,
 };
-
 
 export default MenuList;
