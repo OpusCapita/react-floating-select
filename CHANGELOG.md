@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.6.4
 * Added possibility to custom `FloatingSelectInfinite` menu list options
 
 ## 3.6.3
