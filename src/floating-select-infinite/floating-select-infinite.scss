@@ -8,6 +8,7 @@
   }
 
   &-menu-list.no-options {
+    // Overwriting inline CSS created by react-infinite
     overflow: auto !important;
   }
 
