@@ -58,7 +58,7 @@ class MenuList extends React.PureComponent {
         containerHeight={listHeight}
         elementHeight={controlHeight}
       >
-        {this.getItems().length ? this.renderMenuItems() : this.renderNoOptionsMessage()}
+        {itemCount ? this.renderMenuItems() : this.renderNoOptionsMessage()}
       </Infinite>
     );
   }
