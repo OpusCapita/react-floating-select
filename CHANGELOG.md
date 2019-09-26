@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Updated react-select v3 in order to improve performance
 
 ## 3.6.4
 * Added possibility to custom `FloatingSelectInfinite` menu list options
