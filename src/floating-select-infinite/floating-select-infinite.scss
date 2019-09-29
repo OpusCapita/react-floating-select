@@ -7,11 +7,9 @@
     justify-content: center;
   }
 
-  &-menu-list {
-    .no-options {
-      // Overwriting inline CSS created by react-infinite
-      overflow: auto !important;
-    }
+  &-menu-list.no-options {
+    // Overwriting inline CSS created by react-infinite
+    overflow: auto !important;
   }
 
   &-menu-option {

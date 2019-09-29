@@ -1,5 +1,5 @@
 import React from 'react';
-import Creatable from 'react-select/lib/Creatable';
+import Creatable from 'react-select/creatable';
 import styles from '../base/styles';
 import FloatingSelectBase from '../base/floating-select-base.component';
 
