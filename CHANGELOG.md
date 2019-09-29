@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 3.7.0
 * Updated react-select v3 in order to improve performance
 
 ## 3.6.4
