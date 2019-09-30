@@ -11,6 +11,12 @@ npm install @opuscapita/react-floating-select
 ### Demo
 View the [Demo](https://opuscapita.github.io/react-floating-select)
 
+### Change log
+View the [Change log](CHANGELOG.md)
+
+### Migrate guide
+View the [Migrate guide](MIGRATEGUIDE.md) between major versions
+
 ### Builds
 #### UMD
 The default build with compiled styles in the .js file. Also minified version available in the lib/umd directory.

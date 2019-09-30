@@ -3,8 +3,8 @@
 
 ## <next>
 
-## 3.7.0
-* Updated react-select v3 in order to improve performance
+## 4.0.0
+* Updated react-select v3 in order to improve performance. See the [migrate guide](MIGRATEGUIDE.md).
 
 ## 3.6.4
 * Added possibility to custom `FloatingSelectInfinite` menu list options
