@@ -41,7 +41,7 @@ class MenuList extends React.PureComponent {
 
   render() {
     const {
-      getStyles, selectProps,
+      getStyles, innerRef, selectProps,
     } = this.props;
     const menuListStyles = getStyles('menuList', this.props);
     const controlHeight = parseInt(selectProps.controlHeight, 10);
@@ -54,7 +54,7 @@ class MenuList extends React.PureComponent {
     return (
       <Infinite
         className={!this.getItems().length ? `${CLASS_PREFIX}-menu-list no-options` : `${CLASS_PREFIX}-menu-list`}
-        ref={this.setListRef}
+        ref={innerRef}
         containerHeight={listHeight}
         elementHeight={controlHeight}
       >
@@ -66,6 +66,7 @@ class MenuList extends React.PureComponent {
 
 MenuList.propTypes = {
   getStyles: PropTypes.func.isRequired,
+  innerRef: PropTypes.func.isRequired,
   selectProps: PropTypes.shape({
     controlHeight: PropTypes.string,
     noOptionsMessage: PropTypes.func,
