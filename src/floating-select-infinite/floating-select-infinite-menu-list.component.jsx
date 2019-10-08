@@ -71,7 +71,7 @@ class MenuList extends React.PureComponent {
     // with IE. Without this outermost div clicking scrollbar closes the menu but scrolling with
     // mouse wheel works with IE. This othermost div causes scrolling with mouse wheel fail with
     // Chrome. Therefore the outhermost element is render only with IE.
-    if (/*@cc_on!@*/false || !!document.documentMode) {
+    if (/* @cc_on!@ */false || !!document.documentMode) {
       return (
         <div ref={innerRef}>
           {this.renderInfiniteList()}
