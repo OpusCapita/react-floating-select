@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 4.0.1
 * Fixed infinite virtualized list scrolling with IE
 
 ## 4.0.0
