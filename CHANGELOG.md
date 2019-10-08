@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Fixed infinite virtualized list scrolling with IE
 
 ## 4.0.0
 * Updated react-select v3 in order to improve performance. See the [migrate guide](MIGRATEGUIDE.md).
