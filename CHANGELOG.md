@@ -2,6 +2,7 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+* Fixed virtualized list ref prop in order to avoid react-select invoking ref's contains function
 
 ## 4.0.1
 * Fixed infinite virtualized list scrolling with IE

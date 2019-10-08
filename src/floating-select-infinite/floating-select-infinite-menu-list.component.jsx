@@ -39,9 +39,9 @@ class MenuList extends React.PureComponent {
     return this.getItems().map(renderOption);
   };
 
-  render() {
+  renderInfiniteList() {
     const {
-      getStyles, innerRef, selectProps,
+      getStyles, selectProps,
     } = this.props;
     const menuListStyles = getStyles('menuList', this.props);
     const controlHeight = parseInt(selectProps.controlHeight, 10);
@@ -51,16 +51,35 @@ class MenuList extends React.PureComponent {
 
     if (itemCount * controlHeight < maxHeight) listHeight = itemCount * controlHeight;
     if (listHeight === 0) listHeight = controlHeight;
+    // innerRef cannot be ref prop of Infinite, otherwise react-select
+    // calls ref's contains function on blur
     return (
       <Infinite
         className={!this.getItems().length ? `${CLASS_PREFIX}-menu-list no-options` : `${CLASS_PREFIX}-menu-list`}
-        ref={innerRef}
         containerHeight={listHeight}
         elementHeight={controlHeight}
       >
         {itemCount ? this.renderMenuItems() : this.renderNoOptionsMessage()}
       </Infinite>
     );
+  }
+
+  render() {
+    const { innerRef } = this.props;
+
+    // If the outermost div has ref function, scrollbar works but scrolling with mouse wheel not
+    // with IE. Without this outermost div clicking scrollbar closes the menu but scrolling with
+    // mouse wheel works with IE. This othermost div causes scrolling with mouse wheel fail with
+    // Chrome. Therefore the outhermost element is render only with IE.
+    if (/*@cc_on!@*/false || !!document.documentMode) {
+      return (
+        <div ref={innerRef}>
+          {this.renderInfiniteList()}
+        </div>
+      );
+    }
+
+    return this.renderInfiniteList();
   }
 }
 
