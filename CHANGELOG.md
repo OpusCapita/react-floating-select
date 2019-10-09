@@ -2,6 +2,8 @@
 * In general follow (https://docs.npmjs.com/getting-started/semantic-versioning) versioning.
 
 ## <next>
+
+## 4.0.2
 * Fixed virtualized list ref prop in order to avoid react-select invoking ref's contains function
 
 ## 4.0.1
