@@ -26,12 +26,15 @@ const Container2 = styled(Container)`
 `;
 
 export default class InfiniteExample extends React.PureComponent {
-  state = {
-    options: getSimpleData(1000),
-    selected: null,
+  constructor(props) {
+    super(props);
+    this.state = {
+      options: getSimpleData(1000),
+      selected: null,
+    };
   }
 
-  handleChange = selected => this.setState({ selected });
+  handleChange = (selected) => this.setState({ selected });
 
   render() {
     const {

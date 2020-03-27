@@ -46,7 +46,7 @@ const MultiValue = (props) => {
   if (value[0] && value[0].value && data && data.value && value[0].value !== data.value) {
     return null;
   }
-  const valueString = value.map(v => v.label).join(', ');
+  const valueString = value.map((v) => v.label).join(', ');
   if (value.length > 1) {
     return (
       <OverlayTrigger
@@ -54,8 +54,14 @@ const MultiValue = (props) => {
         overlay={(
           <Tooltip id={`${selectProps.name}-tooltip`}>
             <TooltipTextWrapper>
-              {`${value.length} persons selected:`}<br />
-              {value.map(v => <React.Fragment key={v.value}><span>{`- ${v.label}`}</span><br /></React.Fragment>)}
+              {`${value.length} persons selected:`}
+              <br />
+              {value.map((v) => (
+                <React.Fragment key={v.value}>
+                  <span>{`- ${v.label}`}</span>
+                  <br />
+                </React.Fragment>
+              ))}
             </TooltipTextWrapper>
           </Tooltip>
         )}
@@ -77,17 +83,24 @@ const MultiValue = (props) => {
 };
 MultiValue.propTypes = {
   getValue: PropTypes.func.isRequired,
-  data: PropTypes.shape({}).isRequired,
-  selectProps: PropTypes.shape({}).isRequired,
+  data: PropTypes.shape({
+    value: PropTypes.any,
+  }).isRequired,
+  selectProps: PropTypes.shape({
+    name: PropTypes.string,
+  }).isRequired,
 };
 
 export default class MultiSingleLineExample extends React.PureComponent {
-  state = {
-    options: getSimpleData(10),
-    selected: null,
+  constructor(props) {
+    super(props);
+    this.state = {
+      options: getSimpleData(10),
+      selected: null,
+    };
   }
 
-  handleChange = selected => this.setState({ selected });
+  handleChange = (selected) => this.setState({ selected });
 
   render() {
     const {

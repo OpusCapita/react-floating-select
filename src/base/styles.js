@@ -2,8 +2,8 @@
 import theme, { colors } from '@opuscapita/oc-cm-theme';
 
 // Styles shared between both FloatingSelect implementations
-const mainStyles = inputHeight => ({
-  container: base => ({
+const mainStyles = (inputHeight) => ({
+  container: (base) => ({
     ...base,
     width: '100%',
     lineHeight: 'normal',
@@ -36,13 +36,13 @@ const mainStyles = inputHeight => ({
     },
   }),
   indicatorSeparator: () => ({ display: 'none' }),
-  input: base => ({
+  input: (base) => ({
     ...base,
     color: colors.grey9,
     padding: 0,
     margin: 0,
   }),
-  menu: base => ({
+  menu: (base) => ({
     ...base,
     border: `1px solid ${colors.grey6}`,
     borderRadius: 0,
@@ -51,21 +51,21 @@ const mainStyles = inputHeight => ({
     marginTop: 0,
     zIndex: 3,
   }),
-  menuPortal: base => ({
+  menuPortal: (base) => ({
     ...base,
     zIndex: 9999,
   }),
-  menuList: base => ({
+  menuList: (base) => ({
     ...base,
     padding: 0,
   }),
-  multiValueLabel: base => ({
+  multiValueLabel: (base) => ({
     ...base,
     backgroundColor: colors.grey5,
     borderRadius: 0,
     color: colors.grey9,
   }),
-  multiValueRemove: base => ({
+  multiValueRemove: (base) => ({
     ...base,
     backgroundColor: colors.grey5,
     borderRadius: 0,
@@ -90,11 +90,11 @@ const mainStyles = inputHeight => ({
     minHeight: `calc(${inputHeight} - 2px)`, // 1px borders
     paddingLeft: state.data.group ? '50px' : '12px',
   }),
-  singleValue: base => ({
+  singleValue: (base) => ({
     ...base,
     color: colors.grey9,
   }),
-  valueContainer: base => ({
+  valueContainer: (base) => ({
     ...base,
     display: 'flex',
     flex: '1 1 auto',
@@ -104,7 +104,7 @@ const mainStyles = inputHeight => ({
     overflow: 'hidden',
     lineHeight: 'normal',
   }),
-  indicatorsContainer: base => ({
+  indicatorsContainer: (base) => ({
     ...base,
     flex: '0 0 auto',
     flexWrap: 'no-wrap',
@@ -113,7 +113,7 @@ const mainStyles = inputHeight => ({
     overflow: 'hidden',
     lineHeight: 'normal',
   }),
-  clearIndicator: base => ({
+  clearIndicator: (base) => ({
     ...base,
     color: colors.grey9,
     ':hover': {
@@ -135,7 +135,7 @@ const mainStyles = inputHeight => ({
 
 // merge style functions with customStyle functions
 const mergeStyles = (baseStyles, customStyles) => {
-  const mergedStyles = Object.assign({}, baseStyles);
+  const mergedStyles = { ...baseStyles };
   Object.keys(customStyles).forEach((key) => {
     if (baseStyles[key]) {
       mergedStyles[key] = (base, state) => ({

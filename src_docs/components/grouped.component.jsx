@@ -41,17 +41,20 @@ const Button = styled.button`
 `;
 
 export default class GroupedExample extends React.PureComponent {
-  state = {
-    groupedOptions: getGroupedData(5, 6),
-    selected: null,
+  constructor(props) {
+    super(props);
+    this.state = {
+      groupedOptions: getGroupedData(5, 6),
+      selected: null,
+    };
   }
 
-  handleChange = selected => this.setState({ selected });
+  handleChange = (selected) => this.setState({ selected });
 
   handleInputChange = (inputValue) => {
     let { groupedOptions } = this.state;
     groupedOptions = groupedOptions.map((group) => {
-      const options = group.options.map(option => ({
+      const options = group.options.map((option) => ({
         ...option,
         match: option.label && option.label.includes(inputValue) && inputValue,
       }));
@@ -65,7 +68,7 @@ export default class GroupedExample extends React.PureComponent {
 
   formatGroupLabel = (data) => {
     const handleClick = () => {
-      const options = data.options.map(option => ({
+      const options = data.options.map((option) => ({
         ...option,
         isHidden: data.isOpen,
       }));
@@ -75,8 +78,9 @@ export default class GroupedExample extends React.PureComponent {
         isOpen: !data.isOpen,
       };
       let { groupedOptions } = this.state;
-      groupedOptions = groupedOptions.map(groupedOption =>
-        (groupedOption.label && groupedOption.label === data.label ? group : groupedOption));
+      groupedOptions = groupedOptions.map((groupedOption) => (
+        groupedOption.label && groupedOption.label === data.label ? group : groupedOption
+      ));
       this.setState({ groupedOptions });
     };
     return (
@@ -96,10 +100,10 @@ export default class GroupedExample extends React.PureComponent {
     );
   };
 
-  renderArrow = isOpen => (
-    isOpen ?
-      <FaCaretDown style={{ marginRight: '.5rem' }} /> :
-      <FaCaretRight style={{ marginRight: '.5rem' }} />
+  renderArrow = (isOpen) => (
+    isOpen
+      ? <FaCaretDown style={{ marginRight: '.5rem' }} />
+      : <FaCaretRight style={{ marginRight: '.5rem' }} />
   );
 
   render() {

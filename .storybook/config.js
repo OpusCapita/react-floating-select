@@ -1,24 +1,19 @@
-import {
-  configure,
-  addDecorator
-} from '@storybook/react';
-import {
-  setOptions
-} from '@storybook/addon-options';
+/* Storybook configuration file */
+import { configure, addDecorator } from '@storybook/react';
+import { withOptions } from '@storybook/addon-options';
 import { withKnobs } from '@storybook/addon-knobs';
 
-setOptions({
-  name: "OpusCapita react-floating-select Storybook",
+withOptions({
+  name: "React Component Template",
   addonPanelInRight: true,
-  hiearchySeparator: /\//,
-  hiearchyRootSeparator: /\|/,
+  hierarchySeparator: /\//,
+  hierarchyRootSeparator: /\|/,
 });
 
-// AddDecorator
+// Add withKnobs decorator globally in every Component story
 addDecorator(withKnobs);
 
-function loadStories() {
-  require('../stories/index.story.jsx');
-}
+// Load Component Stories
+function loadStories() { require('../stories/index.story.jsx'); }
 
 configure(loadStories, module);

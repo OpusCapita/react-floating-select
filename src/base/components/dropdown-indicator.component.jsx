@@ -6,12 +6,14 @@ export function DropdownOpenIndicator(props) {
   return components.DropdownIndicator && (
     <components.DropdownIndicator {...props}>
       <FaCaretDown height="16px" width="16px" />
-    </components.DropdownIndicator>);
+    </components.DropdownIndicator>
+  );
 }
 
 export function DropdownCloseIndicator(props) {
   return components.DropdownIndicator && (
     <components.DropdownIndicator {...props}>
       <FaCaretUp height="16px" width="16px" />
-    </components.DropdownIndicator>);
+    </components.DropdownIndicator>
+  );
 }

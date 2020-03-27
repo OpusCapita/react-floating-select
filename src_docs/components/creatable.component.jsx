@@ -26,12 +26,15 @@ const Container2 = styled(Container)`
 `;
 
 export default class CreatableExample extends React.PureComponent {
-  state = {
-    options: getSimpleData(10),
-    selected: null,
+  constructor(props) {
+    super(props);
+    this.state = {
+      options: getSimpleData(10),
+      selected: null,
+    };
   }
 
-  handleChange = selected => this.setState({ selected });
+  handleChange = (selected) => this.setState({ selected });
 
   // Create new option and select it
   handleCreateOption = (e) => {
@@ -40,7 +43,7 @@ export default class CreatableExample extends React.PureComponent {
       value: faker.random.uuid(),
     };
     const options = [
-      ...this.state.options,
+      ...this.state.options, // eslint-disable-line
       selected,
     ];
     this.setState({

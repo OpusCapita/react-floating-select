@@ -1,11 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, object, number, boolean, array } from '@storybook/addon-knobs';
+import {
+  text,
+  object,
+  number,
+  boolean,
+  select,
+} from '@storybook/addon-knobs';
 // Application imports
 import { FloatingSelect } from '../src/index';
 import AppWrapper from './hocComponents/app-wrapper.component';
 import StoryWrapper from './hocComponents/story-wrapper.component';
-import { select } from '@storybook/addon-knobs/dist/vue';
 
 const stories = storiesOf('@opuscapita/react-floating-select', module);
 
@@ -31,12 +36,15 @@ stories.add('FloatingSelect', () => {
         selectedOption: null,
       };
     }
-    onChange = selectedOption => this.setState({ selectedOption });
+
+    onChange = (selectedOption) => this.setState({ selectedOption });
+
     render() {
+      const { selectedOption } = this.state;
       const fsProps = {
         ...this.props,
         onChange: this.onChange,
-        value: this.state.selectedOption,
+        value: selectedOption,
       };
       return <FloatingSelect {...fsProps} />;
     }

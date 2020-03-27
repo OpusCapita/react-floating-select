@@ -10,7 +10,9 @@ export default class MenuOption extends React.PureComponent {
     getStyles: PropTypes.func.isRequired,
     selectProps: PropTypes.shape({}).isRequired,
     onOptionClick: PropTypes.func.isRequired,
-    item: PropTypes.shape({}).isRequired,
+    item: PropTypes.shape({
+      props: PropTypes.shape({}),
+    }).isRequired,
   };
 
   onOptionClick = () => {
@@ -20,10 +22,10 @@ export default class MenuOption extends React.PureComponent {
 
   render() {
     const { getStyles, selectProps, item } = this.props;
-    const { children } = item.props;
+    const { children } = item.props; // eslint-disable-line
     const baseStyle = getStyles('option', item.props);
 
-    const inputHeight = selectProps.controlHeight || '32px';
+    const inputHeight = selectProps.controlHeight || '32px'; // eslint-disable-line
     const customStyles = styles(inputHeight);
     const combinedStyles = customStyles.option(baseStyle, item.props);
 

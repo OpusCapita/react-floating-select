@@ -1,7 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Switch, Route, Link } from 'react-router-dom';
-import { Panel, Grid, Row, Col, Checkbox } from 'react-bootstrap';
+import {
+  Panel,
+  Grid,
+  Row,
+  Col,
+  Checkbox,
+} from 'react-bootstrap';
 import GithubLogo from '../images/logo-github.svg';
 import packageConfig from '../../package.json';
 // Example Components
@@ -21,25 +27,27 @@ const ListContainer = styled.div`
 `;
 
 export default class ExampleContainer extends React.PureComponent {
-  state = {
-    // default props for component
-    controlHeight: 30,
-    isSearchable: false,
-    isClearable: false,
-    isMulti: false,
-    isDisabled: false,
+  constructor(props) {
+    super(props);
+    this.state = {
+      controlHeight: 30,
+      isSearchable: false,
+      isClearable: false,
+      isMulti: false,
+      isDisabled: false,
+    };
   }
 
-  changeNumberProp = prop => (e) => {
+  changeNumberProp = (prop) => (e) => {
     const val = Number(e.target.value);
     this.setState({ [prop]: val });
   }
 
-  renderNumberInput = attr => (
+  renderNumberInput = (attr) => (
     <p>
       <input
         type="number"
-        value={this.state[attr]}
+        value={this.state[attr]} // eslint-disable-line
         onChange={this.changeNumberProp(attr)}
         style={{ width: '60px' }}
       />
@@ -48,12 +56,12 @@ export default class ExampleContainer extends React.PureComponent {
     </p>
   )
 
-  renderCheckbox = attr => (
+  renderCheckbox = (attr) => (
     <p>
       <Checkbox
         inline
-        checked={this.state[attr]}
-        onChange={() => this.setState({ [attr]: !this.state[attr] })}
+        checked={this.state[attr]} // eslint-disable-line
+        onChange={() => this.setState({ [attr]: !this.state[attr] })} // eslint-disable-line
       >
         {attr}
       </Checkbox>

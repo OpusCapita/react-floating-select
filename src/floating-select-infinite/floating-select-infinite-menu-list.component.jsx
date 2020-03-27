@@ -19,23 +19,27 @@ class MenuList extends React.PureComponent {
     return children;
   };
 
-  renderNoOptionsMessage = () => (
-    <div className={`${CLASS_PREFIX}-no-options-message`}>
-      {this.props.selectProps.noOptionsMessage()}
-    </div>
-  );
+  renderNoOptionsMessage = () => {
+    const { selectProps } = this.props;
+    return (
+      <div className={`${CLASS_PREFIX}-no-options-message`}>
+        {selectProps.noOptionsMessage()}
+      </div>
+    );
+  }
 
   renderMenuItems = () => {
     const { selectProps: { components } } = this.props;
     const renderOption = components && components.Option
-      ? child => <components.Option key={child.key} {...child.props} />
-      : child => (
+      ? (child) => <components.Option key={child.key} {...child.props} />
+      : (child) => (
         <MenuOption
           item={child}
           key={child.key}
           onOptionClick={this.onOptionClick}
           {...this.props}
-        />);
+        />
+      );
     return this.getItems().map(renderOption);
   };
 
@@ -89,6 +93,9 @@ MenuList.propTypes = {
   selectProps: PropTypes.shape({
     controlHeight: PropTypes.string,
     noOptionsMessage: PropTypes.func,
+    components: PropTypes.shape({
+      Option: PropTypes.node,
+    }),
   }).isRequired,
   children: PropTypes.node.isRequired,
   selectOption: PropTypes.func.isRequired,
